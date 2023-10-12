@@ -14,6 +14,7 @@ public class P05_01_POA_SPECIAL {
 
     public WebElement drop_id_listFirstParty() {
         return Hooks.driver.findElement(By.id("ddlConfirmTypeFirstParty_chosen"));
+
     }
 
     public WebElement applicant_checkboxFirstParty() {
@@ -75,6 +76,55 @@ public class P05_01_POA_SPECIAL {
         List<WebElement> secondPartyTableIds = Hooks.driver.findElements(By.xpath("//form[@class=\"secondParty ng-pristine ng-valid ng-scope\"]//tbody//tr//td[@data-title=\" رقم الإثبات\"]"));
         return secondPartyTableIds;
     }
+     public WebElement nav_sample() {
+        return Hooks.driver.findElement(By.id("li_debage"));
+    }
+
+    public WebElement simpleTextCheckbox() {
+        return Hooks.driver.findElement(By.xpath("//legend//input[@type=\"checkbox\"]"));
+    }
+    public WebElement inSideQaterRadioBtn() {
+        return Hooks.driver.findElement(By.id("2483"));
+    }
+
+    public WebElement saveModelBtn() {
+        return Hooks.driver.findElement(By.id("btnAddDebagaRequest"));
+    }
+    public WebElement nav_fees() {
+        return Hooks.driver.findElement(By.id("li_fees"));
+    }
+
+    public WebElement chkNoFees() {
+        return Hooks.driver.findElement(By.id("chkNoFees"));
+    }
+
+    public WebElement excemptedReasons() {
+        return Hooks.driver.findElement(By.id("ddlExcemptedReasons"));
+    }
+
+    public WebElement btnViewTransaction() {
+        return Hooks.driver.findElement(By.id("btnViewTransaction"));
+    }
+
+    public WebElement cboxClose() {
+        return Hooks.driver.findElement(By.id("cboxClose"));
+    }
+
+    public WebElement btnSubmitTransaction() {
+        return Hooks.driver.findElement(By.id("btnSubmitTransaction"));
+    }
+    public WebElement completeRequestShowFlag() {
+        return Hooks.driver.findElement(By.id("completeRequestShowFlag"));
+    }
+
+
+
+
+
+
+
+
+
 
 
 }
