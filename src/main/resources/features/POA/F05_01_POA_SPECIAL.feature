@@ -12,7 +12,7 @@ Background:user could click on POA_SPECIAL
   And user clicked on POA_SPECIAL successfully
 
   Scenario: user could add new transactions for POA_SPECIAL
-    When user add the first Party for POA_SPECIAL with obj of index "8" and id of index "1" id equal "00000000091" and click on applicant
+    When user add the first Party for POA_SPECIAL with obj of index "8" and id of index "1" id equal "00000000200" and click on applicant
     And user click on add button and add new first Party successfully
     And user close first Party for POA_SPECIAL and open the second Party for POA_SPECIAL
     When user add the second Party for POA_SPECIAL with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230"
@@ -23,6 +23,6 @@ Background:user could click on POA_SPECIAL
     And user close the the samples Nav for POA_SPECIAL and open the fees Nav for POA_SPECIAL
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
-    Then user click on btnSubmitTransaction and Transaction add successfully
+    Then user click on btnSubmitTransaction and Transaction added successfully
 
 
