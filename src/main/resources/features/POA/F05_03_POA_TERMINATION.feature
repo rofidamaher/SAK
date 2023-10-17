@@ -1,9 +1,9 @@
 @smoke
 Feature: F05_03_POA_TERMINATION | users could add new transactions for POA_TERMINATION
 Background:user could click on POA_TERMINATION
-  When user login with email "tester7" and password "P@ssw0rd"
+  When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
-  And user login to the system successfully by user "tester7"
+  And user login to the system successfully by user "amrsaid"
   And user click on Documentation
   Then user clicked on Documentation successfully
   And user click on POA

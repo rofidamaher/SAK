@@ -24,6 +24,10 @@ public class P05_POA {
     {
         return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_TERMINATION.png']"));
     }
+    public WebElement POA_PARTIAL_TERMINATION()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src=\"img/POA_PARTIAL_TERMINATION.png\"]"));
+    }
 
 
 }

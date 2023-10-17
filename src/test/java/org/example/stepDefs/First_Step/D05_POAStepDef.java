@@ -101,4 +101,34 @@ public class D05_POAStepDef {
         // Assert All
         soft.assertAll();
     }
+
+    @When("user click on POA_PARTIAL_TERMINATION")
+    public void userClickOnPOA_PARTIAL_TERMINATION() throws InterruptedException {
+        poa.POA_PARTIAL_TERMINATION().click();
+        Thread.sleep(200);
+    }
+
+    @And("user clicked on POA_PARTIAL_TERMINATION successfully")
+    public void userClickedOnPOA_PARTIAL_TERMINATIONSuccessfully() {
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+        //first Assert
+        String expectedResult = "الغاء توكيل جزئى";
+        String actualResult =poa.POA_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_PARTIAL_TERMINATION successfully" );
+
+        //Hooks.driver.getCurrentUrl();
+        // second Assert
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_PARTIAL_TERMINATION/:64";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_PARTIAL_TERMINATION successfully" );
+
+        // Assert All
+        soft.assertAll();
+    }
 }

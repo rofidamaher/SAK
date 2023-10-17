@@ -172,7 +172,7 @@ public class D05_01_POA_SPECIALStepDef {
     @Then("user click on btnSubmitTransaction and Transaction added successfully")
     public void userClickOnBtnSubmitTransactionAndTransactionAddedSuccessfully() throws InterruptedException {
         POASpecial.btnSubmitTransaction().click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 //        Hooks.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 //        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(6));
@@ -185,7 +185,9 @@ public class D05_01_POA_SPECIALStepDef {
 //        }
 //        POASpecial.cboxClose().click();
 //        Thread.sleep(200);
-//        Assert.assertTrue(POASpecial.completeRequestShowFlag().isDisplayed());
+        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+        jse.executeScript("arguments[0].scrollIntoView();", POASpecial.completeRequestShowFlag());
+        Assert.assertFalse(POASpecial.completeRequestShowFlag().isDisplayed());
     }
 
     public static boolean isDisplayed(WebElement element) {

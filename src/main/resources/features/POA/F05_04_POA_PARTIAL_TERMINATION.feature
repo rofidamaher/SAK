@@ -1,5 +1,5 @@
 @smoke
-Feature: F05_03_POA_TERMINATION | users could add new transactions for POA_TERMINATION
+Feature: F05_04_POA_PARTIAL_TERMINATION | users could add new transactions for POA_PARTIAL_TERMINATION
 Background:user could click on POA_TERMINATION
   When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
@@ -8,14 +8,15 @@ Background:user could click on POA_TERMINATION
   Then user clicked on Documentation successfully
   And user click on POA
   And user clicked on POA successfully
-  When user click on POA_TERMINATION
-  And user clicked on POA_TERMINATION successfully
+  When user click on POA_PARTIAL_TERMINATION
+  And user clicked on POA_PARTIAL_TERMINATION successfully
 
-  Scenario: user could add new transactions for POA_TERMINATION
+  Scenario: user could add new transactions for POA_PARTIAL_TERMINATION
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty
     And user click on add button and add new first Party successfully
     When user close first Party and open the model Nav
-    And user enter transaction num "2023/3636" and click save model btn
+    And user enter transaction num "2023/3636" for POA_PARTIAL_TERMINATION and click save model btn
+    And user select person who cancel agency "00000000085" and click save btn
     And user close the the samples Nav and open the fees Nav
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
