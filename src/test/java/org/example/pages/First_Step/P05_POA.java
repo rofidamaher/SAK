@@ -6,14 +6,24 @@ import org.openqa.selenium.WebElement;
 
 public class P05_POA {
 
-   public WebElement Tawkel_rasmy()
+   public WebElement POA_SPECIAL()
 {
     return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_SPECIAL.png']"));
 }
 
-    public WebElement Tawkel_rasmy_label()
+    public WebElement POA_label()
     {
         return Hooks.driver.findElement(By.id("referrer"));
     }
+    public WebElement POA_PARTIAL_STEPPED()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_PARTIAL_STEPPED.png']"));
+    }
+
+    public WebElement POA_TERMINATION()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_TERMINATION.png']"));
+    }
+
 
 }

@@ -10,6 +10,14 @@ Background:user could click on POA
   And user clicked on POA successfully
 
   Scenario: user could click on POA_SPECIAL
-    And user click on POA_SPECIAL
+    When user click on POA_SPECIAL
     And user clicked on POA_SPECIAL successfully
 
+
+  Scenario: user could click on POA_PARTIAL_STEPPED
+    When user click on POA_PARTIAL_STEPPED
+    And user clicked on POA_PARTIAL_STEPPED successfully
+
+  Scenario: user could click on POA_TERMINATION
+    When user click on POA_TERMINATION
+    And user clicked on POA_TERMINATION successfully

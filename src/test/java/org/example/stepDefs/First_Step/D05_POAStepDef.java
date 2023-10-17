@@ -1,6 +1,7 @@
 package org.example.stepDefs.First_Step;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
 import org.example.pages.First_Step.P05_POA;
 import org.example.stepDefs.Hooks;
 import org.testng.asserts.SoftAssert;
@@ -8,11 +9,11 @@ import org.testng.asserts.SoftAssert;
 
 public class D05_POAStepDef {
 
-    P05_POA tawkel = new P05_POA();
+    P05_POA poa = new P05_POA();
 
-    @And("user click on POA_SPECIAL")
-    public void userClickOnTawkelRasmy() {
-        tawkel.Tawkel_rasmy().click();
+    @When("user click on POA_SPECIAL")
+    public void userClickOnPOA_SPECIAL() {
+        poa.POA_SPECIAL().click();
     }
 
     @And("user clicked on POA_SPECIAL successfully")
@@ -22,11 +23,11 @@ public class D05_POAStepDef {
         SoftAssert soft = new SoftAssert();
         //first Assert
         String expectedResult = "توكيل خاص";
-        String actualResult =tawkel.Tawkel_rasmy_label().getText();
+        String actualResult =poa.POA_label().getText();
 
         System.out.println(actualResult);
         soft.assertEquals(actualResult.contains(expectedResult),true);
-        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on Tawkel racmy successfully" );
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_SPECIAL successfully" );
 
         //Hooks.driver.getCurrentUrl();
         // second Assert
@@ -34,14 +35,70 @@ public class D05_POAStepDef {
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_SPECIAL/:45";
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
-        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on Tawkel racmy successfully" );
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_SPECIAL successfully" );
 
         // Assert All
         soft.assertAll();
     }
 
 
+    @When("user click on POA_PARTIAL_STEPPED")
+    public void userClickOnPOA_PARTIAL_STEPPED() {
+        poa.POA_PARTIAL_STEPPED().click();
+    }
 
+    @And("user clicked on POA_PARTIAL_STEPPED successfully")
+    public void userClickedOnPOA_PARTIAL_STEPPEDSuccessfully() {
 
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+        //first Assert
+        String expectedResult = "تنحى";
+        String actualResult =poa.POA_label().getText();
 
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_PARTIAL_STEPPED successfully" );
+
+        //Hooks.driver.getCurrentUrl();
+        // second Assert
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_PARTIAL_STEPPED/:65";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_PARTIAL_STEPPED successfully" );
+
+        // Assert All
+        soft.assertAll();
+    }
+
+    @When("user click on POA_TERMINATION")
+    public void userClickOnPOA_TERMINATION() throws InterruptedException {
+        poa.POA_TERMINATION().click();
+        Thread.sleep(200);
+    }
+
+    @And("user clicked on POA_TERMINATION successfully")
+    public void userClickedOnPOA_TERMINATIONSuccessfully() {
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+        //first Assert
+        String expectedResult = "الغاء توكيل";
+        String actualResult =poa.POA_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_TERMINATION successfully" );
+
+        //Hooks.driver.getCurrentUrl();
+        // second Assert
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_TERMINATION/:61";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_TERMINATION successfully" );
+
+        // Assert All
+        soft.assertAll();
+    }
 }

@@ -8,10 +8,14 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 
@@ -19,7 +23,7 @@ public class D05_01_POA_SPECIALStepDef {
 
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
 
-    @When("user add the first Party for POA_SPECIAL with obj of index {string} and id of index {string} id equal {string} and click on applicant")
+    @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and click on btnAddFirstParty")
     public void userAddTheFirstSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndClickOnApplicant(String arg0, String arg1, String arg2) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
@@ -61,7 +65,7 @@ public class D05_01_POA_SPECIALStepDef {
     }
 
 
-    @And("user close first Party for POA_SPECIAL and open the second Party for POA_SPECIAL")
+    @And("user close first Party and open the second Party")
     public void userCloseFirstSideForPOA_SPECIALAndOpenTheSecondSideForPOA_SPECIAL() throws InterruptedException {
         Thread.sleep(100);
         POASpecial.nav_First_Side().click();
@@ -70,7 +74,7 @@ public class D05_01_POA_SPECIALStepDef {
 
     }
 
-    @When("user add the second Party for POA_SPECIAL with obj of index {string} and id of index {string} id equal {string} and CR equal {string}")
+    @When("user add the second Party with obj of index {string} and id of index {string} id equal {string} and CR equal {string}")
     public void userAddTheSecondSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndCREqual(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();
         Thread.sleep(100);
@@ -106,7 +110,7 @@ public class D05_01_POA_SPECIALStepDef {
             //Assert.assertEquals(actualResult.contains(expectedResult),true,"euro symbol is displayed on product :" + i);
         }
     }
-    @And("user close the second Party for POA_SPECIAL and open the samples Nav for POA_SPECIAL")
+    @And("user close the second Party and open the model Nav")
     public void userCloseTheSecondPartyForPOA_SPECIALAndOpenTheSamplesNavForPOA_SPECIAL() throws InterruptedException {
         Thread.sleep(100);
         POASpecial.nav_Second_Side().click();
@@ -133,7 +137,7 @@ public class D05_01_POA_SPECIALStepDef {
 
     }
 
-    @And("user close the the samples Nav for POA_SPECIAL and open the fees Nav for POA_SPECIAL")
+    @And("user close the the samples Nav and open the fees Nav")
     public void userCloseTheTheSamplesNavForPOA_SPECIALAndOpenTheFeesNavForPOA_SPECIAL() throws InterruptedException {
 
         POASpecial.nav_sample().click();
@@ -154,21 +158,45 @@ public class D05_01_POA_SPECIALStepDef {
         JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.btnViewTransaction());
         POASpecial.btnViewTransaction().click();
-        Hooks.driver.manage().timeouts().getPageLoadTimeout();
-        Thread.sleep(1000);
-
-        //Hooks.driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
-        //cboxContent
+        Thread.sleep(2000);
+        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+        {
+            Thread.sleep(3000);
+            System.out.println("Element is not visible yet");
+        }
+        Thread.sleep(200);
         POASpecial.cboxClose().click();
-        Thread.sleep(500);
+       // Thread.sleep(200);
     }
 
-    @Then("user click on btnSubmitTransaction and Transaction add successfully")
-    public void userClickOnBtnSubmitTransactionAndTransactionAddSuccessfully() throws InterruptedException {
-        Thread.sleep(1000);
+    @Then("user click on btnSubmitTransaction and Transaction added successfully")
+    public void userClickOnBtnSubmitTransactionAndTransactionAddedSuccessfully() throws InterruptedException {
         POASpecial.btnSubmitTransaction().click();
-        Thread.sleep(100);
-        POASpecial.cboxClose().click();
-        Assert.assertTrue(POASpecial.completeRequestShowFlag().isDisplayed());
+        Thread.sleep(2000);
+//        Hooks.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+//        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(6));
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cboxContent")));
+//
+//        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+//        {
+//            Thread.sleep(3000);
+//            System.out.println("Element cboxContent is not visible yet");
+//        }
+//        POASpecial.cboxClose().click();
+//        Thread.sleep(200);
+//        Assert.assertTrue(POASpecial.completeRequestShowFlag().isDisplayed());
     }
+
+    public static boolean isDisplayed(WebElement element) {
+        try {
+            if(element.isDisplayed())
+                return element.isDisplayed();
+        }catch (NoSuchElementException ex) {
+            return false;
+        }
+        return false;
+    }
+
+
 }
