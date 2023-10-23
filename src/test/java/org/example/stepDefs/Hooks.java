@@ -15,7 +15,7 @@ public class Hooks {
 
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
 
-       // System.setProperty("webdriver.chrome.driver","D:\\informatique\\SAK\\code\\Automation pro Test templet\\src\\main\\resources\\chromedriver.exe");
+        // System.setProperty("webdriver.chrome.driver","D:\\informatique\\SAK\\code\\Automation pro Test templet\\src\\main\\resources\\chromedriver.exe");
 
         //2 new object
         ChromeOptions options= new ChromeOptions();

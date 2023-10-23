@@ -3,7 +3,11 @@ package org.example.stepDefs.MainMenu;
 import io.cucumber.java.en.And;
 import org.example.pages.MainMenu.P07_MainMenu;
 import org.example.stepDefs.Hooks;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 
@@ -13,8 +17,9 @@ public class D07_MainMenuStepDef {
 
     @And("user open MainMenu")
     public void userClickOnDocumentation() {
-        Hooks.driver. manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        menu.mainMenu().click();
+        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
+        WebElement mainMenu = wait.until(ExpectedConditions.elementToBeClickable(menu.mainMenu()));
+        mainMenu.click();
     }
 
 //    @Then("user clicked on Documentation successfully")

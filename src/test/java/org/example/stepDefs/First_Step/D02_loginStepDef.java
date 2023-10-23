@@ -5,7 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.First_Step.P02_login;
 import org.example.stepDefs.Hooks;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
+
+import java.time.Duration;
 
 
 public class D02_loginStepDef {
@@ -26,31 +31,38 @@ public class D02_loginStepDef {
     }
 
     @And("user press on login button")
-    public void userPressOnLoginButton() throws InterruptedException {
+    public void userPressOnLoginButton(){
+        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
+
         //login.Password().sendKeys(Keys.ENTER);
-        Thread.sleep(300);
-        login.btn_login().click();
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(login.btn_login()));
+        loginButton.click();
     }
 
     @Then("user login to the system successfully by user {string}")
-    public void userLoginToTheSystemSuccessfullyByUser(String arg0) throws InterruptedException {
+    public void userLoginToTheSystemSuccessfullyByUser(String arg0){
 
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
+        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
+
         //first Assert
-        String actualResult =login.UserName_home().getText();
+        WebElement userNameElement = wait.until(ExpectedConditions.visibilityOf(login.UserName_home()));
+
+        String actualResult =userNameElement.getText();
         System.out.println(actualResult);
         soft.assertEquals(actualResult.contains(arg0),true);
         soft.assertTrue(actualResult.contains(arg0),"user can login successful" );
 
         //Hooks.driver.getCurrentUrl();
-       // second Assert
+        // second Assert
 
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/";
+        wait.until(ExpectedConditions.urlContains(expectedResulturl));
+
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user can login successful" );
-        Thread.sleep(1000);
         // Assert All
         soft.assertAll();
     }

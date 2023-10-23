@@ -27,7 +27,7 @@ public class D09_PersonalInboxStepDef {
 
     @And("user enter request num {string} in request field and click on search btn on PersonalInbox page")
     public void userEnterRequestNumInRequestFieldAndClickOnSearchBtnOnPersonalInboxPage(String arg0) {
-        
+
     }
 
     @Then("user find request successfully in PersonalInbox pag")
