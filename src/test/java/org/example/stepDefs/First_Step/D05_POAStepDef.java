@@ -4,12 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.example.pages.First_Step.P05_POA;
 import org.example.stepDefs.Hooks;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
-
-import java.time.Duration;
 
 
 public class D05_POAStepDef {
@@ -21,28 +16,28 @@ public class D05_POAStepDef {
         poa.POA_SPECIAL().click();
     }
 
+    @When("user click on POA_GENERAL_CASES")
+    public void userClickOnPOA_GENERAL_CASES() {
+        poa.POA_GENERAL_CASES().click();
+    }
+
     @And("user clicked on POA_SPECIAL successfully")
     public void userClickedOnTawkelRasmySuccessfully() {
 
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-
         //first Assert
-        WebElement tawkelLabel = wait.until(ExpectedConditions.visibilityOf(poa.POA_label()));
+        String expectedResult = "توكيل خاص";
+        String actualResult =poa.POA_label().getText();
 
-        String actualResult =tawkelLabel.getText();
         System.out.println(actualResult);
-
-        soft.assertTrue(actualResult.contains("توكيل خاص"), "User clicked on POA_SPECIAL successfully");
-
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_SPECIAL successfully" );
 
         //Hooks.driver.getCurrentUrl();
         // second Assert
 
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_SPECIAL/:45";
-        wait.until(ExpectedConditions.urlContains(expectedResulturl));
-
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_SPECIAL successfully" );
@@ -51,6 +46,30 @@ public class D05_POAStepDef {
         soft.assertAll();
     }
 
+    @And("user clicked on POA_GENERAL_CASES successfully")
+    public void userClickedOnTawkelKadayaSuccessfully() {
+
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+        //first Assert
+        String expectedResult = "توكيل عام في القضايا";
+        String actualResult =poa.POA_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_GENERAL_CASES successfully" );
+
+        //Hooks.driver.getCurrentUrl();
+        // second Assert
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_GENERAL_CASES/:51";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_GENERAL_CASES successfully" );
+
+        // Assert All
+        soft.assertAll();
+    }
 
     @When("user click on POA_PARTIAL_STEPPED")
     public void userClickOnPOA_PARTIAL_STEPPED() {
@@ -62,23 +81,18 @@ public class D05_POAStepDef {
 
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-
         //first Assert
-        WebElement poaLabel = wait.until(ExpectedConditions.visibilityOf(poa.POA_label()));
-
         String expectedResult = "تنحى";
-        String actualResult =poaLabel.getText();
-        System.out.println(actualResult);
+        String actualResult =poa.POA_label().getText();
 
-        soft.assertTrue(actualResult.contains("تنحى"), "User clicked on POA_PARTIAL_STEPPED successfully");
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_PARTIAL_STEPPED successfully" );
 
         //Hooks.driver.getCurrentUrl();
         // second Assert
 
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_PARTIAL_STEPPED/:65";
-        wait.until(ExpectedConditions.urlContains(expectedResulturl));
-
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_PARTIAL_STEPPED successfully" );
@@ -88,36 +102,29 @@ public class D05_POAStepDef {
     }
 
     @When("user click on POA_TERMINATION")
-    public void userClickOnPOA_TERMINATION() {
+    public void userClickOnPOA_TERMINATION() throws InterruptedException {
         poa.POA_TERMINATION().click();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(poa.POA_TERMINATION()));
+        Thread.sleep(200);
     }
 
     @And("user clicked on POA_TERMINATION successfully")
     public void userClickedOnPOA_TERMINATIONSuccessfully() {
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-
         //first Assert
-        WebElement poaLabel = wait.until(ExpectedConditions.visibilityOf(poa.POA_label()));
-
         String expectedResult = "الغاء توكيل";
-        String actualResult =poaLabel.getText();
-        System.out.println(actualResult);
+        String actualResult =poa.POA_label().getText();
 
-        soft.assertTrue(actualResult.contains("الغاء توكيل"), "User clicked on POA_TERMINATION successfully");
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_TERMINATION successfully" );
 
         //Hooks.driver.getCurrentUrl();
         // second Assert
 
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_TERMINATION/:61";
-        wait.until(ExpectedConditions.urlContains(expectedResulturl));
-
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
-
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_TERMINATION successfully" );
 
         // Assert All
@@ -125,36 +132,29 @@ public class D05_POAStepDef {
     }
 
     @When("user click on POA_PARTIAL_TERMINATION")
-    public void userClickOnPOA_PARTIAL_TERMINATION(){
+    public void userClickOnPOA_PARTIAL_TERMINATION() throws InterruptedException {
         poa.POA_PARTIAL_TERMINATION().click();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(poa.POA_PARTIAL_TERMINATION()));
+        Thread.sleep(200);
     }
 
     @And("user clicked on POA_PARTIAL_TERMINATION successfully")
     public void userClickedOnPOA_PARTIAL_TERMINATIONSuccessfully() {
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
-        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
-
         //first Assert
-        WebElement poaLabel = wait.until(ExpectedConditions.visibilityOf(poa.POA_label()));
-
         String expectedResult = "الغاء توكيل جزئى";
-        String actualResult =poaLabel.getText();
-        System.out.println(actualResult);
+        String actualResult =poa.POA_label().getText();
 
-        soft.assertTrue(actualResult.contains("الغاء توكيل جزئى"), "User clicked on POA_PARTIAL_TERMINATION successfully");
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on POA_PARTIAL_TERMINATION successfully" );
 
         //Hooks.driver.getCurrentUrl();
         // second Assert
 
         String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA_PARTIAL_TERMINATION/:64";
-        wait.until(ExpectedConditions.urlContains(expectedResulturl));
-
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
-
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on POA_PARTIAL_TERMINATION successfully" );
 
         // Assert All

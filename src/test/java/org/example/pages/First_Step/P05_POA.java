@@ -6,10 +6,15 @@ import org.openqa.selenium.WebElement;
 
 public class P05_POA {
 
-   public WebElement POA_SPECIAL()
-{
-    return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_SPECIAL.png']"));
-}
+    public WebElement POA_SPECIAL()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_SPECIAL.png']"));
+    }
+
+    public WebElement POA_GENERAL_CASES()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/POA_GENERAL_CASES.png']"));
+    }
 
     public WebElement POA_label()
     {
