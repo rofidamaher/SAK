@@ -24,7 +24,7 @@ public class D05_03_POA_TERMINATIONStepDef {
         POASpecial.nav_sample().click();
     }
 
-    @And("user enter transaction num {string} and click save model btn")
+    @And("user enter transaction num {string} for POA_TERMINATION and click save model btn")
     public void userEnterTransactionNumAndClickSaveModelBtn(String arg0) throws InterruptedException {
         p0503PoaTermination.transactionNum().sendKeys(arg0);
         JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;

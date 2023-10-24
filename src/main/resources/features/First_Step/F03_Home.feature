@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F03_Home | users could use login functionality and click on Documentation
 
   Scenario: user could login with valid username and password and click on Documentation

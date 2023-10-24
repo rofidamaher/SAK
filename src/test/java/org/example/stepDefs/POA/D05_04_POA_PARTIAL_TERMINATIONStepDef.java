@@ -24,7 +24,7 @@ public class D05_04_POA_PARTIAL_TERMINATIONStepDef {
 
         POASpecial.saveModelBtn().click();
         Thread.sleep(100);
-        POASpecial.ok_but().click();
+        //POASpecial.ok_but().click();
     }
     @And("user select person who cancel agency {string} and click save btn")
     public void userSelectPersonWhoCancelAgencyAndClickSaveBtn(String arg0) throws InterruptedException {
@@ -40,14 +40,18 @@ public class D05_04_POA_PARTIAL_TERMINATIONStepDef {
         while (p0504PoaPartialTermination.idsNum().get(i).isDisplayed()) {
             if (p0504PoaPartialTermination.idsNum().get(i).getText().contains(arg0)) {
                 p0504PoaPartialTermination.checkboxItems().get(i).click();
+                break;
             }
             i++;
         }
 
         jse.executeScript("arguments[0].scrollIntoView();", p0504PoaPartialTermination.btnAddChildParty());
         p0504PoaPartialTermination.btnAddChildParty().click();
-
+        Thread.sleep(200);
+        //jse.executeScript("arguments[0].scrollIntoView();", POASpecial.saveModelBtn());
+        POASpecial.cboxClose().click();
+        POASpecial.saveModelBtn().click();
+        Thread.sleep(100);
+        POASpecial.ok_but().click();
     }
-
-
 }

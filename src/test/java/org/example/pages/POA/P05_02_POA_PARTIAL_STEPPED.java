@@ -40,6 +40,10 @@ public class P05_02_POA_PARTIAL_STEPPED {
         return Hooks.driver.findElement(By.xpath("//div[@id=\"dialog-box-id-1697452620405\"]//input[@class=\"radius button\"]"));
 
     }
+    public WebElement transactionNum() {
+        return Hooks.driver.findElement(By.id("3258"));
+    }
+
 
 
 

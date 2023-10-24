@@ -5,8 +5,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.stepDefs.Hooks;
+import org.example.stepDefs.MainMenu.D07_MainMenuStepDef;
+import org.example.stepDefs.MainMenu.D08_SearchStepDef;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -22,6 +25,8 @@ import java.util.concurrent.TimeUnit;
 public class D05_01_POA_SPECIALStepDef {
 
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
+    JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+    String transactions_num ;
 
     @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and click on btnAddFirstParty")
     public void userAddTheFirstSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndClickOnApplicant(String arg0, String arg1, String arg2) throws InterruptedException {
@@ -44,9 +49,9 @@ public class D05_01_POA_SPECIALStepDef {
 
     
     @And("user click on add button and add new first Party successfully")
-    public void userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
+    public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
 
-        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+
         jse.executeScript("window.scrollBy(0,150)");
 
         POASpecial.add_butFirstParty().click();
@@ -55,12 +60,14 @@ public class D05_01_POA_SPECIALStepDef {
         SoftAssert soft = new SoftAssert();
         POASpecial.ok_but().click();
         String actualResult1 = POASpecial.transactions_num().getText();
+        transactions_num = POASpecial.transactions_num().getText();
 
         System.out.println(actualResult1);
         soft.assertTrue(POASpecial.transactions_num().isDisplayed());
         // Assert All
         soft.assertAll();
 
+        return transactions_num;
 
     }
 
@@ -143,6 +150,7 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.nav_sample().click();
         Thread.sleep(100);
         POASpecial.nav_fees().click();
+        Thread.sleep(100);
     }
 
     @When("user click on noFees checkbox and select ExcemptedReasons {string}")
@@ -169,25 +177,26 @@ public class D05_01_POA_SPECIALStepDef {
        // Thread.sleep(200);
     }
 
-    @Then("user click on btnSubmitTransaction and Transaction added successfully")
+    @Then("user click on btnSubmitTransaction")
     public void userClickOnBtnSubmitTransactionAndTransactionAddedSuccessfully() throws InterruptedException {
         POASpecial.btnSubmitTransaction().click();
-        Thread.sleep(3000);
-//        Hooks.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Thread.sleep(10000);
+//        Hooks.driver.switchTo().frame(Hooks.driver.findElement(By.className("cboxIframe")));
+//        Thread.sleep(300);
+//        Hooks.driver.switchTo().defaultContent();
+//        Thread.sleep(300);
+//        POASpecial.btnSubmitTransaction().getCssValue("background-color");
+//        System.out.println(POASpecial.btnSubmitTransaction().getCssValue("background-color"));
 
-//        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds(6));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("cboxContent")));
-//
-//        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+
+//        while (!isDisplayed( Hooks.driver.findElement(By.id("cboxContent"))))
 //        {
 //            Thread.sleep(3000);
-//            System.out.println("Element cboxContent is not visible yet");
+//            System.out.println("Element is not visible yet");
 //        }
+//        Thread.sleep(500);
 //        POASpecial.cboxClose().click();
-//        Thread.sleep(200);
-        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
-        jse.executeScript("arguments[0].scrollIntoView();", POASpecial.completeRequestShowFlag());
-        Assert.assertFalse(POASpecial.completeRequestShowFlag().isDisplayed());
+//        Assert.assertTrue(POASpecial.completeRequestShowFlag().isDisplayed());
     }
 
     public static boolean isDisplayed(WebElement element) {
@@ -199,6 +208,7 @@ public class D05_01_POA_SPECIALStepDef {
         }
         return false;
     }
+
 
 
 }

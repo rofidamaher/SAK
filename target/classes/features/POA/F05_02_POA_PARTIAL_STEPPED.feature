@@ -11,11 +11,17 @@ Background:user could click on POA_PARTIAL_STEPPED
   When user click on POA_PARTIAL_STEPPED
   And user clicked on POA_PARTIAL_STEPPED successfully
 
-  Scenario: user could add new transactions for POA_SPECIAL
-    When user add the first Party with obj of index "13" and id of index "1" id equal "00000000201" and BayanatElwkalaFirstParty equal "10/2010" click on btnAddFirstParty
+  Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one
+    When user add the first Party with obj of index "8" and id of index "1" id equal "00000000085" and click on btnAddFirstParty
     And user click on add button and add new first Party successfully
-    And user click on addCompanyStakeholder with id of index "2" id equal "12345678" and Choose a nationality equal "3" and click at add btn and save btn
-    And user close first Party and open the second Party
+    When user close first Party and open the model Nav
+    And user enter transaction num "2023/3758" for POA_PARTIAL_STEPPED and click save model btn
+    And user select person who step aside agency and step aside from him then click save btn
+    And user close the the samples Nav and open the fees Nav
+    When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
+    And user click on btnViewTransaction
+    Then user click on btnSubmitTransaction
+
 
 
 

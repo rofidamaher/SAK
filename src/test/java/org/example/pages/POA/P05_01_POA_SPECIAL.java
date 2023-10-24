@@ -114,7 +114,7 @@ public class P05_01_POA_SPECIAL {
         return Hooks.driver.findElement(By.id("btnSubmitTransaction"));
     }
     public WebElement completeRequestShowFlag() {
-        return Hooks.driver.findElement(By.id("cboxContent"));
+        return Hooks.driver.findElement(By.id("completeRequestShowFlag"));
     }
 
 

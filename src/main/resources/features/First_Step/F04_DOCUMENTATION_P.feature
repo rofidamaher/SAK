@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F04_DOCUMENTATION_P | users could use login functionality and click on Documentation then go to POA
 
   Scenario: user could login with valid username and password and click on Documentation

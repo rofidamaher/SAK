@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="558.23">
+    <testcase classname="F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL" name="user could add new transactions for POA_SPECIAL" time="136.678">
+        <system-out><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
+And user press on login button..............................................passed
+And user login to the system successfully by user "amrsaid".................passed
+And user click on Documentation.............................................passed
+Then user clicked on Documentation successfully.............................passed
+And user click on POA.......................................................passed
+And user clicked on POA successfully........................................passed
+When user click on POA_SPECIAL..............................................passed
+And user clicked on POA_SPECIAL successfully................................passed
+When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty.passed
+And user click on add button and add new first Party successfully...........passed
+And user close first Party and open the second Party........................passed
+When user add the second Party with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230".passed
+And user click on add button and add new second Party with id "00000000085" successfully.passed
+And user close the second Party and open the model Nav......................passed
+When user chick the fixed text checkbox and click inside the state of qatar radio btn.passed
+And user click on save model btn............................................passed
+And user close the the samples Nav and open the fees Nav....................passed
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".passed
+And user click on btnViewTransaction........................................passed
+Then user click on btnSubmitTransaction.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_02_POA_PARTIAL_STEPPED | users could add new transactions for POA_PARTIAL_STEPPED" name="user could add new transactions for POA_PARTIAL_STEPPED one to one" time="178.468">
+        <system-out><![CDATA[When user login with email "tester7" and password "P@ssw0rd"................passed
+And user press on login button..............................................passed
+And user login to the system successfully by user "tester7".................passed
+And user click on Documentation.............................................passed
+Then user clicked on Documentation successfully.............................passed
+And user click on POA.......................................................passed
+And user clicked on POA successfully........................................passed
+When user click on POA_PARTIAL_STEPPED......................................passed
+And user clicked on POA_PARTIAL_STEPPED successfully........................passed
+When user add the first Party with obj of index "8" and id of index "1" id equal "00000000085" and click on btnAddFirstParty.passed
+And user click on add button and add new first Party successfully...........passed
+When user close first Party and open the model Nav..........................passed
+And user enter transaction num "2023/3758" for POA_PARTIAL_STEPPED and click save model btn.passed
+And user select person who step aside agency and step aside from him then click save btn.passed
+And user close the the samples Nav and open the fees Nav....................passed
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".passed
+And user click on btnViewTransaction........................................passed
+Then user click on btnSubmitTransaction.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_03_POA_TERMINATION | users could add new transactions for POA_TERMINATION" name="user could add new transactions for POA_TERMINATION" time="68.774">
+        <failure message="element click intercepted: Element &lt;input id=&quot;btnSignIn&quot; class=&quot;button&quot; type=&quot;submit&quot; ng-click=&quot;Login()&quot; value=&quot;تسجيل دخول&quot;&gt; is not clickable at point (759, 473). Other element would receive the click: &lt;div id=&quot;transparentGray&quot; style=&quot;top:0;left:0;position:absolute;width:100%;height:100%;background-color: gray;opacity:0.4;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=118.0.5993.89)&#10;Build info: version: '4.9.0', revision: 'd7057100a6'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1e9b5e728315d8a2b5705b3c828981ab, clickElement {id=A4E9EFDACEEE0C451EA7DE292B94D5A4_element_15}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52334/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (1e9b5e728315d8a2b5705b3c828981ab)] -&gt; id: btnSignIn]&#10;Session ID: 1e9b5e728315d8a2b5705b3c828981ab" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
+And user press on login button..............................................failed
+And user login to the system successfully by user "amrsaid".................skipped
+And user click on Documentation.............................................skipped
+Then user clicked on Documentation successfully.............................skipped
+And user click on POA.......................................................skipped
+And user clicked on POA successfully........................................skipped
+When user click on POA_TERMINATION..........................................skipped
+And user clicked on POA_TERMINATION successfully............................skipped
+When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty.skipped
+And user click on add button and add new first Party successfully...........skipped
+When user close first Party and open the model Nav..........................skipped
+And user enter transaction num "2023/3757" for POA_TERMINATION and click save model btn.skipped
+And user close the the samples Nav and open the fees Nav....................skipped
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".skipped
+And user click on btnViewTransaction........................................skipped
+Then user click on btnSubmitTransaction.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input id="btnSignIn" class="button" type="submit" ng-click="Login()" value="تسجيل دخول"> is not clickable at point (759, 473). Other element would receive the click: <div id="transparentGray" style="top:0;left:0;position:absolute;width:100%;height:100%;background-color: gray;opacity:0.4;"></div>
+  (Session info: chrome=118.0.5993.89)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e9b5e728315d8a2b5705b3c828981ab, clickElement {id=A4E9EFDACEEE0C451EA7DE292B94D5A4_element_15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52334/devtoo..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1e9b5e728315d8a2b5705b3c828981ab)] -> id: btnSignIn]
+Session ID: 1e9b5e728315d8a2b5705b3c828981ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.example.stepDefs.First_Step.D02_loginStepDef.userPressOnLoginButton(D02_loginStepDef.java:32)
+	at ✽.user press on login button(file:///D:/informatique/SAK/code/SAK/src/main/resources/features/POA/F05_03_POA_TERMINATION.feature:5)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_04_POA_PARTIAL_TERMINATION | users could add new transactions for POA_PARTIAL_TERMINATION" name="user could add new transactions for POA_PARTIAL_TERMINATION" time="173.676">
+        <system-out><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
+And user press on login button..............................................passed
+And user login to the system successfully by user "amrsaid".................passed
+And user click on Documentation.............................................passed
+Then user clicked on Documentation successfully.............................passed
+And user click on POA.......................................................passed
+And user clicked on POA successfully........................................passed
+When user click on POA_PARTIAL_TERMINATION..................................passed
+And user clicked on POA_PARTIAL_TERMINATION successfully....................passed
+When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty.passed
+And user click on add button and add new first Party successfully...........passed
+When user close first Party and open the model Nav..........................passed
+And user enter transaction num "2023/3751" for POA_PARTIAL_TERMINATION and click save model btn.passed
+And user select person who cancel agency "00000000085" and click save btn...passed
+And user close the the samples Nav and open the fees Nav....................passed
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".passed
+And user click on btnViewTransaction........................................passed
+Then user click on btnSubmitTransaction.....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

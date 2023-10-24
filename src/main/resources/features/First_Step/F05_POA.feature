@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F05_POA | users could use login functionality and click on Documentation then go to POA and click POA_SPECIAL
 Background:user could click on POA
   When user login with email "tester7" and password "P@ssw0rd"

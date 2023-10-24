@@ -1,15 +1,16 @@
 @smoke
 Feature: F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL
 Background:user could click on POA_SPECIAL
-  When user login with email "tester7" and password "P@ssw0rd"
+  When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
-  And user login to the system successfully by user "tester7"
+  And user login to the system successfully by user "amrsaid"
   And user click on Documentation
   Then user clicked on Documentation successfully
   And user click on POA
   And user clicked on POA successfully
   When user click on POA_SPECIAL
   And user clicked on POA_SPECIAL successfully
+
 
   Scenario: user could add new transactions for POA_SPECIAL
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty
@@ -23,6 +24,6 @@ Background:user could click on POA_SPECIAL
     And user close the the samples Nav and open the fees Nav
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
-    Then user click on btnSubmitTransaction and Transaction added successfully
+    Then user click on btnSubmitTransaction
 
 

@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F07_MainMenu | users could use login functionality and open MainMenu
 
   Scenario: user could login with valid username and password and open MainMenu

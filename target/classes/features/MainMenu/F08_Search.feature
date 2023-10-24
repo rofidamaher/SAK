@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F08_Search | users could use login functionality and user could open Search page
 Background: user could login with valid username and password and open MainMenu
   When user login with email "tester7" and password "P@ssw0rd"
@@ -9,7 +9,7 @@ Background: user could login with valid username and password and open MainMenu
   Scenario: user could open Search page
     When user click on Search icon
     Then Search page open successfully
-    And user enter request num "44728" in request field and click on search bun
-    Then user find request successfully by searching request num "44728"
+    And user enter request num "46094" in request field and click on search bun
+    Then user find request successfully by searching request num "46094"
 
 

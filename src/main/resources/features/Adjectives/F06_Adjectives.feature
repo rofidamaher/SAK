@@ -1,4 +1,4 @@
-@smoke
+
   Feature: F06_AddNewT | user could use add NewTreatment functionality
     Background: user log in
       When user login with email "tester7" and password "P@ssw0rd"

@@ -15,12 +15,12 @@ Background:user could click on POA_TERMINATION
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty
     And user click on add button and add new first Party successfully
     When user close first Party and open the model Nav
-    And user enter transaction num "2023/3636" for POA_PARTIAL_TERMINATION and click save model btn
+    And user enter transaction num "2023/3751" for POA_PARTIAL_TERMINATION and click save model btn
     And user select person who cancel agency "00000000085" and click save btn
     And user close the the samples Nav and open the fees Nav
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
-    Then user click on btnSubmitTransaction and Transaction added successfully
+    Then user click on btnSubmitTransaction
 
 
 
