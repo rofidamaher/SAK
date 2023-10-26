@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2fc659dd-891e-4471-a6ca-77b886b4c267" name="Changes" comment="POA_SPECIAL">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/First_Step/F06_SALE.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/MainMenu/MainMenu.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/MainMenu/PersonalInbox.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/MainMenu/Search.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/SALE/F06_01_SALE_COMPANY.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/First_Step/P06_SAEL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/SALE/P06_01_SALE_COMPANY.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/First_Step/D06_SEALStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/SALE/D06_01_SALE_COMPANYStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/First_Step/F06_SALE.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/MainMenu/MainMenu.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/MainMenu/PersonalInbox.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/MainMenu/Search.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/POA/F05_05_POA_GENERAL_CASES.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/features/SALE/F06_01_SALE_COMPANY.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/First_Step/P06_SAEL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/MainMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/PersonalInbox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/SALE/P06_01_SALE_COMPANY.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/First_Step/D06_SEALStepDef.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/MainMenuStepDef.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/PersonalInboxStepDef.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/SALE/D06_01_SALE_COMPANYStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/Adjectives/F06_Adjectives.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/Adjectives/Adjectives.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/First_Step/F02_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/First_Step/F02_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/First_Step/F03_Home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/First_Step/F03_Home.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/First_Step/F05_POA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/First_Step/F05_POA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/POA/F05_01_POA_SPECIAL.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/POA/F05_01_POA_SPECIAL.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/POA/F05_02_POA_PARTIAL_STEPPED.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/POA/F05_02_POA_PARTIAL_STEPPED.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/POA/F05_03_POA_TERMINATION.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/POA/F05_03_POA_TERMINATION.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/POA/F05_04_POA_PARTIAL_TERMINATION.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/POA/F05_04_POA_PARTIAL_TERMINATION.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/POA/F05_05_POA_GENERAL_CASES.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/POA/F05_05_POA_GENERAL_CASES.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/Adjectives/P06_NewTreatment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/Adjectives/NewTreatment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/P07_MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/P08_Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/P09_PersonalInbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/MainMenu/PersonalInbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Adjectives/D06_NewTreatmentStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Adjectives/NewTreatmentStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/D07_MainMenuStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/MainMenuStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/D08_SearchStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/SearchStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/D09_PersonalInboxStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/MainMenu/PersonalInboxStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_03_POA_TERMINATIONStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_03_POA_TERMINATIONStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_04_POA_PARTIAL_TERMINATIONStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/POA/D05_04_POA_PARTIAL_TERMINATIONStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/Adjectives/F06_Adjectives.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/Adjectives/Adjectives.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/First_Step/F02_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/First_Step/F02_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/First_Step/F03_Home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/First_Step/F03_Home.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/First_Step/F04_DOCUMENTATION_P.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/First_Step/F04_DOCUMENTATION_P.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/First_Step/F05_POA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/First_Step/F05_POA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/POA/F05_01_POA_SPECIAL.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/POA/F05_01_POA_SPECIAL.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/POA/F05_02_POA_PARTIAL_STEPPED.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/POA/F05_02_POA_PARTIAL_STEPPED.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/POA/F05_03_POA_TERMINATION.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/POA/F05_03_POA_TERMINATION.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/POA/F05_04_POA_PARTIAL_TERMINATION.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/POA/F05_04_POA_PARTIAL_TERMINATION.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/Adjectives/P06_NewTreatment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/Adjectives/NewTreatment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/First_Step/P04_DOCUMENTATION_P.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/First_Step/P04_DOCUMENTATION_P.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/First_Step/P05_POA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/First_Step/P05_POA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/P07_MainMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/P08_Search.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/Search.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/MainMenu/P09_PersonalInbox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/Adjectives/D06_NewTreatmentStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/Adjectives/NewTreatmentStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/First_Step/D05_POAStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/First_Step/D05_POAStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/D07_MainMenuStepDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/D08_SearchStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/SearchStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/MainMenu/D09_PersonalInboxStepDef.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_03_POA_TERMINATIONStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_03_POA_TERMINATIONStepDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_04_POA_PARTIAL_TERMINATIONStepDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/POA/D05_04_POA_PARTIAL_TERMINATIONStepDef.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2FrAryBUxkMb1tnoq2QuQaSbhhP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/informatique/SAK/code/SAK/src/main/resources/features/POA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\informatique\SAK\code\SAK\src\main\resources\features\POA" />
+      <recent name="D:\informatique\SAK\code\SAK\src\test\java\org\example\stepDefs" />
+      <recent name="D:\informatique\SAK\code\SAK\src\test\java\org\example\stepDefs\POA" />
+      <recent name="D:\informatique\SAK\code\SAK\src\test\java\org\example\stepDefs\MainMenu" />
+      <recent name="D:\informatique\SAK\code\SAK\src\test\java\org\example\stepDefs\First_Step" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\informatique\SAK\code\SAK(Tawkel_Rasmy)\src\main\resources\features\Adjectives" />
+      <recent name="D:\informatique\SAK\code\SAK(Tawkel_Rasmy)\src\main\resources\features\MainMenu" />
+      <recent name="D:\informatique\SAK\code\SAK(Tawkel_Rasmy)\src\main\resources\features\First_Step" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.stepDefs.Adjectives" />
+      <recent name="org.example.pages.Adjectives" />
+      <recent name="org.example.stepDefs.POA" />
+      <recent name="org.example.pages.POA" />
+      <recent name="org.example.stepDefs.MainMenu" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: user could add new transactions for SALE_COMPANY">
+    <configuration name="Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/POA/F05_02_POA_PARTIAL_STEPPED.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SAK" />
+      <option name="NAME_FILTER" value="^user could add new transactions for POA_PARTIAL_STEPPED one to one$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for POA_PARTIAL_STEPPED one to one$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for POA_PARTIAL_TERMINATION (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/POA/F05_04_POA_PARTIAL_TERMINATION.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SAK" />
+      <option name="NAME_FILTER" value="^user could add new transactions for POA_PARTIAL_TERMINATION$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for POA_PARTIAL_TERMINATION$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for POA_PARTIAL_TERMINATION" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for POA_SPECIAL" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/POA/F05_01_POA_SPECIAL.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could add new transactions for POA_SPECIAL$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for POA_SPECIAL$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for POA_SPECIAL" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for POA_TERMINATION" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/POA/F05_03_POA_TERMINATION.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SAK" />
+      <option name="NAME_FILTER" value="^user could add new transactions for POA_TERMINATION$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for POA_TERMINATION$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for POA_TERMINATION" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for SALE_COMPANY" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/SALE/F06_01_SALE_COMPANY.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could add new transactions for SALE_COMPANY$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for SALE_COMPANY$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for SALE_COMPANY" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runners" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testRunner.runners" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runners" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation pro Test templet" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example.testRunner" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testRunner.runners" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_SPECIAL" />
+      <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMPANY" />
+      <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_PARTIAL_TERMINATION (1)" />
+      <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_TERMINATION" />
+      <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one" />
+      <item itemvalue="TestNG.runners" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMPANY" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_SPECIAL" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_TERMINATION" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for POA_PARTIAL_TERMINATION (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fc659dd-891e-4471-a6ca-77b886b4c267" name="Changes" comment="" />
+      <created>1665240033871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665240033871</updated>
+      <workItem from="1694941469785" duration="1115000" />
+      <workItem from="1694942618013" duration="4378000" />
+      <workItem from="1695018203726" duration="9767000" />
+      <workItem from="1695039018365" duration="6116000" />
+      <workItem from="1695104870986" duration="1725000" />
+      <workItem from="1695126205006" duration="4978000" />
+      <workItem from="1695191984551" duration="4888000" />
+      <workItem from="1695212132150" duration="1342000" />
+      <workItem from="1695300043495" duration="2833000" />
+      <workItem from="1696773420871" duration="19000" />
+      <workItem from="1696773552109" duration="28000" />
+      <workItem from="1696835755503" duration="340000" />
+      <workItem from="1696854176039" duration="4559000" />
+      <workItem from="1696922446304" duration="8015000" />
+      <workItem from="1696931922698" duration="2517000" />
+      <workItem from="1696941064198" duration="6877000" />
+      <workItem from="1697006212998" duration="2678000" />
+      <workItem from="1697025869648" duration="4723000" />
+      <workItem from="1697030620157" duration="3156000" />
+      <workItem from="1697092060397" duration="728000" />
+      <workItem from="1697092844372" duration="10962000" />
+      <workItem from="1697112766793" duration="5104000" />
+      <workItem from="1697351426086" duration="11645000" />
+      <workItem from="1697366598455" duration="600000" />
+      <workItem from="1697375561480" duration="2810000" />
+      <workItem from="1697439693799" duration="8455000" />
+      <workItem from="1697524260812" duration="6149000" />
+      <workItem from="1697537062114" duration="2637000" />
+      <workItem from="1697544783324" duration="7778000" />
+      <workItem from="1697620549165" duration="19000" />
+      <workItem from="1697631402176" duration="49000" />
+      <workItem from="1697699574367" duration="12834000" />
+      <workItem from="1697717677191" duration="5581000" />
+      <workItem from="1697957855984" duration="95000" />
+      <workItem from="1698054390544" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="POA_SPECIAL">
+      <option name="closed" value="true" />
+      <created>1697107983729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697107983729</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="POA_SPECIAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="POA_SPECIAL" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
