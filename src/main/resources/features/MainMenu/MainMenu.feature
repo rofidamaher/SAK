@@ -1,5 +1,5 @@
 
-Feature: F07_MainMenu | users could use login functionality and open MainMenu
+Feature: MainMenu | users could use login functionality and open MainMenu
 
   Scenario: user could login with valid username and password and open MainMenu
     When user login with email "tester7" and password "P@ssw0rd"
