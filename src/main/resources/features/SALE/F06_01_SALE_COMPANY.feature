@@ -17,7 +17,7 @@ Background:user could click on POA_SPECIAL
     When user add the first Party with obj of index "25" and id of index "2" civilId equal "200"  txtPercentFristParty "5" and click on chkDepositFirstParty
     And user click on add button and add new first Party successfully
     And user click on add button and add new first Party successfully
-    And user close first Party and open the second Party
+    # And user close first Party and open the second Party
    # When user add the second Party with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230"
   #  And user click on add button and add new second Party with id "00000000085" successfully
   #  And user close the second Party and open the model Nav
