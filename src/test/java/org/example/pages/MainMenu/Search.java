@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class P08_Search {
+public class Search {
 
    public WebElement searchIcon()
 {

@@ -2,7 +2,7 @@ package org.example.stepDefs.Adjectives;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.example.pages.Adjectives.P06_NewTreatment;
+import org.example.pages.Adjectives.NewTreatment;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,9 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
 
 
-public class D06_NewTreatmentStepDef {
+public class NewTreatmentStepDef {
 
-    P06_NewTreatment new_t = new P06_NewTreatment();
+    NewTreatment new_t = new NewTreatment();
 
     @And("user add new treatment for obj of index {string} and id of index {string} id equal {string}")
     public void userAddNewTreatmentForObjOfIndexAndIdOfIndexIdEqual(String arg0, String arg1, String arg2) throws InterruptedException {

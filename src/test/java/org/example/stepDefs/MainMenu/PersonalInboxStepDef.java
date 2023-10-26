@@ -3,18 +3,12 @@ package org.example.stepDefs.MainMenu;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.pages.MainMenu.P08_Search;
-import org.example.pages.MainMenu.P09_PersonalInbox;
-import org.example.stepDefs.Hooks;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
-
-import java.util.concurrent.TimeUnit;
+import org.example.pages.MainMenu.PersonalInbox;
 
 
-public class D09_PersonalInboxStepDef {
+public class PersonalInboxStepDef {
 
-    P09_PersonalInbox searchPage = new P09_PersonalInbox();
+    PersonalInbox searchPage = new PersonalInbox();
 
     @When("user click on PersonalInbox")
     public void userClickOnPersonalInbox() {

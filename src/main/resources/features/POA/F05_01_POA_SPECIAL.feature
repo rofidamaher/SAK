@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL
 Background:user could click on POA_SPECIAL
   When user login with email "amrsaid" and password "amrsaid"
@@ -13,7 +13,7 @@ Background:user could click on POA_SPECIAL
 
 
   Scenario: user could add new transactions for POA_SPECIAL
-    When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on btnAddFirstParty
+    When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty
     And user click on add button and add new first Party successfully
     And user close first Party and open the second Party
     When user add the second Party with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230"

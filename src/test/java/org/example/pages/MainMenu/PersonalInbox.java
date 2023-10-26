@@ -4,9 +4,7 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
-public class P09_PersonalInbox {
+public class PersonalInbox {
 
     public WebElement inbox()
     {

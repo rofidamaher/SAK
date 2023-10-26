@@ -6,14 +6,24 @@ import org.openqa.selenium.WebElement;
 
 public class P04_DOCUMENTATION_P {
 
-   public WebElement Tawkel()
-{
-    return Hooks.driver.findElement(By.xpath("//img[@src='img/documentation.png']"));
-}
+   public WebElement POA() {
+       return Hooks.driver.findElement(By.xpath("//img[@src='img/documentation.png']"));
+   }
 
-    public WebElement Tawkel_label()
+    public WebElement POA_label()
     {
         return Hooks.driver.findElement(By.id("lblPOA"));
     }
+
+    public WebElement SALE() {
+        return Hooks.driver.findElement(By.xpath("//img[@src=\"img/Sale.png\"]"));
+    }
+
+    public WebElement SALE_label()
+    {
+        return Hooks.driver.findElement(By.id("lblSale"));
+    }
+
+
 
 }

@@ -1,10 +1,7 @@
 package org.example.stepDefs.POA;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.When;
-import org.example.pages.First_Step.P05_POA;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
-import org.example.pages.POA.P05_03_POA_TERMINATION;
 import org.example.pages.POA.P05_04_POA_PARTIAL_TERMINATION;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.JavascriptExecutor;

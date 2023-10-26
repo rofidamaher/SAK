@@ -3,7 +3,7 @@ package org.example.stepDefs.MainMenu;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.pages.MainMenu.P08_Search;
+import org.example.pages.MainMenu.Search;
 import org.example.stepDefs.Hooks;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
@@ -11,9 +11,9 @@ import org.testng.asserts.SoftAssert;
 import java.util.concurrent.TimeUnit;
 
 
-public class D08_SearchStepDef {
+public class SearchStepDef {
 
-    P08_Search searchPage = new P08_Search();
+    Search searchPage = new Search();
 
     @When("user click on Search icon")
     public void userClickOnSearchIcon() {

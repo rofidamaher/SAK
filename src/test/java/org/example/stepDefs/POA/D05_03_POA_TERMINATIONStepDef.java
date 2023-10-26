@@ -3,12 +3,9 @@ package org.example.stepDefs.POA;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
-import org.example.pages.POA.P05_02_POA_PARTIAL_STEPPED;
 import org.example.pages.POA.P05_03_POA_TERMINATION;
 import org.example.stepDefs.Hooks;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
 
 public class D05_03_POA_TERMINATIONStepDef {

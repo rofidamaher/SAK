@@ -5,19 +5,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.stepDefs.Hooks;
-import org.example.stepDefs.MainMenu.D07_MainMenuStepDef;
-import org.example.stepDefs.MainMenu.D08_SearchStepDef;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -28,7 +22,7 @@ public class D05_01_POA_SPECIALStepDef {
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
     String transactions_num ;
 
-    @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and click on btnAddFirstParty")
+    @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and click on chkDepositFirstParty")
     public void userAddTheFirstSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndClickOnApplicant(String arg0, String arg1, String arg2) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
@@ -50,10 +44,7 @@ public class D05_01_POA_SPECIALStepDef {
     
     @And("user click on add button and add new first Party successfully")
     public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
-
-
         jse.executeScript("window.scrollBy(0,150)");
-
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
         // Soft Assertion
@@ -68,7 +59,6 @@ public class D05_01_POA_SPECIALStepDef {
         soft.assertAll();
 
         return transactions_num;
-
     }
 
 
