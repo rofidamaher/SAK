@@ -13,7 +13,6 @@ public class P05_04_POA_PARTIAL_TERMINATION {
         return Hooks.driver.findElement(By.id("3259"));
     }
 
-
     public WebElement btnAddAgent() {
         return Hooks.driver.findElement(By.id("btnAddAgent"));
     }

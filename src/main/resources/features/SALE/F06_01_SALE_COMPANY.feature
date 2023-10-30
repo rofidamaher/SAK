@@ -26,10 +26,10 @@ Background:user could click on POA_SPECIAL
     When user add civilId_Num equal "230" and SALE_VALUE_COMPANY equal "3000" and click on add btn
     And user enter text " اضافة نص " in frame element
     And user click on save model btn
-   # And user close the the samples Nav and open the fees Nav
-    #When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
+    And user close the the samples Nav and open the fees Nav
+    When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
-    And user click on btnCollection
+    #And user click on btnCollection
     Then user click on btnSubmitTransaction
 
 

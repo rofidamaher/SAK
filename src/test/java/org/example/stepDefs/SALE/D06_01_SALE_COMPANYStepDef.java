@@ -10,12 +10,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.NoSuchElementException;
-
-import static sun.security.util.KnownOIDs.EC;
 
 
 public class D06_01_SALE_COMPANYStepDef {
@@ -121,10 +117,11 @@ public class D06_01_SALE_COMPANYStepDef {
     public void userClickOnBtnCollection() throws InterruptedException {
         saleCompany.btnCollection().click();
         Thread.sleep(2000);
-
-
-        WebDriverWait wait = WebDriverWait(Hooks.driver, Duration.ofSeconds( 10);
-
+        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+        {
+             Thread.sleep(3000);
+            System.out.println("Element is not visible yet");
+        }
         saleCompany.yes_btn().click();
         Thread.sleep(2000);
         while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
