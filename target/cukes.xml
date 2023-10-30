@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="41.169">
+    <testcase classname="F06_01_SALE_COMPANY | users could add new transactions for SALE_COMPANY" name="user could add new transactions for SALE_COMPANY" time="40.797">
+        <failure message="javascript error: Cannot read properties of null (reading 'prototype')&#10;  (Session info: chrome=109.0.5414.168)&#10;Build info: version: '4.9.0', revision: 'd7057100a6'&#10;System info: os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [421c6df082ae8f96ddfc13f3648dac0e, findElement {using=xpath, value=yesButton}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\QC-3\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 421c6df082ae8f96ddfc13f3648dac0e" type="org.openqa.selenium.JavascriptException"><![CDATA[When user login with email "tester7" and password "P@ssw0rd"................passed
+And user press on login button..............................................passed
+And user login to the system successfully by user "tester7".................passed
+And user click on Documentation.............................................passed
+Then user clicked on Documentation successfully.............................passed
+When user click on SAlE.....................................................passed
+And user clicked on SAlE successfully.......................................passed
+When user click on SALE_COMPANY.............................................passed
+And user clicked on SALE_COMPANY successfully...............................passed
+When user add the first Party with obj of index "25" and id of index "2" civilId equal "230"  txtPercentFristParty "5" and click on chkDepositFirstParty.passed
+And user click on add button and add new first Party successfully...........passed
+And user click on ShowChild btn and click on btnAddChildParty...............passed
+When user AddChildParty with adj of index "1" and obj of index "الرقم الشخصي" id equal "00000000090" and click on save btn.passed
+And user close first Party and open the second Party........................passed
+When user add the second Party with obj of index "6" and id of index "2" id equal "00000000215" and civilId equal "230" txtPercentFristParty "5".passed
+And user click on add button and add new second Party with id "00000000215" successfully.passed
+And user close the second Party and open the model Nav......................passed
+When user add civilId_Num equal "230" and SALE_VALUE_COMPANY equal "3000" and click on add btn.passed
+And user enter text " اضافة نص " in frame element...........................passed
+And user click on save model btn............................................passed
+And user click on btnViewTransaction........................................passed
+And user click on btnCollection.............................................failed
+Then user click on btnSubmitTransaction.....................................skipped
+
+StackTrace:
+org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'prototype')
+  (Session info: chrome=109.0.5414.168)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [421c6df082ae8f96ddfc13f3648dac0e, findElement {using=xpath, value=yesButton}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\QC-3\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50488/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 421c6df082ae8f96ddfc13f3648dac0e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.pages.SALE.P06_01_SALE_COMPANY.yes_btn(P06_01_SALE_COMPANY.java:75)
+	at org.example.stepDefs.SALE.D06_01_SALE_COMPANYStepDef.userClickOnBtnCollection(D06_01_SALE_COMPANYStepDef.java:125)
+	at ✽.user click on btnCollection(file:///C:/Users/QC-3/Downloads/SAK/src/main/resources/features/SALE/F06_01_SALE_COMPANY.feature:32)
+]]></failure>
+    </testcase>
+</testsuite>
