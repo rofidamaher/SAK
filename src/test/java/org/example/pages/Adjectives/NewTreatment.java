@@ -5,6 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class NewTreatment {
+<<<<<<< HEAD
+=======
+
+>>>>>>> adf37fe (test)
     public WebElement drop_list() {
         return Hooks.driver.findElement(By.id("ddlAdjectiveFirstParty_chosen"));
     }

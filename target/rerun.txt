@@ -1,0 +1,1 @@
+file:src/main/resources/features/SALE/F06_01_SALE_COMPANY.feature:15

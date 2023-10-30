@@ -13,6 +13,9 @@ Background:user could click on SALE
     When user click on SALE_COMPANY
     And user clicked on SALE_COMPANY successfully
 
+<<<<<<< HEAD
   Scenario: user could click on SALE_LAND
     When user click on SALE_LAND
     And user clicked on SALE_LAND successfully
+=======
+>>>>>>> adf37fe (test)

@@ -1,6 +1,10 @@
 
 Feature: F05_04_POA_PARTIAL_TERMINATION | users could add new transactions for POA_PARTIAL_TERMINATION
+<<<<<<< HEAD
 Background:user could click on POA_PARTIAL_TERMINATION
+=======
+Background:user could click on POA_TERMINATION
+>>>>>>> adf37fe (test)
   When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
   And user login to the system successfully by user "amrsaid"

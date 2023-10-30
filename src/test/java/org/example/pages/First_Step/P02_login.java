@@ -3,8 +3,17 @@ package org.example.pages.First_Step;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+<<<<<<< HEAD
 public class P02_login {
 
+=======
+
+public class P02_login {
+//    public P02_login()
+//    {
+//        PageFactory.initElements(Hooks.driver,this);
+//    }
+>>>>>>> adf37fe (test)
    public WebElement UserName()
 {
     return Hooks.driver.findElement(By.id("tb_UserName"));

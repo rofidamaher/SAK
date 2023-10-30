@@ -10,11 +10,24 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+<<<<<<< HEAD
 
 import java.util.NoSuchElementException;
 
 
 public class D06_01_SALE_COMPANYStepDef {
+=======
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.NoSuchElementException;
+
+import static sun.security.util.KnownOIDs.EC;
+
+
+public class D06_01_SALE_COMPANYStepDef {
+
+>>>>>>> adf37fe (test)
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
@@ -23,12 +36,20 @@ public class D06_01_SALE_COMPANYStepDef {
     public void userAddTheFirstPartyWithObjOfIndexAndIdOfIndexCivilIdEqualTxtPercentFristPartyAndClickOnChkDepositFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
      POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
+<<<<<<< HEAD
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
+=======
+        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
+>>>>>>> adf37fe (test)
 
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
+<<<<<<< HEAD
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
+=======
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
+>>>>>>> adf37fe (test)
         saleCompany.txtPercentFristParty().clear();
 
         Thread.sleep(500);
@@ -41,16 +62,28 @@ public class D06_01_SALE_COMPANYStepDef {
     }
 
 
+<<<<<<< HEAD
     @And("user click on ShowChild btn")
     public void userClickOnShowChildBtnAndClickOnBtnAddChildParty() throws InterruptedException {
         saleCompany.ShowChild().click();
         Thread.sleep(200);
+=======
+    @And("user click on ShowChild btn and click on btnAddChildParty")
+    public void userClickOnShowChildBtnAndClickOnBtnAddChildParty() throws InterruptedException {
+        saleCompany.ShowChild().click();
+        Thread.sleep(200);
+        saleCompany.btnAddChildParty().click();
+
+>>>>>>> adf37fe (test)
     }
 
     @When("user AddChildParty with adj of index {string} and obj of index {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
+<<<<<<< HEAD
         saleCompany.btnAddChildParty().click();
         Thread.sleep(100);
+=======
+>>>>>>> adf37fe (test)
         saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();
         Thread.sleep(100);
@@ -69,6 +102,11 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(100);
         POASpecial.ok_but().click();
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> adf37fe (test)
     @When("user add the second Party with obj of index {string} and id of index {string} id equal {string} and civilId equal {string} txtPercentFristParty {string}")
     public void userAddTheSecondPartyWithObjOfIndexAndIdOfIndexIdEqualAndCivilIdEqualTxtPercentFristParty(String arg0, String arg1, String arg2, String arg3, String arg4) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();
@@ -108,15 +146,27 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(500);
         saleCompany.fr_element().sendKeys(arg0);
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> adf37fe (test)
     @And("user click on btnCollection")
     public void userClickOnBtnCollection() throws InterruptedException {
         saleCompany.btnCollection().click();
         Thread.sleep(2000);
+<<<<<<< HEAD
         while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
         {
              Thread.sleep(3000);
             System.out.println("Element is not visible yet");
         }
+=======
+
+
+        WebDriverWait wait = WebDriverWait(Hooks.driver, Duration.ofSeconds( 10);
+
+>>>>>>> adf37fe (test)
         saleCompany.yes_btn().click();
         Thread.sleep(2000);
         while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))

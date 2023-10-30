@@ -23,5 +23,9 @@ Background:user could click on POA
 
   Scenario: user could click on POA_PARTIAL_TERMINATION
     When user click on POA_PARTIAL_TERMINATION
+<<<<<<< HEAD
     And user clicked on POA_PARTIAL_TERMINATION successfully
 
+=======
+    And user clicked on POA_PARTIAL_TERMINATION successfully
+>>>>>>> adf37fe (test)

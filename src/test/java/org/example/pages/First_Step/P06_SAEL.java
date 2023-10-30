@@ -5,6 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class P06_SAEL {
+<<<<<<< HEAD
+=======
+
+>>>>>>> adf37fe (test)
     public WebElement SALE_COMPANY()
     {
         return Hooks.driver.findElement(By.xpath("//a[@href=\"#/SALE_COMPANY/:28\"]"));
@@ -15,9 +19,12 @@ public class P06_SAEL {
         return Hooks.driver.findElement(By.id("referrer"));
     }
 
+<<<<<<< HEAD
     public WebElement SALE_LAND()
     {
         return Hooks.driver.findElement(By.xpath("//a[@href=\"#/SALE_LAND/:25\"]"));
     }
 
+=======
+>>>>>>> adf37fe (test)
 }

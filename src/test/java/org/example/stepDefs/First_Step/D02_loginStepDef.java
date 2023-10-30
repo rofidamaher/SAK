@@ -12,6 +12,16 @@ public class D02_loginStepDef {
 
     P02_login login = new P02_login();
 
+<<<<<<< HEAD
+=======
+
+//    @Given("user go to login page")
+//    public void login_page() throws InterruptedException {
+//        login.login_page().click();
+//        Thread.sleep(2000);
+//    }
+
+>>>>>>> adf37fe (test)
     @When("user login with email {string} and password {string}")
     public void userLoginWithEmailAndPassword(String arg0, String arg1) {
         login.UserName().sendKeys(arg0);

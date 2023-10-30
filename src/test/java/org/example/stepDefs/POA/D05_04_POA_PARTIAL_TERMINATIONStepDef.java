@@ -10,10 +10,17 @@ import static org.example.stepDefs.POA.D05_01_POA_SPECIALStepDef.isDisplayed;
 
 
 public class D05_04_POA_PARTIAL_TERMINATIONStepDef {
+<<<<<<< HEAD
      P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
      P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
 
+=======
+
+     P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
+     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
+    JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+>>>>>>> adf37fe (test)
     @And("user enter transaction num {string} for POA_PARTIAL_TERMINATION and click save model btn")
     public void userEnterTransactionNumForPOA_PARTIAL_TERMINATIONAndClickSaveModelBtn(String arg0) throws InterruptedException {
         p0504PoaPartialTermination.transactionNum().sendKeys(arg0);

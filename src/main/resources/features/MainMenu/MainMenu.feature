@@ -7,4 +7,7 @@ Feature:MainMenu | users could use login functionality and open MainMenu
     And user login to the system successfully by user "tester7"
     And user open MainMenu
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> adf37fe (test)
