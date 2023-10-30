@@ -40,11 +40,12 @@ public class P05_01_POA_SPECIAL {
         return Hooks.driver.findElement(By.xpath("//div[@id='title_services']//span[@class]"));
     }
 
+
     public WebElement nav_First_Side() {
-        return Hooks.driver.findElement(By.xpath("//li[@class=\"accordion-navigation\"]//span[@ng-bind=\"$root.FirstPartyTitle\"]"));
+        return Hooks.driver.findElement(By.id("fisrtParty"));
     }
     public WebElement nav_Second_Side() {
-        return Hooks.driver.findElement(By.xpath("//li[@class=\"accordion-navigation\"]//span[@ng-bind=\"$root.SecondPartyTitle\"]"));
+        return Hooks.driver.findElement(By.id("secondParty"));
     }
 
     public WebElement drop_listSecondParty() {

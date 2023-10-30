@@ -75,12 +75,12 @@ public class D05_01_POA_SPECIALStepDef {
     public void userAddTheSecondSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndCREqual(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();
         Thread.sleep(100);
-        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveSecondParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
+        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveSecondParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
         objeItem.click();
         Thread.sleep(500);
         POASpecial.drop_id_listSecondParty().click();
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
 
         Thread.sleep(100);
         idItem.click();
@@ -99,6 +99,8 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(1000);
         POASpecial.ok_but().click();
         Hooks.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+        jse.executeScript("window.scrollBy(0,150)");
 
         for (int i = 0; i <POASpecial.secondPartyTable().size() ; i++) {
             String actualResult =POASpecial.secondPartyTable().get(i).getText();
@@ -125,7 +127,7 @@ public class D05_01_POA_SPECIALStepDef {
 
     @And("user click on save model btn")
     public void userClickOnSaveModelBtn() throws InterruptedException {
-        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.saveModelBtn());
 
         POASpecial.saveModelBtn().click();
@@ -153,7 +155,6 @@ public class D05_01_POA_SPECIALStepDef {
 
     @And("user click on btnViewTransaction")
     public void userClickOnBtnViewTransaction() throws InterruptedException {
-        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.btnViewTransaction());
         POASpecial.btnViewTransaction().click();
         Thread.sleep(2000);

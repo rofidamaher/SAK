@@ -1,4 +1,4 @@
-
+@smoke
 Feature: F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL
 Background:user could click on POA_SPECIAL
   When user login with email "amrsaid" and password "amrsaid"
