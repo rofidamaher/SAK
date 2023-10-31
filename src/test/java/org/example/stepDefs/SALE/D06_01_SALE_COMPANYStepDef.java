@@ -42,16 +42,16 @@ public class D06_01_SALE_COMPANYStepDef {
     }
 
 
-    @And("user click on ShowChild btn and click on btnAddChildParty")
+    @And("user click on ShowChild btn")
     public void userClickOnShowChildBtnAndClickOnBtnAddChildParty() throws InterruptedException {
         saleCompany.ShowChild().click();
         Thread.sleep(200);
-        saleCompany.btnAddChildParty().click();
-
     }
 
     @When("user AddChildParty with adj of index {string} and obj of index {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
+        saleCompany.btnAddChildParty().click();
+        Thread.sleep(100);
         saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();
         Thread.sleep(100);

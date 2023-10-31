@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F06_SALE | users could use login functionality and click on Documentation then go to SALE
 Background:user could click on SALE
   When user login with email "tester7" and password "P@ssw0rd"

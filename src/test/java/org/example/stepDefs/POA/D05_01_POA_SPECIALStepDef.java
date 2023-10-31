@@ -45,6 +45,7 @@ public class D05_01_POA_SPECIALStepDef {
     @And("user click on add button and add new first Party successfully")
     public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
         jse.executeScript("window.scrollBy(0,150)");
+        Thread.sleep(300);
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
         // Soft Assertion

@@ -11,12 +11,11 @@ Background:user could click on POA_SPECIAL
   When user click on SALE_COMPANY
   And user clicked on SALE_COMPANY successfully
 
-
   Scenario: user could add new transactions for SALE_COMPANY
     # جهة إعتبارية محلية     |||  سجل تجاري |||||  رقم السجل   |||||||| النسبة المباعة
     When user add the first Party with obj of index "25" and id of index "2" civilId equal "230"  txtPercentFristParty "5" and click on chkDepositFirstParty
     And user click on add button and add new first Party successfully
-    And user click on ShowChild btn and click on btnAddChildParty
+    And user click on ShowChild btn
     When user AddChildParty with adj of index "1" and obj of index "الرقم الشخصي" id equal "00000000090" and click on save btn
     And user close first Party and open the second Party
     #شريك في شركة  \\\\ رقم شخصي    \\\\ رقم السجل \\\\\ النسبة المباعة
