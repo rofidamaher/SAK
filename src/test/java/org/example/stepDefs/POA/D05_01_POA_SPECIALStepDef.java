@@ -81,7 +81,6 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(500);
         POASpecial.drop_id_listSecondParty().click();
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
-
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);

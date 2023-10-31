@@ -70,8 +70,6 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(100);
         POASpecial.ok_but().click();
     }
-
-
     @When("user add the second Party with obj of index {string} and id of index {string} id equal {string} and civilId equal {string} txtPercentFristParty {string}")
     public void userAddTheSecondPartyWithObjOfIndexAndIdOfIndexIdEqualAndCivilIdEqualTxtPercentFristParty(String arg0, String arg1, String arg2, String arg3, String arg4) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();

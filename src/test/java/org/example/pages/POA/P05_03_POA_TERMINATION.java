@@ -10,5 +10,4 @@ public class P05_03_POA_TERMINATION {
         return Hooks.driver.findElement(By.id("3105"));
     }
 
-
 }

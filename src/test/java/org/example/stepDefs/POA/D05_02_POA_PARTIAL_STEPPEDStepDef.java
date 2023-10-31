@@ -62,8 +62,6 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
 
 
     }
-
-
     @And("user select person who step aside agency and step aside from him then click save btn")
     public void userSelectPersonWhoStepAsideAgencyAndStepAsideFromHimThenClickSaveBtn() throws InterruptedException {
         Thread.sleep(3000);

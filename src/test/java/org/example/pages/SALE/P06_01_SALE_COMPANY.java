@@ -74,6 +74,4 @@ public class P06_01_SALE_COMPANY {
     public WebElement yes_btn() {
         return Hooks.driver.findElement(By.xpath("yesButton"));
     }
-
-
 }
