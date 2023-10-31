@@ -12,7 +12,7 @@ Background:user could click on POA_SPECIAL
   And user clicked on SALE_LAND successfully
 
 
-  Scenario: user could add new transactions for SALE_COMPANY
+  Scenario: user could add new transactions for SALE_LAND
     # وكيل بموجب وكالة    //// الرقم الشخصي   ///  رقم الوكالة
     When user add the first Party with obj of index "13" and id of index "1" id "00000000081" txtBayanatElwkalaFirstParty "54/2014" and click on chkDepositFirstParty
     And user click on add button and add new first Party successfully
