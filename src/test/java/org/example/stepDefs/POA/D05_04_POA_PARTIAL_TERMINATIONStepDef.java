@@ -10,6 +10,7 @@ import static org.example.stepDefs.POA.D05_01_POA_SPECIALStepDef.isDisplayed;
 
 
 public class D05_04_POA_PARTIAL_TERMINATIONStepDef {
+
      P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
      P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;

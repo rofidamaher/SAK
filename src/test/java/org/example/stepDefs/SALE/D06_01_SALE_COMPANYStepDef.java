@@ -111,8 +111,6 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(500);
         saleCompany.fr_element().sendKeys(arg0);
     }
-
-
     @And("user click on btnCollection")
     public void userClickOnBtnCollection() throws InterruptedException {
         saleCompany.btnCollection().click();

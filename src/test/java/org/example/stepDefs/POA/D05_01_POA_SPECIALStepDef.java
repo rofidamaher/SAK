@@ -144,7 +144,6 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.nav_fees().click();
         Thread.sleep(100);
     }
-
     @When("user click on noFees checkbox and select ExcemptedReasons {string}")
     public void userClickOnNoFeesCheckboxAndSelectExcemptedReasons(String arg0) throws InterruptedException {
         POASpecial.chkNoFees().click();

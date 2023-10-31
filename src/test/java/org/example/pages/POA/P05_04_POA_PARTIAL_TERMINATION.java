@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class P05_04_POA_PARTIAL_TERMINATION {
-
     public WebElement transactionNum() {
         return Hooks.driver.findElement(By.id("3259"));
     }

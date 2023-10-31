@@ -19,8 +19,6 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
-
-
     @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and BayanatElwkalaFirstParty equal {string} click on btnAddFirstParty")
     public void userAddTheFirstPartyForPOA_PARTIAL_STEPPEDWithObjOfIndexAndIdOfIndexIdEqualAndBayanatElwkalaFirstPartyEqualClickOnBtnAddFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();

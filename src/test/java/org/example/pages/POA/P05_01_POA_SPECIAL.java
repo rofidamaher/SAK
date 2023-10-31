@@ -39,7 +39,6 @@ public class P05_01_POA_SPECIAL {
     public WebElement transactions_num() {
         return Hooks.driver.findElement(By.xpath("//div[@id='title_services']//span[@class]"));
     }
-
     public WebElement nav_First_Side() {
         return Hooks.driver.findElement(By.id("fisrtParty"));
     }
