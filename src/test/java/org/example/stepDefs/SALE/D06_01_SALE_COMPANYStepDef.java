@@ -24,12 +24,12 @@ public class D06_01_SALE_COMPANYStepDef {
     public void userAddTheFirstPartyWithObjOfIndexAndIdOfIndexCivilIdEqualTxtPercentFristPartyAndClickOnChkDepositFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
      POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
-        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
+        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         saleCompany.txtPercentFristParty().clear();
 
         Thread.sleep(500);
@@ -42,16 +42,16 @@ public class D06_01_SALE_COMPANYStepDef {
     }
 
 
-    @And("user click on ShowChild btn and click on btnAddChildParty")
+    @And("user click on ShowChild btn")
     public void userClickOnShowChildBtnAndClickOnBtnAddChildParty() throws InterruptedException {
         saleCompany.ShowChild().click();
         Thread.sleep(200);
-        saleCompany.btnAddChildParty().click();
-
     }
 
     @When("user AddChildParty with adj of index {string} and obj of index {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
+        saleCompany.btnAddChildParty().click();
+        Thread.sleep(100);
         saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();
         Thread.sleep(100);
@@ -70,8 +70,6 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(100);
         POASpecial.ok_but().click();
     }
-
-
     @When("user add the second Party with obj of index {string} and id of index {string} id equal {string} and civilId equal {string} txtPercentFristParty {string}")
     public void userAddTheSecondPartyWithObjOfIndexAndIdOfIndexIdEqualAndCivilIdEqualTxtPercentFristParty(String arg0, String arg1, String arg2, String arg3, String arg4) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();
@@ -111,8 +109,6 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(500);
         saleCompany.fr_element().sendKeys(arg0);
     }
-
-
     @And("user click on btnCollection")
     public void userClickOnBtnCollection() throws InterruptedException {
         saleCompany.btnCollection().click();

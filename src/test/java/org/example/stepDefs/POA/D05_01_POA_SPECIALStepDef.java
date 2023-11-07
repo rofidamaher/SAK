@@ -45,6 +45,7 @@ public class D05_01_POA_SPECIALStepDef {
     @And("user click on add button and add new first Party successfully")
     public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
         jse.executeScript("window.scrollBy(0,150)");
+        Thread.sleep(300);
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
         // Soft Assertion
@@ -81,7 +82,6 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(500);
         POASpecial.drop_id_listSecondParty().click();
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
-
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);
@@ -144,7 +144,6 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.nav_fees().click();
         Thread.sleep(100);
     }
-
     @When("user click on noFees checkbox and select ExcemptedReasons {string}")
     public void userClickOnNoFeesCheckboxAndSelectExcemptedReasons(String arg0) throws InterruptedException {
         POASpecial.chkNoFees().click();

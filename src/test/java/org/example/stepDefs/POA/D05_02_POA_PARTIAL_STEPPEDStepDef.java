@@ -19,18 +19,16 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
-
-
     @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and BayanatElwkalaFirstParty equal {string} click on btnAddFirstParty")
     public void userAddTheFirstPartyForPOA_PARTIAL_STEPPEDWithObjOfIndexAndIdOfIndexIdEqualAndBayanatElwkalaFirstPartyEqualClickOnBtnAddFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
-        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
+        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
 
         Thread.sleep(100);
         idItem.click();
@@ -64,8 +62,6 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
 
 
     }
-
-
     @And("user select person who step aside agency and step aside from him then click save btn")
     public void userSelectPersonWhoStepAsideAgencyAndStepAsideFromHimThenClickSaveBtn() throws InterruptedException {
         Thread.sleep(3000);

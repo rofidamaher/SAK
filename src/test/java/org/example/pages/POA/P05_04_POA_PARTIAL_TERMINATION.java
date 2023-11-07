@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class P05_04_POA_PARTIAL_TERMINATION {
-
     public WebElement transactionNum() {
         return Hooks.driver.findElement(By.id("3259"));
     }
@@ -16,7 +15,6 @@ public class P05_04_POA_PARTIAL_TERMINATION {
     public WebElement btnAddAgent() {
         return Hooks.driver.findElement(By.id("btnAddAgent"));
     }
-
     public List<WebElement> checkboxItems()
     {
         List<WebElement> checkboxItems = Hooks.driver.findElements(By.xpath("//div[@id='cboxContent']//input[@type=\"checkbox\"]"));
