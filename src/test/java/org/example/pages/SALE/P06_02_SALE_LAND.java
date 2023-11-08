@@ -34,7 +34,6 @@ public class P06_02_SALE_LAND {
     public WebElement ShowChildsecondParty(){
         return Hooks.driver.findElement(By.xpath("//form[@class=\"secondParty ng-pristine ng-valid ng-scope\"]//div[@id=\"PersonList\"]"));
     }
-
     public WebElement SALE_REGION_LAND(){
         return Hooks.driver.findElement(By.id("386"));
     }

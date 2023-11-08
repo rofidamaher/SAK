@@ -144,9 +144,7 @@ public class D07_01_AGREEMENTStepDef {
         agreement.CONTRACT_PERIOD_TO().sendKeys(arg2);
         Thread.sleep(2000);
         setDateTo(arg4,arg5,arg6);
-
     }
-
     public void setDateFrom(String Y , String M , String D) throws InterruptedException {
         Thread.sleep(1000);
         agreement.datepicker_daysFrom().click();

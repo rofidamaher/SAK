@@ -10,7 +10,6 @@ import org.testng.asserts.SoftAssert;
 public class D04_DOCUMENTATION_PStepDef {
 
     P04_DOCUMENTATION_P doc = new P04_DOCUMENTATION_P();
-
     @When("user click on POA")
     public void userClickOnPOA() {
         doc.POA().click();

@@ -15,7 +15,6 @@ import java.util.NoSuchElementException;
 
 
 public class D06_01_SALE_COMPANYStepDef {
-
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;

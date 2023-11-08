@@ -15,7 +15,6 @@ import java.util.NoSuchElementException;
 
 
 public class D06_02_SALE_LANDStepDef {
-
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_02_SALE_LAND saleLand = new P06_02_SALE_LAND();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
