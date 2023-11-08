@@ -1,9 +1,5 @@
 
 Feature: F04_DOCUMENTATION_P | users could use login functionality and click on Documentation then go to POA
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
   Background:user could login with valid username and password and click on Documentation
     When user login with email "tester7" and password "P@ssw0rd"
     And user press on login button
@@ -18,9 +14,3 @@ Feature: F04_DOCUMENTATION_P | users could use login functionality and click on 
   Scenario:user could click on_SAlE
     When user click on SAlE
     And user clicked on SAlE successfully
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> adf37fe (test)

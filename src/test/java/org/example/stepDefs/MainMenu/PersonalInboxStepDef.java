@@ -9,10 +9,7 @@ import org.example.pages.MainMenu.PersonalInbox;
 public class PersonalInboxStepDef {
 
     PersonalInbox searchPage = new PersonalInbox();
-<<<<<<< HEAD
-=======
 
->>>>>>> adf37fe (test)
     @When("user click on PersonalInbox")
     public void userClickOnPersonalInbox() {
         searchPage.inbox().click();

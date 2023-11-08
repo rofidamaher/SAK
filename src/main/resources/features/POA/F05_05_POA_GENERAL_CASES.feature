@@ -8,10 +8,3 @@ Feature: F05_05_POA_GENERAL_CASES | users could add new transactions for POA_GEN
     Then user clicked on Documentation successfully
     And user click on POA
     And user clicked on POA successfully
-    When user click on POA_GENERAL_CASES
-<<<<<<< HEAD
-    And user clicked on POA_GENERAL_CASES successfully
-
-=======
-    And user clicked on POA_GENERAL_CASES successfully
->>>>>>> adf37fe (test)

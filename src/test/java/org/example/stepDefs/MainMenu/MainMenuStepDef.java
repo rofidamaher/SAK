@@ -8,10 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class MainMenuStepDef {
-<<<<<<< HEAD
-=======
 
->>>>>>> adf37fe (test)
     MainMenu menu = new MainMenu();
 
     @And("user open MainMenu")

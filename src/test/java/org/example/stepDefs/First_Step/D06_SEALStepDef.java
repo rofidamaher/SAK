@@ -16,10 +16,6 @@ public class D06_SEALStepDef {
     public void userClickOnSALE_COMPANY() {
         sael.SALE_COMPANY().click();
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
     @And("user clicked on SALE_COMPANY successfully")
     public void userClickedOnSALE_COMPANYSuccessfully() {
         SoftAssert soft = new SoftAssert();
@@ -39,8 +35,6 @@ public class D06_SEALStepDef {
         soft.assertAll();
     }
 
-
-<<<<<<< HEAD
     @When("user click on SALE_LAND")
     public void userClickOnSALE_LAND() {
         sael.SALE_LAND().click();
@@ -63,7 +57,4 @@ public class D06_SEALStepDef {
 
         soft.assertAll();
     }
-=======
-
->>>>>>> adf37fe (test)
 }

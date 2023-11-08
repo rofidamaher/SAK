@@ -8,10 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.concurrent.TimeUnit;
 public class Hooks {
     public static WebDriver driver = null ;
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
     @Before
     public static void OpenBrowser() {
         // 1- Bridge
@@ -37,11 +33,8 @@ public class Hooks {
     public static void quitDriver () throws InterruptedException
     {
         Thread.sleep(3000);
-<<<<<<< HEAD
-       //driver.quit();
-=======
         driver.quit();
->>>>>>> adf37fe (test)
+
     }
 
 }

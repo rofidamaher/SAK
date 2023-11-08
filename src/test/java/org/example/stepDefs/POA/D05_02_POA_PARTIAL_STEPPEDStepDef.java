@@ -14,38 +14,23 @@ import static org.example.stepDefs.POA.D05_01_POA_SPECIALStepDef.isDisplayed;
 
 
 public class D05_02_POA_PARTIAL_STEPPEDStepDef {
-<<<<<<< HEAD
-=======
 
->>>>>>> adf37fe (test)
      P05_02_POA_PARTIAL_STEPPED POAPaetialStepped = new P05_02_POA_PARTIAL_STEPPED();
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> adf37fe (test)
     @When("user add the first Party with obj of index {string} and id of index {string} id equal {string} and BayanatElwkalaFirstParty equal {string} click on btnAddFirstParty")
     public void userAddTheFirstPartyForPOA_PARTIAL_STEPPEDWithObjOfIndexAndIdOfIndexIdEqualAndBayanatElwkalaFirstPartyEqualClickOnBtnAddFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
-<<<<<<< HEAD
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
-=======
-        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
->>>>>>> adf37fe (test)
+
 
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-<<<<<<< HEAD
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
-=======
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
->>>>>>> adf37fe (test)
 
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);
@@ -78,11 +63,6 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
 
 
     }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> adf37fe (test)
     @And("user select person who step aside agency and step aside from him then click save btn")
     public void userSelectPersonWhoStepAsideAgencyAndStepAsideFromHimThenClickSaveBtn() throws InterruptedException {
         Thread.sleep(3000);

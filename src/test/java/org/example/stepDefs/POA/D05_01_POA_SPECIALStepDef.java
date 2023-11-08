@@ -26,21 +26,15 @@ public class D05_01_POA_SPECIALStepDef {
     public void userAddTheFirstSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndClickOnApplicant(String arg0, String arg1, String arg2) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
-<<<<<<< HEAD
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
-=======
-        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg0+"']"));
->>>>>>> adf37fe (test)
+
+
 
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-<<<<<<< HEAD
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
-=======
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//ul[@class='chosen-results']//li[@data-option-array-index='"+arg1+"']"));
->>>>>>> adf37fe (test)
 
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);
@@ -52,13 +46,11 @@ public class D05_01_POA_SPECIALStepDef {
     
     @And("user click on add button and add new first Party successfully")
     public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
-<<<<<<< HEAD
+
         Thread.sleep(1000);
         jse.executeScript("window.scrollBy(0,150)");
         Thread.sleep(300);
-=======
-        jse.executeScript("window.scrollBy(0,150)");
->>>>>>> adf37fe (test)
+
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
         // Soft Assertion
@@ -71,11 +63,9 @@ public class D05_01_POA_SPECIALStepDef {
         soft.assertTrue(POASpecial.transactions_num().isDisplayed());
         // Assert All
         soft.assertAll();
-<<<<<<< HEAD
-        Thread.sleep(1000);
-=======
 
->>>>>>> adf37fe (test)
+        Thread.sleep(1000);
+
         return transactions_num;
     }
 
@@ -99,20 +89,14 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(500);
         POASpecial.drop_id_listSecondParty().click();
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);
         POASpecial.id_inputSecondParty().sendKeys(arg2);
         POASpecial.elsqlEltogary_Value().sendKeys(arg3);
         POASpecial.companyNameSecondParty().click();
-<<<<<<< HEAD
-=======
         JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
->>>>>>> adf37fe (test)
+
         jse.executeScript("window.scrollBy(0,150)");
     }
 
@@ -133,12 +117,8 @@ public class D05_01_POA_SPECIALStepDef {
             //Assert.assertEquals(actualResult.contains(expectedResult),true,"euro symbol is displayed on product :" + i);
         }
     }
-<<<<<<< HEAD
 
     @And("user close second Party and open samples Nav")
-=======
-    @And("user close the second Party and open the model Nav")
->>>>>>> adf37fe (test)
     public void userCloseTheSecondPartyForPOA_SPECIALAndOpenTheSamplesNavForPOA_SPECIAL() throws InterruptedException {
         Thread.sleep(100);
         POASpecial.nav_Second_Side().click();
@@ -173,10 +153,6 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.nav_fees().click();
         Thread.sleep(100);
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
     @When("user click on noFees checkbox and select ExcemptedReasons {string}")
     public void userClickOnNoFeesCheckboxAndSelectExcemptedReasons(String arg0) throws InterruptedException {
         POASpecial.chkNoFees().click();

@@ -11,9 +11,4 @@ public class PersonalInbox {
         return Hooks.driver.findElement(By.xpath("//img[@src=\"img/authimg/menuicons/email_menu.png\"]"));
     }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> adf37fe (test)
 }

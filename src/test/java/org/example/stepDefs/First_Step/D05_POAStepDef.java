@@ -10,10 +10,7 @@ import org.testng.asserts.SoftAssert;
 public class D05_POAStepDef {
 
     P05_POA poa = new P05_POA();
-<<<<<<< HEAD
-=======
 
->>>>>>> adf37fe (test)
     @When("user click on POA_SPECIAL")
     public void userClickOnPOA_SPECIAL() {
         poa.POA_SPECIAL().click();

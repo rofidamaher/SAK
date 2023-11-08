@@ -9,7 +9,7 @@ public class P07_ConfirmationSignatures {
        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/AGREEMENT.png']"));
    }
 
-    public WebElement AGREEMENT_label()
+    public WebElement Treatment_label()
     {
         return Hooks.driver.findElement(By.id("referrer"));
     }

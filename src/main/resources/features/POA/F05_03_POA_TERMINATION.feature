@@ -22,10 +22,3 @@ Background:user could click on POA_TERMINATION
     And user click on btnViewTransaction
     Then user click on btnSubmitTransaction
 
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> adf37fe (test)

@@ -22,12 +22,3 @@ Background:user could click on POA_PARTIAL_STEPPED
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
     Then user click on btnSubmitTransaction
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> adf37fe (test)

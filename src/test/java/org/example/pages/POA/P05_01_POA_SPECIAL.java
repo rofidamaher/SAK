@@ -32,22 +32,13 @@ public class P05_01_POA_SPECIAL {
     public WebElement suc_message() {
         return Hooks.driver.findElement(By.xpath("//div[@id='cboxLoadedContent']//center//span"));
     }
-<<<<<<< HEAD
     public WebElement ok_but() {
 
-=======
-
-    public WebElement ok_but() {
->>>>>>> adf37fe (test)
         return Hooks.driver.findElement(By.xpath("//div[@id='cboxLoadedContent']//button"));
     }
     public WebElement transactions_num() {
         return Hooks.driver.findElement(By.xpath("//div[@id='title_services']//span[@class]"));
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> adf37fe (test)
     public WebElement nav_First_Side() {
         return Hooks.driver.findElement(By.id("fisrtParty"));
     }
