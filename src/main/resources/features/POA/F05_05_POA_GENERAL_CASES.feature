@@ -10,3 +10,4 @@ Feature: F05_05_POA_GENERAL_CASES | users could add new transactions for POA_GEN
     And user clicked on POA successfully
     When user click on POA_GENERAL_CASES
     And user clicked on POA_GENERAL_CASES successfully
+

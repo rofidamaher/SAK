@@ -50,7 +50,29 @@ public class P06_01_SALE_COMPANY {
         return Hooks.driver.findElement(By.id("txtElsqlEltogarySecondParty"));
     }
 
+    public WebElement txtConfirmSecondParty() {
+        return Hooks.driver.findElement(By.id("txtConfirmSecondParty"));
+    }
+    public WebElement civilId_Num() {
+        return Hooks.driver.findElement(By.id("3769"));
+    }
 
-
-
+    public WebElement SALE_VALUE_COMPANY() {
+        return Hooks.driver.findElement(By.id("3774"));
+    }
+    public WebElement btnAddDebagaToTable() {
+        return Hooks.driver.findElement(By.id("btnAddDebagaToTable"));
+    }
+    public WebElement debagaEditors() {
+        return Hooks.driver.findElement(By.id("debagaEditors"));
+    }
+    public WebElement fr_element() {
+        return Hooks.driver.findElement(By.xpath("//div[@id=\"debagaEditors\"]//div[@class=\"fr-element fr-view\"]//p"));
+    }
+    public WebElement btnCollection() {
+        return Hooks.driver.findElement(By.id("btnCollection"));
+    }
+    public WebElement yes_btn() {
+        return Hooks.driver.findElement(By.xpath("yesButton"));
+    }
 }

@@ -6,13 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class P05_02_POA_PARTIAL_STEPPED {
-
-
     public WebElement txtBayanatElwkalaFirstParty() {
         return Hooks.driver.findElement(By.id("txtBayanatElwkalaFirstParty"));
-
     }
-
     public WebElement addCompanyStakeholder() {
         return Hooks.driver.findElement(By.id("noti_Container"));
 
