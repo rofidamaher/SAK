@@ -151,11 +151,11 @@ public class D07_01_AGREEMENTStepDef {
         Thread.sleep(500);
         agreement.datepicker_monthsFrom().click();
         Thread.sleep(200);
-        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
+        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();
-        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-months']//span[text()='"+M+"']"));
+        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-months']//span[text()='"+M+"']"));
         Month.click();
-        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-days']//td[text()='"+D+"']"));
+        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//td[text()='"+D+"']"));
         Day.click();
     }
     public void setDateTo(String Y , String M , String D) throws InterruptedException {
@@ -164,11 +164,11 @@ public class D07_01_AGREEMENTStepDef {
         Thread.sleep(200);
         agreement.datepicker_monthsTo().click();
         Thread.sleep(200);
-        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
+        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();
-        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-months']//span[text()='"+M+"']"));
+        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-months']//span[text()='"+M+"']"));
         Month.click();
-        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//td[text()='"+D+"']"));
+        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-days']//td[text()='"+D+"']"));
         Day.click();
     }
 

@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F07_02_SUPPLY | users could add new transactions for SUPPLY
 Background:user could click on SUPPLY
   When user login with email "amrsaid" and password "amrsaid"

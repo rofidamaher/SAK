@@ -54,18 +54,18 @@ public class P07_01_AGREEMENT {
         return Hooks.driver.findElement(By.id("8"));
     }
     public WebElement datepicker_daysFrom() {
-        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-days']//th[@class='date-switch']"));
-    }
-
-    public WebElement datepicker_monthsFrom() {
-        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-months']//th[@class='date-switch']"));
-    }
-    public WebElement datepicker_daysTo() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//th[@class='date-switch']"));
     }
 
-    public WebElement datepicker_monthsTo() {
+    public WebElement datepicker_monthsFrom() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-months']//th[@class='date-switch']"));
+    }
+    public WebElement datepicker_daysTo() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-days']//th[@class='date-switch']"));
+    }
+
+    public WebElement datepicker_monthsTo() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-months']//th[@class='date-switch']"));
     }
 
 
