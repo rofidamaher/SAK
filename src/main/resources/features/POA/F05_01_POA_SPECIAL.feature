@@ -20,7 +20,7 @@ Background:user could click on POA_SPECIAL
      # شريك في شركة      |||  رقم شخصي
     When user add the second Party with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230"
     And user click on add button and add new second Party with id "00000000085" successfully
-    And user close second Party and open samples Nav
+    And user close the second Party and open the model Nav
     When user chick the fixed text checkbox and click inside the state of qatar radio btn
     And user click on save model btn
     And user close the the samples Nav and open the fees Nav
