@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F06_01_SALE_LAND | users could add new transactions for SALE_COMPANY
 Background:user could click on POA_SPECIAL
   When user login with email "tester7" and password "P@ssw0rd"
@@ -33,6 +33,7 @@ Background:user could click on POA_SPECIAL
     And user click on btnViewTransaction
     #And user click on btnCollection
     Then user click on btnSubmitTransaction
+
 
 
 
