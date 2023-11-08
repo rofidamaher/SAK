@@ -109,7 +109,7 @@ public class D05_01_POA_SPECIALStepDef {
             //Assert.assertEquals(actualResult.contains(expectedResult),true,"euro symbol is displayed on product :" + i);
         }
     }
-    @And("user close the second Party and open the model Nav")
+    @And("user close second Party and open samples Nav")
     public void userCloseTheSecondPartyForPOA_SPECIALAndOpenTheSamplesNavForPOA_SPECIAL() throws InterruptedException {
         Thread.sleep(100);
         POASpecial.nav_Second_Side().click();

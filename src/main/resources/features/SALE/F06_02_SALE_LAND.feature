@@ -24,7 +24,7 @@ Background:user could click on POA_SPECIAL
     And user click on add button and add new second Party with id "00000000085" successfully
     And user click on ShowChild btn second Party
     When user Add childType with obj of index "1"  id "00000000080" and click on save btn
-    And user close the second Party and open the model Nav
+    And user close second Party and open samples Nav
     When user add SALE_REGION_LAND "الدوحة" and SALE_AREA_LAND "5655" SALE_FIGURE_AREAL_LAND "454574985" SALE_VALUE_LAND "54556" SALE_NO_APPROVAL_LETTER_LAND "6654" and click on add btn
     And user enter text " اضافة نص " in frame element
     And user click on save model btn
