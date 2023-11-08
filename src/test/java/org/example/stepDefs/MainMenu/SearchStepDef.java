@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class SearchStepDef {
 
     Search searchPage = new Search();
+
     @When("user click on Search icon")
     public void userClickOnSearchIcon() {
         Hooks.driver. manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);

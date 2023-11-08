@@ -24,7 +24,7 @@ public class D07_ConfirmationSignaturesStepDef {
         SoftAssert soft = new SoftAssert();
 
         String expectedResult = "عقد إتفاق";
-        String actualResult =confirmationSignatures.AGREEMENT_label().getText();
+        String actualResult =confirmationSignatures.Treatment_label().getText();
 
         System.out.println(actualResult);
         soft.assertEquals(actualResult.contains(expectedResult),true);
@@ -33,6 +33,31 @@ public class D07_ConfirmationSignaturesStepDef {
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on AGREEMENT successfully" );
+
+        // Assert All
+        soft.assertAll();
+    }
+
+    @When("user click on SUPPLY")
+    public void userClickOnSUPPLY() {
+        confirmationSignatures.SUPPLY().click();
+    }
+
+    @And("user clicked on SUPPLY successfully")
+    public void userClickedOnSUPPLYSuccessfully() throws InterruptedException {
+        Thread.sleep(1000);
+        SoftAssert soft = new SoftAssert();
+
+        String expectedResult = "عقد توريد";
+        String actualResult =confirmationSignatures.Treatment_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on SUPPLY successfully" );
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/SUPPLY/:6";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SUPPLY successfully" );
 
         // Assert All
         soft.assertAll();

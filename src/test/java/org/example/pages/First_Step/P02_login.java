@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 public class P02_login {
 
+
    public WebElement UserName()
 {
     return Hooks.driver.findElement(By.id("tb_UserName"));
@@ -18,32 +19,10 @@ public class P02_login {
     {
         return Hooks.driver.findElement(By.id("btnSignIn"));
     }
-//    public WebElement error_message()
-//    {
-//        return Hooks.driver.findElement(By.xpath("//div[@class='message-error validation-summary-errors']"));
-//    }
 
     public WebElement UserName_home()
     {
         return Hooks.driver.findElement(By.id("adminName"));
     }
-
-
-//    @FindBy(className = "ico-login")
-//    public WebElement login_page;
-//
-//    @FindBy(id = "Email")
-//    public WebElement Email;
-//
-//    @FindBy(id = "Password")
-//    public WebElement Password;
-//
-//    @FindBy(className = "button-1 login-button")
-//    public WebElement btn_login;
-
-//    @FindBy(className = "message-error validation-summary-errors")
-//    public WebElement error_message;
-
-
-
 }
+

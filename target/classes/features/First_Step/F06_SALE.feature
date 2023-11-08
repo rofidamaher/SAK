@@ -16,3 +16,7 @@ Background:user could click on SALE
   Scenario: user could click on SALE_LAND
     When user click on SALE_LAND
     And user clicked on SALE_LAND successfully
+
+  Scenario: user could click on SALE_LAND
+    When user click on SALE_LAND
+    And user clicked on SALE_LAND successfully

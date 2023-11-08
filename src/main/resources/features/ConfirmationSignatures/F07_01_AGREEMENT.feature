@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F07_01_AGREEMENT | users could add new transactions for AGREEMENT
 Background:user could click on AGREEMENT
   When user login with email "amrsaid" and password "amrsaid"

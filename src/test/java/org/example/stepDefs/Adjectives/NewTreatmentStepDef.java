@@ -11,6 +11,7 @@ import org.testng.asserts.SoftAssert;
 
 
 public class NewTreatmentStepDef {
+
     NewTreatment new_t = new NewTreatment();
 
     @And("user add new treatment for obj of index {string} and id of index {string} id equal {string}")

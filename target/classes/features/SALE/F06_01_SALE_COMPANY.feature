@@ -1,6 +1,6 @@
 
 Feature: F06_01_SALE_COMPANY | users could add new transactions for SALE_COMPANY
-Background:user could click on SALE_COMPANY
+Background:user could click on POA_SPECIAL
   When user login with email "tester7" and password "P@ssw0rd"
   And user press on login button
   And user login to the system successfully by user "tester7"
@@ -29,6 +29,14 @@ Background:user could click on SALE_COMPANY
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
     And user click on btnViewTransaction
     #And user click on btnCollection
+    And user close second Party and open samples Nav
+    When user add civilId_Num equal "230" and SALE_VALUE_COMPANY equal "3000" and click on add btn
+    And user enter text " اضافة نص " in frame element
+    And user click on save model btn
+   # And user close the the samples Nav and open the fees Nav
+    #When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
+    And user click on btnViewTransaction
+    And user click on btnCollection
     Then user click on btnSubmitTransaction
 
 

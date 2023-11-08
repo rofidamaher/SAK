@@ -1,22 +1,34 @@
+<<<<<<< HEAD
 org\example\stepDefs\SALE\D06_02_SALE_LANDStepDef.class
+=======
+>>>>>>> adf37fe (test)
 org\example\pages\POA\P05_04_POA_PARTIAL_TERMINATION.class
 org\example\pages\MainMenu\Search.class
 org\example\stepDefs\POA\D05_03_POA_TERMINATIONStepDef.class
 org\example\pages\MainMenu\MainMenu.class
 org\example\stepDefs\Hooks.class
+<<<<<<< HEAD
 org\example\pages\SALE\P06_02_SALE_LAND.class
+=======
+>>>>>>> adf37fe (test)
 org\example\stepDefs\First_Step\D05_POAStepDef.class
 org\example\pages\POA\P05_01_POA_SPECIAL.class
 org\example\pages\First_Step\P06_SAEL.class
 org\example\stepDefs\First_Step\D02_loginStepDef.class
+<<<<<<< HEAD
 org\example\pages\First_Step\P07_ConfirmationSignatures.class
+=======
+>>>>>>> adf37fe (test)
 org\example\pages\First_Step\P02_login.class
 org\example\stepDefs\MainMenu\MainMenuStepDef.class
 org\example\stepDefs\Adjectives\NewTreatmentStepDef.class
 org\example\stepDefs\MainMenu\PersonalInboxStepDef.class
 org\example\stepDefs\POA\D05_04_POA_PARTIAL_TERMINATIONStepDef.class
 org\example\pages\POA\P05_02_POA_PARTIAL_STEPPED.class
+<<<<<<< HEAD
 org\example\stepDefs\ConfirmationSignatures\D07_01_AGREEMENTStepDef.class
+=======
+>>>>>>> adf37fe (test)
 org\example\pages\First_Step\P05_POA.class
 org\example\stepDefs\POA\D05_01_POA_SPECIALStepDef.class
 org\example\stepDefs\SALE\D06_01_SALE_COMPANYStepDef.class
@@ -29,8 +41,13 @@ org\example\pages\POA\P05_03_POA_TERMINATION.class
 org\example\testRunner\runners.class
 org\example\stepDefs\First_Step\D03_HomeStepDef.class
 org\example\stepDefs\POA\D05_02_POA_PARTIAL_STEPPEDStepDef.class
+<<<<<<< HEAD
 org\example\pages\ConfirmationSignatures\P07_01_AGREEMENT.class
 org\example\pages\First_Step\P03_Home.class
 org\example\stepDefs\First_Step\D04_DOCUMENTATION_PStepDef.class
 org\example\stepDefs\First_Step\D07_ConfirmationSignaturesStepDef.class
+=======
+org\example\pages\First_Step\P03_Home.class
+org\example\stepDefs\First_Step\D04_DOCUMENTATION_PStepDef.class
+>>>>>>> adf37fe (test)
 org\example\stepDefs\MainMenu\SearchStepDef.class

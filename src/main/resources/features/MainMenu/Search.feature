@@ -11,6 +11,3 @@ Background: user could login with valid username and password and open MainMenu
     Then Search page open successfully
     And user enter request num "46094" in request field and click on search bun
     Then user find request successfully by searching request num "46094"
-
-
-

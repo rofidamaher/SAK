@@ -5,16 +5,15 @@ import io.cucumber.java.en.When;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.pages.SALE.P06_01_SALE_COMPANY;
 import org.example.stepDefs.Hooks;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.NoSuchElementException;
+import java.time.Duration;
 
 
 public class D06_01_SALE_COMPANYStepDef {
+
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
@@ -25,10 +24,12 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
+
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
+
         saleCompany.txtPercentFristParty().clear();
 
         Thread.sleep(500);
@@ -45,12 +46,11 @@ public class D06_01_SALE_COMPANYStepDef {
     public void userClickOnShowChildBtnAndClickOnBtnAddChildParty() throws InterruptedException {
         saleCompany.ShowChild().click();
         Thread.sleep(200);
+        saleCompany.btnAddChildParty().click();
     }
 
     @When("user AddChildParty with adj of index {string} and obj of index {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
-        saleCompany.btnAddChildParty().click();
-        Thread.sleep(100);
         saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();
         Thread.sleep(100);
@@ -108,6 +108,7 @@ public class D06_01_SALE_COMPANYStepDef {
         Thread.sleep(500);
         saleCompany.fr_element().sendKeys(arg0);
     }
+
     @And("user click on btnCollection")
     public void userClickOnBtnCollection() throws InterruptedException {
         saleCompany.btnCollection().click();
@@ -117,6 +118,10 @@ public class D06_01_SALE_COMPANYStepDef {
              Thread.sleep(3000);
             System.out.println("Element is not visible yet");
         }
+
+
+        WebDriverWait wait = new WebDriverWait(Hooks.driver, Duration.ofSeconds( 10));
+
         saleCompany.yes_btn().click();
         Thread.sleep(2000);
         while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))

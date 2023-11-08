@@ -35,7 +35,6 @@ public class D06_SEALStepDef {
         soft.assertAll();
     }
 
-
     @When("user click on SALE_LAND")
     public void userClickOnSALE_LAND() {
         sael.SALE_LAND().click();

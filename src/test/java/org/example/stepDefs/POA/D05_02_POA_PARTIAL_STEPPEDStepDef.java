@@ -14,6 +14,7 @@ import static org.example.stepDefs.POA.D05_01_POA_SPECIALStepDef.isDisplayed;
 
 
 public class D05_02_POA_PARTIAL_STEPPEDStepDef {
+
      P05_02_POA_PARTIAL_STEPPED POAPaetialStepped = new P05_02_POA_PARTIAL_STEPPED();
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P05_04_POA_PARTIAL_TERMINATION p0504PoaPartialTermination = new P05_04_POA_PARTIAL_TERMINATION();
@@ -24,11 +25,12 @@ public class D05_02_POA_PARTIAL_STEPPEDStepDef {
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
+
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
 
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);

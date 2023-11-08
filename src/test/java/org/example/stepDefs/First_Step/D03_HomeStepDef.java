@@ -15,6 +15,7 @@ public class D03_HomeStepDef {
     public void userClickOnDocumentation() {
        home.doc().click();
     }
+
     @Then("user clicked on Documentation successfully")
     public void userClickedOnDocumentationSuccessfully() {
         // Soft Assertion
@@ -62,4 +63,5 @@ public class D03_HomeStepDef {
         // Assert All
         soft.assertAll();
     }
+
 }

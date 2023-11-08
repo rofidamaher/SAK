@@ -6,7 +6,6 @@ Background: user could login with valid username and password and open MainMenu
   And user login to the system successfully by user "tester7"
   And user open MainMenu
 
-
   Scenario: user could PersonalInbox page
     When user click on PersonalInbox
     Then PersonalInbox page open successfully

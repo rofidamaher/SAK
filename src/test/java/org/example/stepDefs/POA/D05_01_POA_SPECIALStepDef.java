@@ -28,11 +28,13 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
+
+
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
-        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
 
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeFirstParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         Thread.sleep(100);
         idItem.click();
         Thread.sleep(1000);
@@ -44,9 +46,11 @@ public class D05_01_POA_SPECIALStepDef {
     
     @And("user click on add button and add new first Party successfully")
     public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
+
         Thread.sleep(1000);
         jse.executeScript("window.scrollBy(0,150)");
         Thread.sleep(300);
+
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
         // Soft Assertion
@@ -59,7 +63,9 @@ public class D05_01_POA_SPECIALStepDef {
         soft.assertTrue(POASpecial.transactions_num().isDisplayed());
         // Assert All
         soft.assertAll();
+
         Thread.sleep(1000);
+
         return transactions_num;
     }
 
@@ -89,6 +95,8 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.id_inputSecondParty().sendKeys(arg2);
         POASpecial.elsqlEltogary_Value().sendKeys(arg3);
         POASpecial.companyNameSecondParty().click();
+        JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+
         jse.executeScript("window.scrollBy(0,150)");
     }
 

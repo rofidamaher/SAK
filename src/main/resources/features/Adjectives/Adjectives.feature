@@ -11,7 +11,6 @@
       And user click on POA_SPECIAL
       And user clicked on POA_SPECIAL successfully
 
-
     Scenario Outline: user could add new Treatment
       When user add new treatment for obj of index "<obj>" and id of index "1" id equal "00000000091"
       And user click on add but and add new treatment successfully
