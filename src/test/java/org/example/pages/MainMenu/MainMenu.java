@@ -11,6 +11,4 @@ public class MainMenu {
     return Hooks.driver.findElement(By.className("menu-icon"));
 }
 
-
-
 }

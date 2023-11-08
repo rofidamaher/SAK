@@ -1,6 +1,6 @@
 
 Feature: F06_01_SALE_COMPANY | users could add new transactions for SALE_COMPANY
-Background:user could click on POA_SPECIAL
+Background:user could click on SALE_COMPANY
   When user login with email "tester7" and password "P@ssw0rd"
   And user press on login button
   And user login to the system successfully by user "tester7"
@@ -21,7 +21,7 @@ Background:user could click on POA_SPECIAL
     #شريك في شركة  \\\\ رقم شخصي    \\\\ رقم السجل \\\\\ النسبة المباعة
     When user add the second Party with obj of index "6" and id of index "2" id equal "00000000215" and civilId equal "230" txtPercentFristParty "5"
     And user click on add button and add new second Party with id "00000000215" successfully
-    And user close the second Party and open the model Nav
+    And user close second Party and open samples Nav
     When user add civilId_Num equal "230" and SALE_VALUE_COMPANY equal "3000" and click on add btn
     And user enter text " اضافة نص " in frame element
     And user click on save model btn

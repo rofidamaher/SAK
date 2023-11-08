@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class P03_Home {
-
    public WebElement doc()
 {
     return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/DOCUMENTATION_P.png']"));

@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class P07_ConfirmationSignatures {
-
    public WebElement AGREEMENT() {
        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/AGREEMENT.png']"));
    }
