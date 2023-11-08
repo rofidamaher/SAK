@@ -1,6 +1,6 @@
 @smoke
 Feature: F07_01_AGREEMENT | users could add new transactions for AGREEMENT
-Background:user could click on POA_SPECIAL
+Background:user could click on AGREEMENT
   When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
   And user login to the system successfully by user "amrsaid"

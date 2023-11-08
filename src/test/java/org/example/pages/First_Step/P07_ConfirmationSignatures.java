@@ -15,6 +15,15 @@ public class P07_ConfirmationSignatures {
         return Hooks.driver.findElement(By.id("referrer"));
     }
 
+    public WebElement SUPPLY() {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/SUPPLY.png']"));
+    }
+
+    public WebElement SUPPLY_label()
+    {
+        return Hooks.driver.findElement(By.id("referrer"));
+    }
+
 
 
 
