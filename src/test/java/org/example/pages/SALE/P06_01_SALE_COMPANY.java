@@ -56,6 +56,7 @@ public class P06_01_SALE_COMPANY {
     public WebElement civilId_Num() {
         return Hooks.driver.findElement(By.id("3769"));
     }
+
     public WebElement SALE_VALUE_COMPANY() {
         return Hooks.driver.findElement(By.id("3774"));
     }

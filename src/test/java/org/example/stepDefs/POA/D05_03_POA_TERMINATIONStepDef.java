@@ -17,6 +17,7 @@ public class D05_03_POA_TERMINATIONStepDef {
         POASpecial.nav_First_Side().click();
         Thread.sleep(100);
         POASpecial.nav_sample().click();
+
     }
     @And("user enter transaction num {string} for POA_TERMINATION and click save model btn")
     public void userEnterTransactionNumAndClickSaveModelBtn(String arg0) throws InterruptedException {

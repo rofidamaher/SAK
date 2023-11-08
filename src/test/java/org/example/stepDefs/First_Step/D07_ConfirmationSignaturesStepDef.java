@@ -18,7 +18,6 @@ public class D07_ConfirmationSignaturesStepDef {
         confirmationSignatures.AGREEMENT().click();
         
     }
-
     @And("user clicked on AGREEMENT successfully")
     public void userClickedOnAGREEMENTSuccessfully() throws InterruptedException {
         Thread.sleep(1000);

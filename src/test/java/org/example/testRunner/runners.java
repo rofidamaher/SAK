@@ -16,6 +16,5 @@ import io.cucumber.testng.CucumberOptions;
                         "rerun:target/rerun.txt"
                 }
         )
-
 public class runners extends AbstractTestNGCucumberTests {
 }

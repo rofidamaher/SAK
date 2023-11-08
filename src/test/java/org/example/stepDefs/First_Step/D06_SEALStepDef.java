@@ -16,7 +16,6 @@ public class D06_SEALStepDef {
     public void userClickOnSALE_COMPANY() {
         sael.SALE_COMPANY().click();
     }
-
     @And("user clicked on SALE_COMPANY successfully")
     public void userClickedOnSALE_COMPANYSuccessfully() {
         SoftAssert soft = new SoftAssert();

@@ -12,7 +12,6 @@ public class Search {
 {
     return Hooks.driver.findElement(By.xpath("//img[@src=\"img/authimg/menuicons/complete_request_menu.png\"]"));
 }
-
     public WebElement searchTitle()
     {
         return Hooks.driver.findElement(By.id("title_services"));

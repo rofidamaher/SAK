@@ -33,6 +33,7 @@ public class P05_01_POA_SPECIAL {
         return Hooks.driver.findElement(By.xpath("//div[@id='cboxLoadedContent']//center//span"));
     }
     public WebElement ok_but() {
+
         return Hooks.driver.findElement(By.xpath("//div[@id='cboxLoadedContent']//button"));
     }
     public WebElement transactions_num() {
