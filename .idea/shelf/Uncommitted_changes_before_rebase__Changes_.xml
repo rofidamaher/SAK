@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]" date="1699438400733" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" />
+    <option name="AFTER_PATH" value="target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/D05_01_POA_SPECIALStepDef.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/org/example/stepDefs/Hooks.class" />
+    <option name="AFTER_PATH" value="target/test-classes/org/example/stepDefs/Hooks.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Hooks.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="target/Project2-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Project2-1.0-SNAPSHOT.jar" />
+  </binary>
+</changelist>

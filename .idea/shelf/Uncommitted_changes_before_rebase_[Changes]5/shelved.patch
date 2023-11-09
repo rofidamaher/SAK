@@ -1,0 +1,153 @@
+Index: src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.pages.First_Step;\r\n\r\nimport org.example.stepDefs.Hooks;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebElement;\r\n\r\npublic class P04_DOCUMENTATION_P {\r\n\r\n   public WebElement POA() {\r\n       return Hooks.driver.findElement(By.xpath(\"//img[@src='img/documentation.png']\"));\r\n   }\r\n\r\n    public WebElement POA_label()\r\n    {\r\n        return Hooks.driver.findElement(By.id(\"lblPOA\"));\r\n    }\r\n\r\n    public WebElement SALE() {\r\n        return Hooks.driver.findElement(By.xpath(\"//img[@src=\\\"img/Sale.png\\\"]\"));\r\n    }\r\n\r\n    public WebElement SALE_label()\r\n    {\r\n        return Hooks.driver.findElement(By.id(\"lblSale\"));\r\n    }\r\n\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java b/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java
+--- a/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java	(revision b5642d7aa8b479f15f2d77d340944bb8cb882a9d)
++++ b/src/test/java/org/example/pages/First_Step/P04_DOCUMENTATION_P.java	(date 1699523997657)
+@@ -24,6 +24,15 @@
+         return Hooks.driver.findElement(By.id("lblSale"));
+     }
+ 
++    public WebElement AUTH() {
++        return Hooks.driver.findElement(By.xpath("//img[@src='img/POA_STAMPED.png']"));
++    }
++
++    public WebElement AUTH_label()
++    {
++        return Hooks.driver.findElement(By.id("lblAUTH"));
++    }
++
+ 
+ 
+ }
+Index: src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nFeature: F04_DOCUMENTATION_P | users could use login functionality and click on Documentation then go to POA\r\n  Background:user could login with valid username and password and click on Documentation\r\n    When user login with email \"tester7\" and password \"P@ssw0rd\"\r\n    And user press on login button\r\n    And user login to the system successfully by user \"tester7\"\r\n    And user click on Documentation\r\n    Then user clicked on Documentation successfully\r\n\r\n  Scenario:user could click on POA\r\n    When user click on POA\r\n    And user clicked on POA successfully\r\n\r\n  Scenario:user could click on_SAlE\r\n    When user click on SAlE\r\n    And user clicked on SAlE successfully\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature b/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature
+--- a/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature	(revision b5642d7aa8b479f15f2d77d340944bb8cb882a9d)
++++ b/src/main/resources/features/First_Step/F04_DOCUMENTATION_P.feature	(date 1699523463024)
+@@ -11,6 +11,10 @@
+     When user click on POA
+     And user clicked on POA successfully
+ 
+-  Scenario:user could click on_SAlE
++  Scenario:user could click on SAlE
+     When user click on SAlE
+     And user clicked on SAlE successfully
++
++  Scenario:user could click on AUTH
++    When user click on AUTH
++    And user clicked on AUTH successfully
+\ No newline at end of file
+Index: src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@smoke\r\nFeature: F07_02_SUPPLY | users could add new transactions for SUPPLY\r\nBackground:user could click on SUPPLY\r\n  When user login with email \"amrsaid\" and password \"amrsaid\"\r\n  And user press on login button\r\n  And user login to the system successfully by user \"amrsaid\"\r\n  And user click on ConfirmationSignatures\r\n  Then user clicked on ConfirmationSignatures successfully\r\n  When user click on SUPPLY\r\n  And user clicked on SUPPLY successfully\r\n\r\n  Scenario: user could add new transactions for SUPPLY\r\n      # عن نفسه      |||  رقم شخصي\r\n    When user add the first Party with obj of index \"8\" and id of index \"1\" id equal \"00000000200\" and click on chkDepositFirstParty\r\n    And user click on add button and add new first Party successfully\r\n    And user close first Party and open the second Party\r\n     # شريك في شركة      |||  رقم شخصي\r\n    When user add the second Party with obj of index \"6\" and id of index \"2\" id equal \"00000000085\" and CR equal \"230\"\r\n    And user click on add button and add new second Party with id \"00000000085\" successfully\r\n    And user close second Party and open samples Nav\r\n    When user enter GOODS_DATA \"food\" and select CONTRACT_PERIOD_FROM Y \"2023\" M \"Jul\" D \"30\" CONTRACT_PERIOD_TO Y \"2025\" M \"Jul\" D \"30\" and CONTRACT_VALUE \"2514\"\r\n    And user click on save model btn\r\n    And user close the the samples Nav and open the fees Nav\r\n    When user click on noFees checkbox and select ExcemptedReasons \"جهة حكومية\"\r\n    And user click on btnViewTransaction\r\n    Then user click on btnSubmitTransaction\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature b/src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature
+--- a/src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature	(revision b5642d7aa8b479f15f2d77d340944bb8cb882a9d)
++++ b/src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature	(date 1699525006773)
+@@ -1,4 +1,4 @@
+-@smoke
++
+ Feature: F07_02_SUPPLY | users could add new transactions for SUPPLY
+ Background:user could click on SUPPLY
+   When user login with email "amrsaid" and password "amrsaid"
+Index: src/test/java/org/example/pages/First_Step/P08_AUTH.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/pages/First_Step/P08_AUTH.java b/src/test/java/org/example/pages/First_Step/P08_AUTH.java
+new file mode 100644
+--- /dev/null	(date 1699524884158)
++++ b/src/test/java/org/example/pages/First_Step/P08_AUTH.java	(date 1699524884158)
+@@ -0,0 +1,20 @@
++package org.example.pages.First_Step;
++
++import org.example.stepDefs.Hooks;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++public class P08_AUTH {
++
++    public WebElement CONTRACT_ESTABLISHMENT()
++    {
++        return Hooks.driver.findElement(By.xpath("//a[@href='#/CONTRACT_ESTABLISHMENT/:36']"));
++    }
++
++    public WebElement AUTH_label()
++    {
++        return Hooks.driver.findElement(By.id("referrer"));
++    }
++
++
++}
+Index: src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.stepDefs.First_Step;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.When;\r\nimport org.example.pages.First_Step.P04_DOCUMENTATION_P;\r\nimport org.example.stepDefs.Hooks;\r\nimport org.testng.asserts.SoftAssert;\r\n\r\n\r\npublic class D04_DOCUMENTATION_PStepDef {\r\n\r\n    P04_DOCUMENTATION_P doc = new P04_DOCUMENTATION_P();\r\n\r\n    @When(\"user click on POA\")\r\n    public void userClickOnPOA() {\r\n        doc.POA().click();\r\n    }\r\n\r\n    @And(\"user clicked on POA successfully\")\r\n    public void userClickedOnPOASuccessfully() {\r\n        // Soft Assertion\r\n        SoftAssert soft = new SoftAssert();\r\n        //first Assert\r\n        String expectedResult = \"التوكيلات\";\r\n        String actualResult =doc.POA_label().getText();\r\n\r\n        System.out.println(actualResult);\r\n        soft.assertEquals(actualResult.contains(expectedResult),true);\r\n        soft.assertTrue(actualResult.contains(expectedResult),\"user clicked on POA successfully\" );\r\n\r\n        //Hooks.driver.getCurrentUrl();\r\n        // second Assert\r\n\r\n        String expectedResulturl = \"http://192.168.1.111:8085/Master.html#/POA/:16\";\r\n        String actualResulturl = Hooks.driver.getCurrentUrl();\r\n        System.out.println(actualResulturl);\r\n        soft.assertTrue(actualResulturl.contains(expectedResulturl),\"user clicked on POA successfully\" );\r\n\r\n        // Assert All\r\n        soft.assertAll();\r\n    }\r\n\r\n\r\n    @When(\"user click on SAlE\")\r\n    public void userClickOnSAlE() {\r\n        doc.SALE().click();\r\n\r\n    }\r\n\r\n    @And(\"user clicked on SAlE successfully\")\r\n    public void userClickedOnSAlESuccessfully() {\r\n        SoftAssert soft = new SoftAssert();\r\n        String expectedResult = \"البيع\";\r\n        String actualResult =doc.SALE_label().getText();\r\n\r\n        System.out.println(actualResult);\r\n        soft.assertEquals(actualResult.contains(expectedResult),true);\r\n        soft.assertTrue(actualResult.contains(expectedResult),\"user clicked on SAlE successfully\" );\r\n        String expectedResulturl = \"http://192.168.1.111:8085/Master.html#/SALE/:15\";\r\n        String actualResulturl = Hooks.driver.getCurrentUrl();\r\n        System.out.println(actualResulturl);\r\n        soft.assertTrue(actualResulturl.contains(expectedResulturl),\"user clicked on SAlE successfully\" );\r\n\r\n        soft.assertAll();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java b/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java
+--- a/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java	(revision b5642d7aa8b479f15f2d77d340944bb8cb882a9d)
++++ b/src/test/java/org/example/stepDefs/First_Step/D04_DOCUMENTATION_PStepDef.java	(date 1699524177664)
+@@ -61,6 +61,28 @@
+         System.out.println(actualResulturl);
+         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SAlE successfully" );
+ 
++        soft.assertAll();
++    }
++
++    @When("user click on AUTH")
++    public void userClickOnAUTH() {
++        doc.AUTH().click();
++    }
++
++    @And("user clicked on AUTH successfully")
++    public void userClickedOnAUTHSuccessfully() {
++        SoftAssert soft = new SoftAssert();
++        String expectedResult = "التوثيقات";
++        String actualResult =doc.AUTH_label().getText();
++
++        System.out.println(actualResult);
++        soft.assertEquals(actualResult.contains(expectedResult),true);
++        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on AUTH successfully" );
++        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA/:17";
++        String actualResulturl = Hooks.driver.getCurrentUrl();
++        System.out.println(actualResulturl);
++        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on AUTH successfully" );
++
+         soft.assertAll();
+     }
+ }
+Index: src/test/java/org/example/stepDefs/ConfirmationSignatures/D07_02_SUPPLYStepDef.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.stepDefs.ConfirmationSignatures;\r\n\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.When;\r\nimport org.example.pages.ConfirmationSignatures.P07_01_AGREEMENT;\r\nimport org.example.pages.ConfirmationSignatures.P07_02_SUPPLY;\r\nimport org.example.pages.POA.P05_01_POA_SPECIAL;\r\nimport org.example.pages.SALE.P06_02_SALE_LAND;\r\nimport org.example.stepDefs.Hooks;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.JavascriptExecutor;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.testng.Assert;\r\n\r\nimport java.util.concurrent.TimeUnit;\r\n\r\n\r\npublic class D07_02_SUPPLYStepDef {\r\n\r\n    P07_02_SUPPLY supply = new P07_02_SUPPLY();\r\n    P07_01_AGREEMENT agreement =new P07_01_AGREEMENT();\r\n    D07_01_AGREEMENTStepDef agreementStepDef = new D07_01_AGREEMENTStepDef();\r\n    JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;\r\n\r\n    @When(\"user enter GOODS_DATA {string} and select CONTRACT_PERIOD_FROM Y {string} M {string} D {string} CONTRACT_PERIOD_TO Y {string} M {string} D {string} and CONTRACT_VALUE {string}\")\r\n    public void userEnterGOODS_DATAAndSelectCONTRACT_PERIOD_FROMYMDCONTRACT_PERIOD_TOYMDAndCONTRACT_VALUE(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7) throws InterruptedException {\r\n        Thread.sleep(100);\r\n        supply.GOODS_DATA().sendKeys(arg0);\r\n        Thread.sleep(100);\r\n        agreement.CONTRACT_PERIOD_FROM().click();\r\n        Thread.sleep(2000);\r\n        agreementStepDef.setDateFrom(arg1,arg2,arg3);\r\n        agreement.CONTRACT_PERIOD_TO().click();\r\n        Thread.sleep(2000);\r\n        agreementStepDef.setDateTo(arg4,arg5,arg6);\r\n        supply.CONTRACT_VALUE().sendKeys(arg7);\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/stepDefs/ConfirmationSignatures/D07_02_SUPPLYStepDef.java b/src/test/java/org/example/stepDefs/ConfirmationSignatures/D07_02_SUPPLYStepDef.java
+--- a/src/test/java/org/example/stepDefs/ConfirmationSignatures/D07_02_SUPPLYStepDef.java	(revision b5642d7aa8b479f15f2d77d340944bb8cb882a9d)
++++ b/src/test/java/org/example/stepDefs/ConfirmationSignatures/D07_02_SUPPLYStepDef.java	(date 1699522635155)
+@@ -20,8 +20,6 @@
+     P07_02_SUPPLY supply = new P07_02_SUPPLY();
+     P07_01_AGREEMENT agreement =new P07_01_AGREEMENT();
+     D07_01_AGREEMENTStepDef agreementStepDef = new D07_01_AGREEMENTStepDef();
+-    JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
+-
+     @When("user enter GOODS_DATA {string} and select CONTRACT_PERIOD_FROM Y {string} M {string} D {string} CONTRACT_PERIOD_TO Y {string} M {string} D {string} and CONTRACT_VALUE {string}")
+     public void userEnterGOODS_DATAAndSelectCONTRACT_PERIOD_FROMYMDCONTRACT_PERIOD_TOYMDAndCONTRACT_VALUE(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6, String arg7) throws InterruptedException {
+         Thread.sleep(100);
