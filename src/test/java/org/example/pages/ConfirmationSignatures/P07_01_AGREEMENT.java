@@ -53,18 +53,18 @@ public class P07_01_AGREEMENT {
     public WebElement CONTRACT_PERIOD_TO(){
         return Hooks.driver.findElement(By.id("8"));
     }
-    public WebElement datepicker_daysFrom() {
+    public WebElement datepicker_daysID4() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//th[@class='date-switch']"));
     }
 
-    public WebElement datepicker_monthsFrom() {
+    public WebElement datepicker_monthsID4() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-months']//th[@class='date-switch']"));
     }
-    public WebElement datepicker_daysTo() {
+    public WebElement datepicker_daysID5() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-days']//th[@class='date-switch']"));
     }
 
-    public WebElement datepicker_monthsTo() {
+    public WebElement datepicker_monthsID5() {
         return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-months']//th[@class='date-switch']"));
     }
 

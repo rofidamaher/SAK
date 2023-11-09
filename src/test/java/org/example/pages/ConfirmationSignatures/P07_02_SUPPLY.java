@@ -18,5 +18,11 @@ public class P07_02_SUPPLY {
         return Hooks.driver.findElement(By.id("13"));
     }
 
+    public WebElement datepicker_daysID3() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-days']//th[@class='date-switch']"));
+    }
+    public WebElement datepicker_monthsID3() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='datepicker_3']//div[@class='datepicker-months']//th[@class='date-switch']"));
+    }
 
 }

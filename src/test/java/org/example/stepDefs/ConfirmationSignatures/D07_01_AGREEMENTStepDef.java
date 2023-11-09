@@ -134,22 +134,22 @@ public class D07_01_AGREEMENTStepDef {
 
     @When("user enter CONTRACT_VALUE {string} and select CONTRACT_PERIOD_FROM Y {string} M {string} D {string} CONTRACT_PERIOD_TO Y {string} M {string} D {string}")
     public void userEnterCONTRACT_VALUEAndSelectCONTRACT_PERIOD_FROMYMDCONTRACT_PERIOD_TOYMD(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6) throws InterruptedException {
-        Thread.sleep(100);
+        Thread.sleep(10000);
         agreement.CONTRACT_VALUE().sendKeys(arg0);
         Thread.sleep(100);
         agreement.CONTRACT_PERIOD_FROM().click();
         Thread.sleep(2000);
-        setDateFrom(arg1,arg2,arg3);
+        setDateID4(arg1,arg2,arg3);
 
         agreement.CONTRACT_PERIOD_TO().click();
         Thread.sleep(2000);
-        setDateTo(arg4,arg5,arg6);
+        setDateID5(arg4,arg5,arg6);
     }
-    public void setDateFrom(String Y , String M , String D) throws InterruptedException {
+    public void setDateID4(String Y , String M , String D) throws InterruptedException {
         Thread.sleep(1000);
-        agreement.datepicker_daysFrom().click();
+        agreement.datepicker_daysID4().click();
         Thread.sleep(500);
-        agreement.datepicker_monthsFrom().click();
+        agreement.datepicker_monthsID4().click();
         Thread.sleep(200);
         WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();
@@ -158,11 +158,11 @@ public class D07_01_AGREEMENTStepDef {
         WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//td[text()='"+D+"']"));
         Day.click();
     }
-    public void setDateTo(String Y , String M , String D) throws InterruptedException {
+    public void setDateID5(String Y , String M , String D) throws InterruptedException {
         Thread.sleep(1000);
-        agreement.datepicker_daysTo().click();
+        agreement.datepicker_daysID5().click();
         Thread.sleep(200);
-        agreement.datepicker_monthsTo().click();
+        agreement.datepicker_monthsID5().click();
         Thread.sleep(200);
         WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();

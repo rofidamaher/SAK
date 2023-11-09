@@ -1,4 +1,4 @@
-
+@smoke
 Feature: F07_02_SUPPLY | users could add new transactions for SUPPLY
 Background:user could click on SUPPLY
   When user login with email "amrsaid" and password "amrsaid"
@@ -18,7 +18,7 @@ Background:user could click on SUPPLY
     When user add the second Party with obj of index "6" and id of index "2" id equal "00000000085" and CR equal "230"
     And user click on add button and add new second Party with id "00000000085" successfully
     And user close second Party and open samples Nav
-    When user enter GOODS_DATA "food" and select CONTRACT_PERIOD_FROM Y "2023" M "Jul" D "30" CONTRACT_PERIOD_TO Y "2025" M "Jul" D "30" and CONTRACT_VALUE "2514"
+    When user enter GOODS_DATA "food" and select CONTRACT_PERIOD_FROM Y "2023" M "Jul" D "10" CONTRACT_PERIOD_TO Y "2025" M "Jul" D "20" and CONTRACT_VALUE "2514"
     And user click on save model btn
     And user close the the samples Nav and open the fees Nav
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
