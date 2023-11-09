@@ -141,7 +141,7 @@ public class D07_01_AGREEMENTStepDef {
         Thread.sleep(2000);
         setDateFrom(arg1,arg2,arg3);
 
-        agreement.CONTRACT_PERIOD_TO().sendKeys(arg2);
+        agreement.CONTRACT_PERIOD_TO().click();
         Thread.sleep(2000);
         setDateTo(arg4,arg5,arg6);
     }
