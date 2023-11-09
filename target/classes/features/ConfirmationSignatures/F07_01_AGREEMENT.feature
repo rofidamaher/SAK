@@ -26,7 +26,7 @@ Background:user could click on AGREEMENT
     When user add the third Party with obj of index "8" and id of index "3" id "885522" NationalityThirdParty "2"
     And user click on add button and add third Party with id "885522" successfully
     And user close the third Party and open the samples Nav
-    When user enter CONTRACT_VALUE "5658" and select CONTRACT_PERIOD_FROM Y "2023" M "Jul" D "30" CONTRACT_PERIOD_TO Y "2025" M "Jul" D "30"
+    When user enter CONTRACT_VALUE "5658" and select CONTRACT_PERIOD_FROM Y "2023" M "Jul" D "15" CONTRACT_PERIOD_TO Y "2025" M "Jul" D "16"
     And user click on save model btn
     And user close the the samples Nav and open the fees Nav
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
