@@ -46,7 +46,6 @@ public class D04_DOCUMENTATION_PStepDef {
         doc.SALE().click();
 
     }
-
     @And("user clicked on SAlE successfully")
     public void userClickedOnSAlESuccessfully() {
         SoftAssert soft = new SoftAssert();
@@ -60,6 +59,29 @@ public class D04_DOCUMENTATION_PStepDef {
         String actualResulturl = Hooks.driver.getCurrentUrl();
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SAlE successfully" );
+
+        soft.assertAll();
+    }
+
+
+    @When("user click on AUTH")
+    public void userClickOnAUTH() {
+        doc.AUTH().click();
+    }
+
+    @And("user clicked on AUTH successfully")
+    public void userClickedOnAUTHSuccessfully() {
+        SoftAssert soft = new SoftAssert();
+        String expectedResult = "التوثيقات";
+        String actualResult =doc.AUTH_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on AUTH successfully" );
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/POA/:17";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on AUTH successfully" );
 
         soft.assertAll();
     }

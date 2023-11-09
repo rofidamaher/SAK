@@ -16,14 +16,21 @@ public class P04_DOCUMENTATION_P {
     }
 
     public WebElement SALE() {
-        return Hooks.driver.findElement(By.xpath("//img[@src=\"img/Sale.png\"]"));
+        return Hooks.driver.findElement(By.xpath("//img[@src='img/Sale.png']"));
     }
 
     public WebElement SALE_label()
     {
         return Hooks.driver.findElement(By.id("lblSale"));
     }
+    public WebElement AUTH() {
+        return Hooks.driver.findElement(By.xpath("//img[@src='img/POA_STAMPED.png']"));
+    }
 
+    public WebElement AUTH_label()
+    {
+        return Hooks.driver.findElement(By.id("lblAUTH"));
+    }
 
 
 }
