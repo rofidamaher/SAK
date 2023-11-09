@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a6b98bc-9c63-4bf1-a8d0-26725ba2c88c" name="Changes" comment="first commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="SUPPLY" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Rofida Maher &lt;rmaher@sirius-its.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="SUPPLYEdite" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;searchQuery&quot;: &quot;master&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Rofida-Maher&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b128ce83-fe63-4898-b28b-a29610672676" />
+        <option name="url" value="https://github.com/rofidamaher/SAK.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2XTVECkzGUIlJhso5gxA2necFmV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "CONTRACT__ESTABLISHMENT",
+    "last_opened_file_path": "C:/Users/QC-3/Downloads/SAK/src/main/resources/features/First_Step",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\QC-3\Downloads\SAK\src\main\resources\features\First_Step" />
+      <recent name="C:\Users\QC-3\Downloads\SAK\src\main\resources\features\ConfirmationSignatures" />
+      <recent name="C:\Users\QC-3\Downloads\SAK\src\main\resources\features\SALE" />
+      <recent name="C:\Users\QC-3\Downloads\SAK\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.stepDefs.First_Step" />
+      <recent name="org.example.pages.First_Step" />
+      <recent name="org.example.stepDefs.ConfirmationSignatures" />
+      <recent name="org.example.pages.ConfirmationSignatures" />
+      <recent name="org.example.stepDefs.SALE" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: user could click on CONTRACT_ESTABLISHMENT">
+    <configuration name="Scenario: user could add new transactions for AGREEMENT" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/ConfirmationSignatures/F07_01_AGREEMENT.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could add new transactions for AGREEMENT$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for AGREEMENT$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for AGREEMENT" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for SALE_COMPANY" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/SALE/F06_01_SALE_COMPANY.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could add new transactions for SALE_COMPANY$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for SALE_COMPANY$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for SALE_COMPANY" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could add new transactions for SUPPLY" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/ConfirmationSignatures/F07_02_SUPPLY.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could add new transactions for SUPPLY$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could add new transactions for SUPPLY$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could add new transactions for SUPPLY" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could click on CONTRACT_ESTABLISHMENT" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/First_Step/F08_AUTH.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could click on CONTRACT_ESTABLISHMENT$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could click on CONTRACT_ESTABLISHMENT$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could click on CONTRACT_ESTABLISHMENT" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user could click on SALE_LAND" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/First_Step/F06_SALE.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project2" />
+      <option name="NAME_FILTER" value="^user could click on SALE_LAND$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user could click on SALE_LAND$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user could click on SALE_LAND" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: user could click on CONTRACT_ESTABLISHMENT" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SUPPLY" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for AGREEMENT" />
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMPANY" />
+        <item itemvalue="Cucumber Java.Scenario: user could click on SALE_LAND" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a6b98bc-9c63-4bf1-a8d0-26725ba2c88c" name="Changes" comment="" />
+      <created>1698652944111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698652944111</updated>
+    </task>
+    <task id="LOCAL-00001" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698683535951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698683535951</updated>
+    </task>
+    <task id="LOCAL-00002" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698683902019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698683902019</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698684303963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684303963</updated>
+    </task>
+    <task id="LOCAL-00004" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698684322746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684322746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698684474158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684474158</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698684646601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684646601</updated>
+    </task>
+    <task id="LOCAL-00007" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698684933964</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684933964</updated>
+    </task>
+    <task id="LOCAL-00008" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698685017180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698685017180</updated>
+    </task>
+    <task id="LOCAL-00009" summary="SALE_COMPANY">
+      <option name="closed" value="true" />
+      <created>1698685182107</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698685182107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SALE_LAND">
+      <option name="closed" value="true" />
+      <created>1698735989371</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698735989371</updated>
+    </task>
+    <task id="LOCAL-00011" summary="SALE_LAND1">
+      <option name="closed" value="true" />
+      <created>1698737018670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698737018670</updated>
+    </task>
+    <task id="LOCAL-00012" summary="SALE_LAND1">
+      <option name="closed" value="true" />
+      <created>1698743091862</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698743091862</updated>
+    </task>
+    <task id="LOCAL-00013" summary="SALE_LAND2">
+      <option name="closed" value="true" />
+      <created>1698743853640</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698743853640</updated>
+    </task>
+    <task id="LOCAL-00014" summary="SALE_LAND_final">
+      <option name="closed" value="true" />
+      <created>1698767046334</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698767046334</updated>
+    </task>
+    <task id="LOCAL-00015" summary="SALE_LAND_finall">
+      <option name="closed" value="true" />
+      <created>1698767790570</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698767790570</updated>
+    </task>
+    <task id="LOCAL-00016" summary="AGREEMENT">
+      <option name="closed" value="true" />
+      <created>1699429823666</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699429823666</updated>
+    </task>
+    <task id="LOCAL-00017" summary="AGREEMENT1">
+      <option name="closed" value="true" />
+      <created>1699431422091</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699431422091</updated>
+    </task>
+    <task id="LOCAL-00018" summary="AGREEMENT_Feature">
+      <option name="closed" value="true" />
+      <created>1699432020906</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699432020906</updated>
+    </task>
+    <task id="LOCAL-00019" summary="edit">
+      <option name="closed" value="true" />
+      <created>1699438559292</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699438559292</updated>
+    </task>
+    <task id="LOCAL-00020" summary="edit2">
+      <option name="closed" value="true" />
+      <created>1699439133478</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1699439133478</updated>
+    </task>
+    <task id="LOCAL-00021" summary="supply edit">
+      <option name="closed" value="true" />
+      <created>1699454824156</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1699454824156</updated>
+    </task>
+    <task id="LOCAL-00022" summary="supply edit1">
+      <option name="closed" value="true" />
+      <created>1699457659763</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699457659763</updated>
+    </task>
+    <task id="LOCAL-00023" summary="supply update">
+      <option name="closed" value="true" />
+      <created>1699521888498</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699521888498</updated>
+    </task>
+    <task id="LOCAL-00024" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1699525874164</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699525874164</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SALE_COMPANY" />
+    <MESSAGE value="SALE_LAND" />
+    <MESSAGE value="SALE_LAND1" />
+    <MESSAGE value="SALE_LAND2" />
+    <MESSAGE value="SALE_LAND_final" />
+    <MESSAGE value="SALE_LAND_finall" />
+    <MESSAGE value="AGREEMENT" />
+    <MESSAGE value="AGREEMENT1" />
+    <MESSAGE value="AGREEMENT_Feature" />
+    <MESSAGE value="edit" />
+    <MESSAGE value="edit2" />
+    <MESSAGE value="supply edit" />
+    <MESSAGE value="supply edit1" />
+    <MESSAGE value="supply update" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.182">
+    <testcase classname="F08_AUTH | users could use login functionality and click on Documentation then go to AUTH" name="user could click on CONTRACT_ESTABLISHMENT" time="13.855">
+        <system-out><![CDATA[When user login with email "tester7" and password "P@ssw0rd"................passed
+And user press on login button..............................................passed
+And user login to the system successfully by user "tester7".................passed
+And user click on Documentation.............................................passed
+Then user clicked on Documentation successfully.............................passed
+When user click on AUTH.....................................................passed
+And user clicked on AUTH successfully.......................................passed
+When user click on CONTRACT_ESTABLISHMENT...................................passed
+And user clicked on CONTRACT_ESTABLISHMENT successfully.....................passed
+]]></system-out>
+    </testcase>
+</testsuite>
