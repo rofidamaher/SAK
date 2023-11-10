@@ -9,6 +9,8 @@ Feature: F07_01_Mortage_of_free_land | users could add new transactions for Mort
     Then user clicked on Documentation successfully
     When user click on MORTGAGE
     Then user clicked on MORTGAGE successfully
+    When user click on MORTGAGE_LAND
+    Then user clicked on MORTGAGE_LAND successfully
 
 
 
