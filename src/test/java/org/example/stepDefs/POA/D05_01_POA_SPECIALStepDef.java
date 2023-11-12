@@ -56,10 +56,12 @@ public class D05_01_POA_SPECIALStepDef {
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
         POASpecial.ok_but().click();
+        Thread.sleep(1000);
+        jse.executeScript("arguments[0].scrollIntoView();", POASpecial.transactions_num());
         String actualResult1 = POASpecial.transactions_num().getText();
         transactions_num = POASpecial.transactions_num().getText();
-
         System.out.println(actualResult1);
+
         soft.assertTrue(POASpecial.transactions_num().isDisplayed());
         // Assert All
         soft.assertAll();
@@ -114,7 +116,6 @@ public class D05_01_POA_SPECIALStepDef {
             String actualResult =POASpecial.secondPartyTable().get(i).getText();
             System.out.println(actualResult);
             Assert.assertTrue(actualResult.contains(arg0),"id for second Party has found : " + i);
-            //Assert.assertEquals(actualResult.contains(expectedResult),true,"euro symbol is displayed on product :" + i);
         }
     }
 

@@ -1,6 +1,6 @@
 
 Feature: F08_AUTH | users could use login functionality and click on Documentation then go to AUTH
-Background:user could click on SALE
+Background:user could click on AUTH
   When user login with email "tester7" and password "P@ssw0rd"
   And user press on login button
   And user login to the system successfully by user "tester7"

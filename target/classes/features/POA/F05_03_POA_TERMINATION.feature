@@ -11,6 +11,7 @@ Background:user could click on POA_TERMINATION
   When user click on POA_TERMINATION
   And user clicked on POA_TERMINATION successfully
 
+  #الغاء توكيل
   Scenario: user could add new transactions for POA_TERMINATION
       # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000090" and click on chkDepositFirstParty

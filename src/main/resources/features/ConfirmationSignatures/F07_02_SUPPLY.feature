@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F07_02_SUPPLY | users could add new transactions for SUPPLY
 Background:user could click on SUPPLY
   When user login with email "amrsaid" and password "amrsaid"
@@ -9,6 +9,7 @@ Background:user could click on SUPPLY
   When user click on SUPPLY
   And user clicked on SUPPLY successfully
 
+  #عقد توريد
   Scenario: user could add new transactions for SUPPLY
       # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty
