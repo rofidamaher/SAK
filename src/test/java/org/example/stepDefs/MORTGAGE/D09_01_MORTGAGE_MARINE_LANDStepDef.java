@@ -122,6 +122,7 @@ public class D09_01_MORTGAGE_MARINE_LANDStepDef {
     @And("Add Debaga To Table And Add Debaga Request")
     public void AddDebagaToTableAndAddDebagaRequest() throws InterruptedException {
         Thread.sleep(100);
+        //
         mortgage.AddDebagaToTable().click();
         Thread.sleep(900);
         mortgage.cboxLoadedContent_ok().click();
