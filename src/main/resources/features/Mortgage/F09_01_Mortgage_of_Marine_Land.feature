@@ -1,7 +1,7 @@
 @smoke
-Feature: F07_01_Mortage_of_free_land | users could add new transactions for Mortage_of_free_land
+Feature: F09_01_Mortage_of_Marine_Land | users could add new transactions for Mortage_of_Marine_land
 
-  Background:user could click on MORTGAGE
+  Background:user could click on MORTGAGE_Marine_Land
     When user login with email "tester7" and password "P@ssw0rd"
     And user press on login button
     And user login to the system successfully by user "tester7"
@@ -12,7 +12,7 @@ Feature: F07_01_Mortage_of_free_land | users could add new transactions for Mort
     When user click on MORTGAGE_LAND
     Then user clicked on MORTGAGE_LAND successfully
 
-  Scenario: user could add new transactions for Mortage_of_free_land
+  Scenario: user could add new transactions for Mortage_of_Marine_Land
 
      # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty

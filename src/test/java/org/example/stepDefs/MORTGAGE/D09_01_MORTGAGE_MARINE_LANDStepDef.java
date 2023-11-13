@@ -3,32 +3,32 @@ package org.example.stepDefs.MORTGAGE;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.pages.MORTGAGE.P09_01_MORTGAGE;
+import org.example.pages.MORTGAGE.P09_01_MORTGAGE_MARINE_LAND;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.asserts.SoftAssert;
 
-public class D09_01_MORTGAGE_LANDStepDef {
-    P09_01_MORTGAGE mortgage = new P09_01_MORTGAGE();
+public class D09_01_MORTGAGE_MARINE_LANDStepDef {
+    P09_01_MORTGAGE_MARINE_LAND mortgage = new P09_01_MORTGAGE_MARINE_LAND();
 
     JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
 
     @When("user click on MORTGAGE_LAND")
-    public void userClickOnMORTGAGE_LAND() {
-        mortgage.MORTGAGE_LAND().click();
+    public void userClickOnMORTGAGE_MARINE_LAND() {
+        mortgage.MORTGAGE_MARINE_LAND().click();
     }
 
     @And("user clicked on MORTGAGE_LAND successfully")
-    public void userClickedOnMORTGAGE_LANDSuccessfully() {
+    public void userClickedOnMORTGAGE_MARINE_LANDSuccessfully() {
 
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
 
         //first Assert
         String expectedResult = "رهن ارض بحرية";
-        String actualResult = mortgage.MORTGAGE_label().getText();
+        String actualResult = mortgage.MORTGAGE_MARINE_LAND_label().getText();
 
         System.out.println(actualResult);
         soft.assertEquals(actualResult.contains(expectedResult), true);

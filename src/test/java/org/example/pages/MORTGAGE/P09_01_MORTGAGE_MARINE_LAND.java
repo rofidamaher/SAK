@@ -4,14 +4,14 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class P09_01_MORTGAGE {
+public class P09_01_MORTGAGE_MARINE_LAND {
 
-    public WebElement MORTGAGE_LAND()
+    public WebElement MORTGAGE_MARINE_LAND()
     {
         return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_LAND.png']"));
     }
 
-    public WebElement MORTGAGE_label()
+    public WebElement MORTGAGE_MARINE_LAND_label()
     {
         return Hooks.driver.findElement(By.id("referrer"));
     }
