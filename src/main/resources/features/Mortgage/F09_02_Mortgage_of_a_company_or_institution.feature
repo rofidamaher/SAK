@@ -9,8 +9,8 @@ Feature: F09_02_Mortage_of_a_company_or_institution | users could add new transa
     Then user clicked on Documentation successfully
     When user click on MORTGAGE
     Then user clicked on MORTGAGE successfully
-#    When user click on MORTGAGE_LAND
-#    Then user clicked on MORTGAGE_LAND successfully
+    When user click on MORTGAGE_COMPANY
+    Then user clicked on MORTGAGE_COMPANY successfully
 
 #  Scenario: user could add new transactions for Mortage_of_free_land
 
