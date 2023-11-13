@@ -81,8 +81,7 @@ public class D08_01_CONTRACT_ESTABLISHMENTStepDef {
         contractEstablishment.CONTRACT_ESTABLISHMENT_CAPITAL().sendKeys(arg3);
         contractEstablishment.CONTRACT_ESTABLISHMENT_DURATION().sendKeys(arg4);
         contractEstablishment.CONTRACT_ESTABLISHMENT_ACTIVITIES().sendKeys(arg5);
-
-
+        Thread.sleep(1000);
 
     }
 }
