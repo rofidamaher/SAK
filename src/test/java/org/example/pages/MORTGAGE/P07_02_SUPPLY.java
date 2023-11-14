@@ -1,10 +1,8 @@
-package org.example.pages.ConfirmationSignatures;
+package org.example.pages.MORTGAGE;
 
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class P07_02_SUPPLY {
 

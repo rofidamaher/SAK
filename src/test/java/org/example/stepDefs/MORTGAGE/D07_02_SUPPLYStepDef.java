@@ -1,18 +1,8 @@
-package org.example.stepDefs.ConfirmationSignatures;
+package org.example.stepDefs.MORTGAGE;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.example.pages.ConfirmationSignatures.P07_01_AGREEMENT;
-import org.example.pages.ConfirmationSignatures.P07_02_SUPPLY;
-import org.example.pages.POA.P05_01_POA_SPECIAL;
-import org.example.pages.SALE.P06_02_SALE_LAND;
-import org.example.stepDefs.Hooks;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
-import java.util.concurrent.TimeUnit;
+import org.example.pages.MORTGAGE.P07_01_AGREEMENT;
+import org.example.pages.MORTGAGE.P07_02_SUPPLY;
 
 
 public class D07_02_SUPPLYStepDef {

@@ -4,8 +4,8 @@ Background:user could click on SUPPLY
   When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
   And user login to the system successfully by user "amrsaid"
-  And user click on ConfirmationSignatures
-  Then user clicked on ConfirmationSignatures successfully
+  And user click on MORTGAGE
+  Then user clicked on MORTGAGE successfully
   When user click on SUPPLY
   And user clicked on SUPPLY successfully
 

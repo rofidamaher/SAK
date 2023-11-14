@@ -40,12 +40,12 @@ public class D03_HomeStepDef {
         soft.assertAll();
     }
 
-    @And("user click on ConfirmationSignatures")
+    @And("user click on MORTGAGE")
     public void userClickOnConfirmationSignatures() {
         home.CONFIRMATION_SIGNATURES_P().click();
     }
 
-    @Then("user clicked on ConfirmationSignatures successfully")
+    @Then("user clicked on MORTGAGE successfully")
     public void userClickedOnConfirmationSignaturesSuccessfully() {
         SoftAssert soft = new SoftAssert();
         //first Assert
