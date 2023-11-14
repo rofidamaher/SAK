@@ -38,4 +38,5 @@ public class P04_DOCUMENTATION_P {
     {
         return Hooks.driver.findElement(By.id("lblMortgage"));
     }
+
 }

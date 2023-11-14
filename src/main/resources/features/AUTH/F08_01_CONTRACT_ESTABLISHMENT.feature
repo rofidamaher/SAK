@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F08_01_CONTRACT_ESTABLISHMENT | users could add new transactions for CONTRACT_ESTABLISHMENT
   Background:user could click on CONTRACT_ESTABLISHMENT
     When user login with email "tester7" and password "P@ssw0rd"
