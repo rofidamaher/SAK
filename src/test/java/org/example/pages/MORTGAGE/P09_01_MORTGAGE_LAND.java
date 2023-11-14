@@ -6,15 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class P09_01_MORTGAGE_LAND {
 
-    public WebElement MORTGAGE_LAND()
-    {
-        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_LAND.png']"));
-    }
-
-    public WebElement MORTGAGE_LAND_label()
-    {
-        return Hooks.driver.findElement(By.id("referrer"));
-    }
     public WebElement region_number() {
         return Hooks.driver.findElement(By.id("341"));
     }
@@ -35,21 +26,7 @@ public class P09_01_MORTGAGE_LAND {
         return Hooks.driver.findElement(By.id("309"));
     }
 
-    public WebElement datepicker_daysFrom() {
-        return Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][1]//div[@class='datepicker-days']//th[@class='date-switch']"));
-    }
 
-    public WebElement datepicker_monthsFrom() {
-        return Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][1]//div[@class='datepicker-months']//th[@class='date-switch']"));
-    }
-
-    public WebElement datepicker_daysTo() {
-        return Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][2]//div[@class='datepicker-days']//th[@class='date-switch']"));
-    }
-
-    public WebElement datepicker_monthsTo() {
-        return Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][2]//div[@class='datepicker-months']//th[@class='date-switch']"));
-    }
 
     public WebElement MortgageValue() {
         return Hooks.driver.findElement(By.id("307"));
