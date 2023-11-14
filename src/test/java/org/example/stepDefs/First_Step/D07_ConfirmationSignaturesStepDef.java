@@ -2,15 +2,14 @@ package org.example.stepDefs.First_Step;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.example.pages.First_Step.P04_DOCUMENTATION_P;
-import org.example.pages.First_Step.P07_ConfirmationSignatures;
+import org.example.pages.First_Step.P07_MORTGAGE;
 import org.example.stepDefs.Hooks;
 import org.testng.asserts.SoftAssert;
 
 
 public class D07_ConfirmationSignaturesStepDef {
 
-    P07_ConfirmationSignatures confirmationSignatures = new P07_ConfirmationSignatures();
+    P07_MORTGAGE confirmationSignatures = new P07_MORTGAGE();
 
 
     @When("user click on AGREEMENT")

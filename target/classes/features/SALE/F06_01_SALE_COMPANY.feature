@@ -11,6 +11,7 @@ Background:user could click on POA_SPECIAL
   When user click on SALE_COMPANY
   And user clicked on SALE_COMPANY successfully
 
+  #بيع شركة / مؤسسة
   Scenario: user could add new transactions for SALE_COMPANY
     # جهة إعتبارية محلية     |||  سجل تجاري |||||  رقم السجل   |||||||| النسبة المباعة
     When user add the first Party with obj of index "25" and id of index "2" civilId equal "230"  txtPercentFristParty "5" and click on chkDepositFirstParty

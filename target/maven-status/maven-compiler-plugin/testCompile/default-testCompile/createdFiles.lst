@@ -1,6 +1,7 @@
 org\example\stepDefs\SALE\D06_02_SALE_LANDStepDef.class
 org\example\pages\POA\P05_04_POA_PARTIAL_TERMINATION.class
 org\example\pages\MainMenu\Search.class
+org\example\stepDefs\AUTH\D08_01_CONTRACT_ESTABLISHMENTStepDef.class
 org\example\stepDefs\POA\D05_03_POA_TERMINATIONStepDef.class
 org\example\pages\MainMenu\MainMenu.class
 org\example\pages\First_Step\P08_AUTH.class
@@ -21,6 +22,7 @@ org\example\stepDefs\POA\D05_04_POA_PARTIAL_TERMINATIONStepDef.class
 org\example\pages\POA\P05_02_POA_PARTIAL_STEPPED.class
 org\example\stepDefs\ConfirmationSignatures\D07_01_AGREEMENTStepDef.class
 org\example\pages\First_Step\P05_POA.class
+org\example\pages\AUTH\P08_01_CONTRACT_ESTABLISHMENT.class
 org\example\stepDefs\POA\D05_01_POA_SPECIALStepDef.class
 org\example\stepDefs\SALE\D06_01_SALE_COMPANYStepDef.class
 org\example\pages\First_Step\P04_DOCUMENTATION_P.class

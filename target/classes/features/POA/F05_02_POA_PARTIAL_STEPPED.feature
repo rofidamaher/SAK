@@ -11,6 +11,7 @@ Background:user could click on POA_PARTIAL_STEPPED
   When user click on POA_PARTIAL_STEPPED
   And user clicked on POA_PARTIAL_STEPPED successfully
 
+  #تنحى
   Scenario: user could add new transactions for POA_PARTIAL_STEPPED one to one
       # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000085" and click on chkDepositFirstParty

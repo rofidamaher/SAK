@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.182">
-    <testcase classname="F08_AUTH | users could use login functionality and click on Documentation then go to AUTH" name="user could click on CONTRACT_ESTABLISHMENT" time="13.855">
-        <system-out><![CDATA[When user login with email "tester7" and password "P@ssw0rd"................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="49.839">
+    <testcase classname="F07_02_SUPPLY | users could add new transactions for SUPPLY" name="user could add new transactions for SUPPLY" time="49.481">
+        <system-out><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
 And user press on login button..............................................passed
-And user login to the system successfully by user "tester7".................passed
-And user click on Documentation.............................................passed
-Then user clicked on Documentation successfully.............................passed
-When user click on AUTH.....................................................passed
-And user clicked on AUTH successfully.......................................passed
-When user click on CONTRACT_ESTABLISHMENT...................................passed
-And user clicked on CONTRACT_ESTABLISHMENT successfully.....................passed
+And user login to the system successfully by user "amrsaid".................passed
+And user click on ConfirmationSignatures....................................passed
+Then user clicked on ConfirmationSignatures successfully....................passed
+When user click on SUPPLY...................................................passed
+And user clicked on SUPPLY successfully.....................................passed
+When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty.passed
+And user click on add button and add new first Party successfully...........passed
+And user close first Party and open the second Party........................passed
+When user add the second Party with obj of index "6" and id of index "2" id equal "00000000085" and CR equal "230".passed
+And user click on add button and add new second Party with id "00000000085" successfully.passed
+And user close second Party and open samples Nav............................passed
+When user enter GOODS_DATA "food" and select CONTRACT_PERIOD_FROM Y "2023" M "Jul" D "10" CONTRACT_PERIOD_TO Y "2025" M "Jul" D "20" and CONTRACT_VALUE "2514".passed
+And user click on save model btn............................................passed
+And user close the the samples Nav and open the fees Nav....................passed
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".passed
+And user click on btnViewTransaction........................................passed
+Then user click on btnSubmitTransaction.....................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

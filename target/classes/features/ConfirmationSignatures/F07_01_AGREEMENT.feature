@@ -9,7 +9,7 @@ Background:user could click on AGREEMENT
   When user click on AGREEMENT
   And user clicked on AGREEMENT successfully
 
-
+#عقد إتفاق
   Scenario: user could add new transactions for AGREEMENT
       # مفوض بموجب محضر اجتماع   //// الرقم الشخصي   ///  رقم الوكالة
     When user add the first Party with obj of index "33" and id of index "1" id "00000000090" txtBayanatElwkalaFirstParty "25/2014" and click on chkDepositFirstParty

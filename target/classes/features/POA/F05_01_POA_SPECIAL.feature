@@ -11,7 +11,7 @@ Background:user could click on POA_SPECIAL
   When user click on POA_SPECIAL
   And user clicked on POA_SPECIAL successfully
 
-
+#توكيل خاص
   Scenario: user could add new transactions for POA_SPECIAL
      # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty

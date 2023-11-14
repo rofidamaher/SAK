@@ -2,7 +2,7 @@ package org.example.stepDefs.ConfirmationSignatures;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.example.pages.ConfirmationSignatures.P07_01_AGREEMENT;
+import org.example.pages.CONFIRMATION_SIGNATURES_P.P07_01_AGREEMENT;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.pages.SALE.P06_02_SALE_LAND;
 import org.example.stepDefs.Hooks;
@@ -134,41 +134,41 @@ public class D07_01_AGREEMENTStepDef {
 
     @When("user enter CONTRACT_VALUE {string} and select CONTRACT_PERIOD_FROM Y {string} M {string} D {string} CONTRACT_PERIOD_TO Y {string} M {string} D {string}")
     public void userEnterCONTRACT_VALUEAndSelectCONTRACT_PERIOD_FROMYMDCONTRACT_PERIOD_TOYMD(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5, String arg6) throws InterruptedException {
-        Thread.sleep(100);
+        Thread.sleep(10000);
         agreement.CONTRACT_VALUE().sendKeys(arg0);
         Thread.sleep(100);
         agreement.CONTRACT_PERIOD_FROM().click();
-        Thread.sleep(2000);
+        Thread.sleep(200);
         setDateFrom(arg1,arg2,arg3);
 
         agreement.CONTRACT_PERIOD_TO().click();
-        Thread.sleep(2000);
+        Thread.sleep(200);
         setDateTo(arg4,arg5,arg6);
     }
     public void setDateFrom(String Y , String M , String D) throws InterruptedException {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         agreement.datepicker_daysFrom().click();
         Thread.sleep(500);
         agreement.datepicker_monthsFrom().click();
         Thread.sleep(200);
-        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
+        WebElement year = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][1]//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();
-        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-months']//span[text()='"+M+"']"));
+        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][1]//div[@class='datepicker-months']//span[text()='"+M+"']"));
         Month.click();
-        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_4']//div[@class='datepicker-days']//td[text()='"+D+"']"));
+        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][1]//div[@class='datepicker-days']//td[text()='"+D+"']"));
         Day.click();
     }
     public void setDateTo(String Y , String M , String D) throws InterruptedException {
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         agreement.datepicker_daysTo().click();
         Thread.sleep(200);
         agreement.datepicker_monthsTo().click();
         Thread.sleep(200);
-        WebElement year = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-years']//span[text()='"+Y+"']"));
+        WebElement year = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][2]//div[@class='datepicker-years']//span[text()='"+Y+"']"));
         year.click();
-        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-months']//span[text()='"+M+"']"));
+        WebElement Month = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][2]//div[@class='datepicker-months']//span[text()='"+M+"']"));
         Month.click();
-        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@id='datepicker_5']//div[@class='datepicker-days']//td[text()='"+D+"']"));
+        WebElement Day = Hooks.driver.findElement(By.xpath("//div[@class='datepicker datepicker-dropdown dropdown-menu datepicker-bottom'][2]//div[@class='datepicker-days']//td[text()='"+D+"']"));
         Day.click();
     }
 
