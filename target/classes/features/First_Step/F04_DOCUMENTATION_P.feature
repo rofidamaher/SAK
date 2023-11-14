@@ -14,3 +14,7 @@ Feature: F04_DOCUMENTATION_P | users could use login functionality and click on 
   Scenario:user could click on_SAlE
     When user click on SAlE
     And user clicked on SAlE successfully
+
+  Scenario:user could click MORTGAGE
+    When user click on MORTGAGE
+    Then user clicked on MORTGAGE successfully

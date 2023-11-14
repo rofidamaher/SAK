@@ -17,9 +17,6 @@ public class D04_DOCUMENTATION_PStepDef {
         doc.POA().click();
     }
 
-    @When("user click on MORTGAGE")
-    public void userClickMortgage() { doc.MORTGAGE().click(); }
-
     @And("user clicked on POA successfully")
     public void userClickedOnPOASuccessfully() {
 
@@ -92,6 +89,9 @@ public class D04_DOCUMENTATION_PStepDef {
         soft.assertAll();
     }
 
+    @When("user click on MORTGAGE")
+    public void userClickMortgage() { doc.MORTGAGE().click(); }
+
     @Then("user clicked on MORTGAGE successfully")
     public void userClickedOnMortgageSuccessfully() {
         // Soft Assertion
@@ -110,4 +110,6 @@ public class D04_DOCUMENTATION_PStepDef {
         System.out.println(actualResulturl);
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on MORTGAGE successfully" );
     }
+
+
 }
