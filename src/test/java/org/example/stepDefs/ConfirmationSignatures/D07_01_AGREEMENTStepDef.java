@@ -1,8 +1,8 @@
-package org.example.stepDefs.MORTGAGE;
+package org.example.stepDefs.ConfirmationSignatures;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.example.pages.MORTGAGE.P07_01_AGREEMENT;
+import org.example.pages.CONFIRMATION_SIGNATURES_P.P07_01_AGREEMENT;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.pages.SALE.P06_02_SALE_LAND;
 import org.example.stepDefs.Hooks;

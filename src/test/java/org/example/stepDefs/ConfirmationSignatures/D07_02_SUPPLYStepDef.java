@@ -1,8 +1,8 @@
-package org.example.stepDefs.MORTGAGE;
+package org.example.stepDefs.ConfirmationSignatures;
 
 import io.cucumber.java.en.When;
-import org.example.pages.MORTGAGE.P07_01_AGREEMENT;
-import org.example.pages.MORTGAGE.P07_02_SUPPLY;
+import org.example.pages.CONFIRMATION_SIGNATURES_P.P07_01_AGREEMENT;
+import org.example.pages.CONFIRMATION_SIGNATURES_P.P07_02_SUPPLY;
 
 
 public class D07_02_SUPPLYStepDef {

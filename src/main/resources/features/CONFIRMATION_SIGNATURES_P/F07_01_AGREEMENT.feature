@@ -4,8 +4,8 @@ Background:user could click on AGREEMENT
   When user login with email "amrsaid" and password "amrsaid"
   And user press on login button
   And user login to the system successfully by user "amrsaid"
-  And user click on MORTGAGE
-  Then user clicked on MORTGAGE successfully
+  And user click on CONFIRMATION_SIGNATURES_P
+  Then user clicked on CONFIRMATION_SIGNATURES_P successfully
   When user click on AGREEMENT
   And user clicked on AGREEMENT successfully
 

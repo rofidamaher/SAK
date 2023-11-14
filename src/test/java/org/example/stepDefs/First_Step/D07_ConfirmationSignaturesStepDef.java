@@ -7,7 +7,7 @@ import org.example.stepDefs.Hooks;
 import org.testng.asserts.SoftAssert;
 
 
-public class D07_MORTGAGEStepDef {
+public class D07_ConfirmationSignaturesStepDef {
 
     P07_MORTGAGE confirmationSignatures = new P07_MORTGAGE();
 

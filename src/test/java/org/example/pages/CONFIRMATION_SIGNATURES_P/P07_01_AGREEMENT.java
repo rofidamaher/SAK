@@ -1,4 +1,4 @@
-package org.example.pages.MORTGAGE;
+package org.example.pages.CONFIRMATION_SIGNATURES_P;
 
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;

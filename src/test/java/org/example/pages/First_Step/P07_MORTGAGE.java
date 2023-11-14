@@ -18,11 +18,6 @@ public class P07_MORTGAGE {
         return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/SUPPLY.png']"));
     }
 
-    public WebElement SUPPLY_label()
-    {
-        return Hooks.driver.findElement(By.id("referrer"));
-    }
-
 
 
 
