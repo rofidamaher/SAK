@@ -32,5 +32,10 @@ public class P04_DOCUMENTATION_P {
         return Hooks.driver.findElement(By.id("lblAUTH"));
     }
 
+    public WebElement MORTGAGE() { return Hooks.driver.findElement(By.xpath("//img[@src='img/mortgage.png']")); }
 
+    public WebElement MORTGAGE_label()
+    {
+        return Hooks.driver.findElement(By.id("lblMortgage"));
+    }
 }

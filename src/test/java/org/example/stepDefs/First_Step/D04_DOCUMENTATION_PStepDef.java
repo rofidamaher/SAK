@@ -1,6 +1,7 @@
 package org.example.stepDefs.First_Step;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.First_Step.P04_DOCUMENTATION_P;
 import org.example.stepDefs.Hooks;
@@ -16,13 +17,18 @@ public class D04_DOCUMENTATION_PStepDef {
         doc.POA().click();
     }
 
+    @When("user click on MORTGAGE")
+    public void userClickMortgage() { doc.MORTGAGE().click(); }
+
     @And("user clicked on POA successfully")
     public void userClickedOnPOASuccessfully() {
+
         // Soft Assertion
         SoftAssert soft = new SoftAssert();
+
         //first Assert
         String expectedResult = "التوكيلات";
-        String actualResult =doc.POA_label().getText();
+        String actualResult = doc.POA_label().getText();
 
         System.out.println(actualResult);
         soft.assertEquals(actualResult.contains(expectedResult),true);
@@ -84,5 +90,24 @@ public class D04_DOCUMENTATION_PStepDef {
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on AUTH successfully" );
 
         soft.assertAll();
+    }
+
+    @Then("user clicked on MORTGAGE successfully")
+    public void userClickedOnMortgageSuccessfully() {
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+
+        //first Assert
+        String expectedResult = "الرهن";
+        String actualResult = doc.MORTGAGE_label().getText();
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on MORTGAGE successfully" );
+
+        // second Assert
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/MORTGAGE/:14";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on MORTGAGE successfully" );
     }
 }
