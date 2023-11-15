@@ -11,8 +11,15 @@ public class P09_MORTGAGE {
         return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_LAND.png']"));
     }
 
-    public WebElement MORTGAGE_LAND_label()
+    public WebElement MORTGAGE_label()
     {
         return Hooks.driver.findElement(By.id("referrer"));
     }
+
+    public WebElement MORTGAGE_RE()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_RE.png']"));
+    }
+
+
 }

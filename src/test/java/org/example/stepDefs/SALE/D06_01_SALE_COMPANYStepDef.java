@@ -23,8 +23,6 @@ public class D06_01_SALE_COMPANYStepDef {
      POASpecial.drop_listFirstParty().click();
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
-
-
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();
@@ -49,7 +47,7 @@ public class D06_01_SALE_COMPANYStepDef {
         saleCompany.btnAddChildParty().click();
     }
 
-    @When("user AddChildParty with adj of index {string} and obj of index {string} id equal {string} and click on save btn")
+    @When("user AddChildParty with adj of index {string} and obj of text {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
         saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();

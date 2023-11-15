@@ -14,3 +14,8 @@ Background:user could click on POA
     When user click on MORTGAGE_LAND
     Then user clicked on MORTGAGE_LAND successfully
 
+
+
+  Scenario: user could click on MORTGAGE_RE
+    When user click on MORTGAGE_RE
+    Then user clicked on MORTGAGE_RE successfully

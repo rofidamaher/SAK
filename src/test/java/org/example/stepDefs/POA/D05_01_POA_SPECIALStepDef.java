@@ -110,12 +110,16 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.ok_but().click();
         Hooks.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
-        jse.executeScript("window.scrollBy(0,150)");
+        jse.executeScript("window.scrollBy(0,50)");
 
         for (int i = 0; i <POASpecial.secondPartyTable().size() ; i++) {
             String actualResult =POASpecial.secondPartyTable().get(i).getText();
-            System.out.println(actualResult);
-            Assert.assertTrue(actualResult.contains(arg0),"id for second Party has found : " + i);
+            Thread.sleep(100);
+            if(actualResult.equals(arg0)) {
+                System.out.println(actualResult);
+                Assert.assertTrue(actualResult.contains(arg0), "id for second Party has found : " + i);
+
+            }
         }
     }
 

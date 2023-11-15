@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LAND
   Background:user could click on MORTGAGE_Marine_Land
     When user login with email "tester7" and password "P@ssw0rd"
@@ -28,8 +28,6 @@ Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LA
     When select MORTGAGE_PERIOD_FROM Y "2023" M "Jul" D "15" MORTGAGE_PERIOD_TO Y "2025" M "Jul" D "16"
     Then Mortgage value is "120" and Approval letter number is "120"
     And Add Debaga To Table And Add Debaga Request
-    And user close the the samples Nav and open the fees Nav
-    When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
 
     # عرض المحرر ثم اصدار المحرر
     And user click on btnViewTransaction

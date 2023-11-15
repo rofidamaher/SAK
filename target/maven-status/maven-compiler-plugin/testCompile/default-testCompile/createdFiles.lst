@@ -1,6 +1,7 @@
 org\example\stepDefs\SALE\D06_02_SALE_LANDStepDef.class
 org\example\pages\POA\P05_04_POA_PARTIAL_TERMINATION.class
 org\example\pages\MainMenu\Search.class
+org\example\pages\MORTGAGE\P09_02_MORTGAGE_RE.class
 org\example\stepDefs\AUTH\D08_01_CONTRACT_ESTABLISHMENTStepDef.class
 org\example\stepDefs\MORTGAGE\D09_01_MORTGAGE_LANDStepDef.class
 org\example\stepDefs\POA\D05_03_POA_TERMINATIONStepDef.class
@@ -31,6 +32,7 @@ org\example\stepDefs\SALE\D06_01_SALE_COMPANYStepDef.class
 org\example\pages\First_Step\P04_DOCUMENTATION_P.class
 org\example\pages\Adjectives\NewTreatment.class
 org\example\pages\SALE\P06_01_SALE_COMPANY.class
+org\example\stepDefs\MORTGAGE\D09_02_MORTGAGE_REStepDef.class
 org\example\stepDefs\First_Step\D06_SEALStepDef.class
 org\example\pages\MainMenu\PersonalInbox.class
 org\example\stepDefs\First_Step\D08_AUTHStepDef.class

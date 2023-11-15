@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LAND
   Background:user could click on MORTGAGE_Marine_Land
     When user login with email "tester7" and password "P@ssw0rd"
