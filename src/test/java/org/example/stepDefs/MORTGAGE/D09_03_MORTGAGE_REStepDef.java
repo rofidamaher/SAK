@@ -1,21 +1,17 @@
 package org.example.stepDefs.MORTGAGE;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.MORTGAGE.P09_01_MORTGAGE_LAND;
-import org.example.pages.MORTGAGE.P09_02_MORTGAGE_RE;
+import org.example.pages.MORTGAGE.P09_03_MORTGAGE_RE;
 import org.example.pages.POA.P05_01_POA_SPECIAL;
 import org.example.pages.SALE.P06_01_SALE_COMPANY;
 import org.example.stepDefs.ConfirmationSignatures.D07_01_AGREEMENTStepDef;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
-public class D09_02_MORTGAGE_REStepDef {
-    P09_02_MORTGAGE_RE mortgageRE = new P09_02_MORTGAGE_RE();
+public class D09_03_MORTGAGE_REStepDef {
+    P09_03_MORTGAGE_RE mortgageRE = new P09_03_MORTGAGE_RE();
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
     P09_01_MORTGAGE_LAND mortgage = new P09_01_MORTGAGE_LAND();

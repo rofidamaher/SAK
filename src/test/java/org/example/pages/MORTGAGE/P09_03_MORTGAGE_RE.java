@@ -4,7 +4,7 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class P09_02_MORTGAGE_RE {
+public class P09_03_MORTGAGE_RE {
 
     public WebElement ddlNationalityFirstParty_chosen() {
         return Hooks.driver.findElement(By.id("ddlNationalityFirstParty_chosen"));

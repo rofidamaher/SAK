@@ -1,5 +1,5 @@
 @smoke
-Feature: F09_02_MORTGAGE_RE | users could add new transactions for MORTGAGE_RE
+Feature: F09_03_MORTGAGE_RE | users could add new transactions for MORTGAGE_RE
   Background:user could click on MORTGAGE_Marine_Land
     When user login with email "tester7" and password "P@ssw0rd"
     And user press on login button
