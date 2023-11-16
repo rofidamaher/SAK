@@ -6,20 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class P09_MORTGAGE {
 
-    public WebElement MORTGAGE_LAND()
-    {
-        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_LAND.png']"));
-    }
 
     public WebElement MORTGAGE_label()
     {
         return Hooks.driver.findElement(By.id("referrer"));
     }
 
-    public WebElement MORTGAGE_RE()
-    {
-        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_RE.png']"));
-    }
+    public WebElement MORTGAGE() { return Hooks.driver.findElement(By.xpath("//img[@src='img/mortgage.png']")); }
 
 
 }

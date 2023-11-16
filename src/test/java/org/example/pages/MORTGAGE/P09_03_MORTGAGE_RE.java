@@ -6,6 +6,16 @@ import org.openqa.selenium.WebElement;
 
 public class P09_03_MORTGAGE_RE {
 
+    public WebElement MORTGAGE_label()
+    {
+        return Hooks.driver.findElement(By.id("referrer"));
+    }
+
+    public WebElement MORTGAGE_RE()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_RE.png']"));
+    }
+
     public WebElement ddlNationalityFirstParty_chosen() {
         return Hooks.driver.findElement(By.id("ddlNationalityFirstParty_chosen"));
     }
