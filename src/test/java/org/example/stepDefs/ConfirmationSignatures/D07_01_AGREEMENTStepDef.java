@@ -75,7 +75,6 @@ public class D07_01_AGREEMENTStepDef {
         }
     }
 
-
     @And("user close the second Party and open the third Party")
     public void userCloseTheSecondPartyAndOpenTheThirdParty() throws InterruptedException {
         Thread.sleep(100);
