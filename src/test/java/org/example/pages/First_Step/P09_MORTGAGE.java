@@ -9,7 +9,7 @@ public class P09_MORTGAGE {
 
     public WebElement MORTGAGE_label()
     {
-        return Hooks.driver.findElement(By.id("referrer"));
+        return Hooks.driver.findElement(By.id("lblMortgage"));
     }
 
     public WebElement MORTGAGE() { return Hooks.driver.findElement(By.xpath("//img[@src='img/mortgage.png']")); }

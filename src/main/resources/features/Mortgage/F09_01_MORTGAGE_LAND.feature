@@ -1,4 +1,4 @@
-
+#@smoke
 Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LAND
   Background:user could click on MORTGAGE_Marine_Land
     When user login with email "tester7" and password "P@ssw0rd"
@@ -18,8 +18,8 @@ Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LA
     And user click on add button and add new first Party successfully
     And user close first Party and open the second Party
 
-     # شريك في شركة      |||  رقم شخصي
-    When user add the second Party with obj of index "6" and id of index "2" id equal "00000000085" and CR equal "230"
+    # عن نفسه      |||  رقم شخصي
+    When user add the second Party with obj of index "8" and id of index "2" id equal "00000000085"
     And user click on add button and add new second Party with id "00000000085" successfully
 
     # النماذج
