@@ -6,17 +6,6 @@ import org.openqa.selenium.WebElement;
 
 public class P09_01_MORTGAGE_LAND {
 
-    public WebElement MORTGAGE_LAND()
-    {
-        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_LAND.png']"));
-    }
-
-    public WebElement MORTGAGE_label()
-    {
-        return Hooks.driver.findElement(By.id("referrer"));
-    }
-
-
     public WebElement region_number() {
         return Hooks.driver.findElement(By.id("341"));
     }

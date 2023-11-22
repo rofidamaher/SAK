@@ -1,34 +1,50 @@
 package org.example.stepDefs.PARTIES;
 
 import io.cucumber.java.en.And;
-import org.example.pages.PARTIES.P10_01_PARTIES;
+import org.example.pages.First_Step.P10_PARTIES;
 
 public class D10_01_PARTIESStepDef {
 
-    P10_01_PARTIES parties = new P10_01_PARTIES();
+    P10_PARTIES parties = new P10_PARTIES();
 
 
-    @And("book's number is {string} and Book side is {string}")
+    // القيم طرف اول
+    @And("book's number is {string} and Book side is {string} for first Party")
     public void bookNumberAndBookSide(String arg0, String arg1) throws InterruptedException{
 
         Thread.sleep(200);
-        parties.Raqm_FirstParty().click();
-        parties.Raqm_FirstParty().sendKeys(arg0);
+        parties.numberBook_FirstParty().click();
+        parties.numberBook_FirstParty().sendKeys(arg0);
 
         Thread.sleep(300);
-        parties.Year_FirstParty().click();
-        parties.Year_FirstParty().sendKeys(arg1);
+        parties.coverBook_FirstParty().click();
+        parties.coverBook_FirstParty().sendKeys(arg1);
     }
 
+    // الوصي طرف تاني
     @And("book's number is {string} and Book side is {string} for second party")
     public void bookNumberAndBookSideForSecondParty(String arg0, String arg1) throws InterruptedException{
 
         Thread.sleep(200);
-        parties.Raqm_SecondParty().click();
-        parties.Raqm_SecondParty().sendKeys(arg0);
+        parties.wasyNumberBook_SecondParty().click();
+        parties.wasyNumberBook_SecondParty().sendKeys(arg0);
 
         Thread.sleep(300);
-        parties.Year_SecondParty().click();
-        parties.Year_SecondParty().sendKeys(arg1);
+        parties.wasyCoverBook_SecondParty().click();
+        parties.wasyCoverBook_SecondParty().sendKeys(arg1);
     }
+
+    // الولي الطبيعي
+    @And("book's number is {string} and Book side is {string} for waly and first Party")
+    public void bookNumberAndBookSideForWaly(String arg0, String arg1) throws InterruptedException{
+
+        Thread.sleep(200);
+        parties.walyNumberBook_FirstParty().click();
+        parties.walyNumberBook_FirstParty().sendKeys(arg0);
+
+        Thread.sleep(300);
+        parties.walyCoverBook_FirstParty().click();
+        parties.walyCoverBook_FirstParty().sendKeys(arg1);
+    }
+
 }

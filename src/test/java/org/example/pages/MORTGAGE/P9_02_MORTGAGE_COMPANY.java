@@ -7,17 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public class P9_02_MORTGAGE_COMPANY {
 
-    public WebElement MORTGAGE_COMPANY()
-    {
-        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_COMPANY.png']"));
-    }
-
-    public WebElement MORTGAGE_COMPANY_label()
-    {
-        return Hooks.driver.findElement(By.id("referrer"));
-    }
-
-
     public WebElement Commercial_Registration_No()
     {
         return Hooks.driver.findElement(By.id("290"));

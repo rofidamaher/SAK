@@ -18,28 +18,6 @@ public class D09_03_MORTGAGE_REStepDef {
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
     D07_01_AGREEMENTStepDef agreementStepDef = new D07_01_AGREEMENTStepDef();
 
-    @When("user click on MORTGAGE_RE")
-    public void userClickOnMORTGAGE_RE() {
-        mortgageRE.MORTGAGE_RE().click();
-    }
-
-    @Then("user clicked on MORTGAGE_RE successfully")
-    public void userClickedOnMORTGAGE_RESuccessfully() {
-        SoftAssert soft = new SoftAssert();
-        String expectedResult = "رهن أصول";
-        String actualResult = mortgageRE.MORTGAGE_label().getText();
-        System.out.println(actualResult);
-        soft.assertEquals(actualResult.contains(expectedResult), true);
-        soft.assertTrue(actualResult.contains(expectedResult), "user clicked on MORTGAGE_RE successfully");
-        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/MORTGAGE_RE/:95";
-        String actualResulturl = Hooks.driver.getCurrentUrl();
-        System.out.println(actualResulturl);
-        soft.assertTrue(actualResulturl.contains(expectedResulturl), "user clicked on MORTGAGE_RE successfully");
-
-
-        soft.assertAll();
-    }
-
     @When("user add the first Party with obj of index {string} civilId {string} ddlNationalityFirstParty_chosen {string} textname {string} and click on chkDepositFirstParty")
     public void userAddTheFirstPartyWithObjOfIndexCivilIdDdlNationalityFirstParty_chosenTextnameAndClickOnChkDepositFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
