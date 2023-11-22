@@ -1,9 +1,9 @@
-package org.example.stepDefs.PARTIES;
+package org.example.stepDefs.First_Step;
 
 import io.cucumber.java.en.And;
 import org.example.pages.First_Step.P10_PARTIES;
 
-public class D10_01_PARTIESStepDef {
+public class D10_PARTIESStepDef {
 
     P10_PARTIES parties = new P10_PARTIES();
 
