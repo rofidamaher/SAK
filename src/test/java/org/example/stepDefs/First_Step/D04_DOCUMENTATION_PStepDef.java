@@ -111,5 +111,4 @@ public class D04_DOCUMENTATION_PStepDef {
         soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on MORTGAGE successfully" );
     }
 
-
 }

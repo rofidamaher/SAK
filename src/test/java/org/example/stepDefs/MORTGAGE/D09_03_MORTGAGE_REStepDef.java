@@ -1,5 +1,6 @@
 package org.example.stepDefs.MORTGAGE;
 
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.MORTGAGE.P09_01_MORTGAGE_LAND;
 import org.example.pages.MORTGAGE.P09_03_MORTGAGE_RE;
@@ -9,13 +10,14 @@ import org.example.stepDefs.ConfirmationSignatures.D07_01_AGREEMENTStepDef;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 public class D09_03_MORTGAGE_REStepDef {
     P09_03_MORTGAGE_RE mortgageRE = new P09_03_MORTGAGE_RE();
     P05_01_POA_SPECIAL POASpecial = new P05_01_POA_SPECIAL();
     P06_01_SALE_COMPANY saleCompany = new P06_01_SALE_COMPANY();
-    P09_01_MORTGAGE_LAND mortgage = new P09_01_MORTGAGE_LAND();
     D07_01_AGREEMENTStepDef agreementStepDef = new D07_01_AGREEMENTStepDef();
+
     @When("user add the first Party with obj of index {string} civilId {string} ddlNationalityFirstParty_chosen {string} textname {string} and click on chkDepositFirstParty")
     public void userAddTheFirstPartyWithObjOfIndexCivilIdDdlNationalityFirstParty_chosenTextnameAndClickOnChkDepositFirstParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listFirstParty().click();
