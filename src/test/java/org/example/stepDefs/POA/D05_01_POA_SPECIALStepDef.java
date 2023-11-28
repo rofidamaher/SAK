@@ -81,6 +81,15 @@ public class D05_01_POA_SPECIALStepDef {
 
     }
 
+    @And("user close first Party and open the second Party by xpath")
+    public void userCloseFirstSideForPOA_SPECIALAndOpenTheSecondSideForPOA_SPECIAL2() throws InterruptedException {
+        Thread.sleep(100);
+        POASpecial.nav_First_Side_By_xpath().click();
+        Thread.sleep(100);
+        POASpecial.nav_Second_Side_By_xpath().click();
+
+    }
+
     @When("user add the second Party with obj of index {string} and id of index {string} id equal {string} and CR equal {string}")
     public void userAddTheSecondSideForPOA_SPECIALWithObjOfIndexAndIdOfIndexIdEqualAndCREqual(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
         POASpecial.drop_listSecondParty().click();
@@ -124,11 +133,19 @@ public class D05_01_POA_SPECIALStepDef {
     }
 
     @And("user close second Party and open samples Nav")
-    public void userCloseTheSecondPartyForPOA_SPECIALAndOpenTheSamplesNavForPOA_SPECIAL() throws InterruptedException {
+    public void userCloseTheSecondPartyAndOpenTheSamplesNav() throws InterruptedException {
         Thread.sleep(100);
         POASpecial.nav_Second_Side().click();
         Thread.sleep(100);
         POASpecial.nav_sample().click();
+    }
+
+    @And("user close second Party and open samples Nav for xpath")
+    public void userCloseTheSecondPartyAndOpenTheSamplesNavByXpath() throws InterruptedException {
+        Thread.sleep(100);
+        POASpecial.nav_Second_Side_By_xpath().click();
+        Thread.sleep(100);
+        POASpecial.nav_sample_xpath().click();
     }
 
     @When("user chick the fixed text checkbox and click inside the state of qatar radio btn")
@@ -151,13 +168,23 @@ public class D05_01_POA_SPECIALStepDef {
     }
 
     @And("user close the the samples Nav and open the fees Nav")
-    public void userCloseTheTheSamplesNavForPOA_SPECIALAndOpenTheFeesNavForPOA_SPECIAL() throws InterruptedException {
+    public void userCloseTheTheSamplesNavAndOpenTheFeesNav() throws InterruptedException {
 
         POASpecial.nav_sample().click();
         Thread.sleep(100);
         POASpecial.nav_fees().click();
         Thread.sleep(100);
     }
+
+    @And("user close the the samples Nav and open the fees Nav by xpath")
+    public void userCloseTheTheSamplesNavAndOpenTheFeesNavByXpath() throws InterruptedException {
+
+        POASpecial.nav_sample_xpath().click();
+        Thread.sleep(100);
+        POASpecial.nav_fees_xpath().click();
+        Thread.sleep(100);
+    }
+
     @When("user click on noFees checkbox and select ExcemptedReasons {string}")
     public void userClickOnNoFeesCheckboxAndSelectExcemptedReasons(String arg0) throws InterruptedException {
         POASpecial.chkNoFees().click();
@@ -183,8 +210,16 @@ public class D05_01_POA_SPECIALStepDef {
 
     @Then("user click on btnSubmitTransaction")
     public void userClickOnBtnSubmitTransactionAndTransactionAddedSuccessfully() throws InterruptedException {
+        jse.executeScript("arguments[0].scrollIntoView();", POASpecial.btnSubmitTransaction());
         POASpecial.btnSubmitTransaction().click();
-        Thread.sleep(10000);
+        Thread.sleep(2000);
+        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+        {
+            Thread.sleep(3000);
+            System.out.println("Element is not visible yet");
+        }
+        Thread.sleep(200);
+        POASpecial.cboxClose().click();
 //        Hooks.driver.switchTo().frame(Hooks.driver.findElement(By.className("cboxIframe")));
 //        Thread.sleep(300);
 //        Hooks.driver.switchTo().defaultContent();
