@@ -1,6 +1,6 @@
-@smoke
+
 Feature: F09_03_MORTGAGE_RE | users could add new transactions for MORTGAGE_RE
-  Background:user could click on MORTGAGE_Marine_Land
+  Background:user could click on MORTGAGE
     When user login with email "tester7" and password "P@ssw0rd"
     And user press on login button
     And user login to the system successfully by user "tester7"
@@ -10,7 +10,7 @@ Feature: F09_03_MORTGAGE_RE | users could add new transactions for MORTGAGE_RE
     Then user clicked on MORTGAGE successfully
     When user click on MORTGAGE_RE
     Then user clicked on MORTGAGE_RE successfully
-
+#الرهن
 
   Scenario: user could add new transactions for MORTGAGE_RE
     # جهة اعتبارية اجنبية     |||  رقم السجل // الجنسية  /// الاسم

@@ -45,11 +45,12 @@ public class D06_01_SALE_COMPANYStepDef {
         saleCompany.ShowChild().click();
         Thread.sleep(200);
         saleCompany.btnAddChildParty().click();
+        Thread.sleep(200);
+        saleCompany.AddChildParty().click();
     }
 
     @When("user AddChildParty with adj of index {string} and obj of text {string} id equal {string} and click on save btn")
     public void userAddChildPartyWithAdjOfIndexAndObjOfIndexIdEqualAndClickOnSaveBtn(String arg0, String arg1, String arg2) throws InterruptedException {
-        saleCompany.AddChildParty().click();
         saleCompany.ddlAdjectiveDependentParty_chosen().click();
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id=\"ddlAdjectiveDependentParty_chosen\"]//li[@data-option-array-index='"+arg0+"']"));

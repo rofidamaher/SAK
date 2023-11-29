@@ -21,4 +21,10 @@ public class P06_SAEL {
         return Hooks.driver.findElement(By.xpath("//a[@href=\"#/SALE_LAND/:25\"]"));
     }
 
+
+    public WebElement SALE_SHARE()
+    {
+        return Hooks.driver.findElement(By.xpath("//a[@href='#/SALE_SHARE/:24']"));
+    }
+
 }

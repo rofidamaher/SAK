@@ -57,4 +57,26 @@ public class D06_SEALStepDef {
 
         soft.assertAll();
     }
+
+    @When("user click on SALE_SHARE")
+    public void userClickOnSALE_SHARE() {
+        sael.SALE_SHARE().click();
+    }
+
+    @And("user clicked on SALE_SHARE successfully")
+    public void userClickedOnSALE_SHARESuccessfully() {
+        SoftAssert soft = new SoftAssert();
+        String expectedResult = "بيع حصص في شركة / مؤسسة";
+        String actualResult =sael.SALE_label().getText();
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on SALE SHARE successfully" );
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/SALE_SHARE/:24";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SALE SHARE successfully" );
+
+        soft.assertAll();
+    }
 }
