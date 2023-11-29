@@ -160,10 +160,11 @@ public class D05_01_POA_SPECIALStepDef {
     public void userClickOnSaveModelBtn() throws InterruptedException {
 
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.saveModelBtn());
-
+        Thread.sleep(200);
         POASpecial.saveModelBtn().click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
         POASpecial.ok_but().click();
+        Thread.sleep(1000);
 
     }
 

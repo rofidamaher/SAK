@@ -41,18 +41,18 @@ public class D06_03_SALE_SHAREStepDef {
         poaSpecial.ok_but().click();
     }
 
-    @When("user enter SALE_NAME_COMPANY {string} SALE_COMMERICAL_NO_STOCKS {string} date Y {string} M {string} D {string} SALE_VALUE_STOCKS {string} and click on add btn")
-    public void userEnterSALE_NAME_COMPANYSALE_COMMERICAL_NO_STOCKSDateYMDSALE_VALUE_STOCKSAndClickOnAddBtn(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5) throws InterruptedException {
-
-        saleShare.SALE_NAME_COMPANY().sendKeys(arg0);
-        saleShare.SALE_COMMERICAL_NO_STOCKS().sendKeys(arg1);
+    @When("user enter SALE_COMMERICAL_NO_STOCKS {string} date Y {string} M {string} D {string} SALE_VALUE_STOCKS {string} and click on add btn")
+    public void userEnterSALE_COMMERICAL_NO_STOCKSDateYMDSALE_VALUE_STOCKSAndClickOnAddBtn(String arg0, String arg1, String arg2, String arg3, String arg4) throws InterruptedException {
+        saleShare.SALE_COMMERICAL_NO_STOCKS().sendKeys(arg0);
         saleShare.date().click();
         Thread.sleep(200);
-        agreementStepDef.setDateFrom(arg2,arg3,arg4);
-        saleShare.SALE_VALUE_STOCKS().sendKeys(arg5);
+        agreementStepDef.setDateFrom(arg1,arg2,arg3);
+        saleShare.SALE_VALUE_STOCKS().sendKeys(arg4);
         saleShare.btnAddDebagaToTable().click();
-        Thread.sleep(200);
+        Thread.sleep(100);
         poaSpecial.ok_but().click();
-        Thread.sleep(500);
+        Thread.sleep(100000);
     }
+
+
 }

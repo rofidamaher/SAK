@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F09_02_Mortage_of_a_company_or_institution | users could add new transactions for Mortage_of_a_company_or_institution
 
   Background:user could click on Mortage_of_a_company_or_institution
