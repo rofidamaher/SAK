@@ -28,8 +28,6 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveFirstParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
 
-
-
         objeItem.click();
         Thread.sleep(100);
         POASpecial.drop_id_listFirstParty().click();

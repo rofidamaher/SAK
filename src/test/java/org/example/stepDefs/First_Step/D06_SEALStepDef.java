@@ -79,4 +79,50 @@ public class D06_SEALStepDef {
 
         soft.assertAll();
     }
+
+    @When("user click on SALE_COMMERCIAL_REGISTRATION")
+    public void userClickOnSALE_COMMERCIAL_REGISTRATION() {
+        sael.SALE_COMMERCIAL_REGISTRATION().click();
+    }
+
+    @And("user clicked on SALE_COMMERCIAL_REGISTRATION successfully")
+    public void userClickedOnSALE_COMMERCIAL_REGISTRATIONSuccessfully() {
+        SoftAssert soft = new SoftAssert();
+        String expectedResult = "بيع رخصة تجارية";
+        String actualResult =sael.SALE_label().getText();
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on SALE COMMERCIAL REGISTRATION successfully" );
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/SALE_COMMERCIAL_REGISTRATION/:69";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SALE COMMERCIAL REGISTRATION successfully" );
+
+        soft.assertAll();
+    }
+
+    @When("user click on SALE_SHARE_COMMERCIAL_REGISTRATION")
+    public void userClickOnSALE_SHARE_COMMERCIAL_REGISTRATION() {
+        sael.SALE_SHARE_COMMERCIAL_REGISTRATION().click();
+    }
+
+    @And("user clicked on SALE_SHARE_COMMERCIAL_REGISTRATION successfully")
+    public void userClickedOnSALE_SHARE_COMMERCIAL_REGISTRATIONSuccessfully() {
+        SoftAssert soft = new SoftAssert();
+        String expectedResult = "بيع حصص برخصة تجارية";
+        String actualResult =sael.SALE_label().getText();
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult),true);
+        soft.assertTrue(actualResult.contains(expectedResult),"user clicked on SALE SHARE COMMERCIAL REGISTRATION successfully" );
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/SALE_SHARE_COMMERCIAL_REGISTRATION/:70";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl),"user clicked on SALE SHARE COMMERCIAL REGISTRATION successfully" );
+
+        soft.assertAll();
+    }
+
+
 }
