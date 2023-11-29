@@ -27,5 +27,9 @@ public class P09_MORTGAGE {
         return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_COMPANY.png']"));
     }
 
+    public WebElement MORTGAGE_ACCOUNT()
+    {
+        return Hooks.driver.findElement(By.xpath("//img[@ng-src='img/MORTGAGE_ACCOUNT.png']"));
+    }
 
 }

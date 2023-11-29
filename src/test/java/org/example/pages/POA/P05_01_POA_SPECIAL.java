@@ -42,8 +42,17 @@ public class P05_01_POA_SPECIAL {
     public WebElement nav_First_Side() {
         return Hooks.driver.findElement(By.id("fisrtParty"));
     }
+
+    public WebElement nav_First_Side_By_xpath() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='Service_Content']//ul//li[1]//a//img"));
+    }
+
     public WebElement nav_Second_Side() {
         return Hooks.driver.findElement(By.id("secondParty"));
+    }
+
+    public WebElement nav_Second_Side_By_xpath() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='Service_Content']//ul//li[2]//a//img"));
     }
 
     public WebElement drop_listSecondParty() {
@@ -79,6 +88,10 @@ public class P05_01_POA_SPECIAL {
         return Hooks.driver.findElement(By.id("li_debage"));
     }
 
+    public WebElement nav_sample_xpath() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='Service_Content']//ul//li[4]//a//img"));
+    }
+
     public WebElement simpleTextCheckbox() {
         return Hooks.driver.findElement(By.xpath("//legend//input[@type=\"checkbox\"]"));
     }
@@ -91,6 +104,10 @@ public class P05_01_POA_SPECIAL {
     }
     public WebElement nav_fees() {
         return Hooks.driver.findElement(By.id("li_fees"));
+    }
+
+    public WebElement nav_fees_xpath() {
+        return Hooks.driver.findElement(By.xpath("//div[@id='Service_Content']//ul//li[6]//a//img"));
     }
 
     public WebElement chkNoFees() {
