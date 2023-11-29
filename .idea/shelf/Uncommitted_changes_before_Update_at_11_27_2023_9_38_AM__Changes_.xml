@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]" date="1701070740672" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/27/2023 9:38 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="target/Project2-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]/Project2-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" />
+    <option name="AFTER_PATH" value="target/test-classes/org/example/stepDefs/POA/D05_01_POA_SPECIALStepDef.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]/D05_01_POA_SPECIALStepDef.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/org/example/stepDefs/First_Step/D06_SEALStepDef.class" />
+    <option name="AFTER_PATH" value="target/test-classes/org/example/stepDefs/First_Step/D06_SEALStepDef.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]/D06_SEALStepDef.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_11_9_2023_1_28_AM_[Changes]1/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/org/example/pages/First_Step/P06_SAEL.class" />
+    <option name="AFTER_PATH" value="target/test-classes/org/example/pages/First_Step/P06_SAEL.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_27_2023_9_38_AM_[Changes]/P06_SAEL.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_Update_at_11_9_2023_1_31_AM_[Changes]1/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/shelf/Uncommitted_changes_before_rebase_[Changes]4/Project2-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
