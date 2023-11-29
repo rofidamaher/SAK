@@ -11,7 +11,7 @@ Background:user could click on SALE_SHARE
   When user click on SALE_SHARE
   And user clicked on SALE_SHARE successfully
 
-  #بيع شركة / مؤسسة
+  #بيع  حصص في شركة / مؤسسة
   Scenario: user could add new transactions for SALE_COMPANY
     # جهة إعتبارية محلية     |||  سجل تجاري |||||  رقم السجل   |||||||| النسبة المباعة
     When user add the first Party with obj of index "25" and id of index "2" civilId equal "230"  txtPercentFristParty "10" and click on chkDepositFirstParty

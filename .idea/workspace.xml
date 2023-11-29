@@ -51,7 +51,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="SALE_SHARE" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +70,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="b128ce83-fe63-4898-b28b-a29610672676" />
+        <option name="accountId" value="7ab4964a-0c90-4454-bea1-f2b4f07300da" />
         <option name="url" value="https://github.com/rofidamaher/SAK" />
       </UrlAndAccount>
     </option>
@@ -216,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMMERCIAL_REGISTRATION" />
         <item itemvalue="Cucumber Java.Scenario: user could click on SALE_SHARE" />
         <item itemvalue="Cucumber Java.Scenario: user could click on CONTRACT_ESTABLISHMENT" />
         <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SUPPLY" />
         <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMPANY (1)" />
-        <item itemvalue="Cucumber Java.Scenario: user could add new transactions for SALE_COMMERCIAL_REGISTRATION" />
       </list>
     </recent_temporary>
   </component>
@@ -489,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700042367659</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="SALE_SHARE1">
+      <option name="closed" value="true" />
+      <created>1701246204153</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701246204153</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +534,8 @@
     <MESSAGE value="MORTGAGE edite" />
     <MESSAGE value="rename" />
     <MESSAGE value="SALE_SHARE" />
-    <option name="LAST_COMMIT_MESSAGE" value="SALE_SHARE" />
+    <MESSAGE value="SALE_SHARE1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SALE_SHARE1" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
