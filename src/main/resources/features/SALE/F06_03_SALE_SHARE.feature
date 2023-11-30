@@ -1,4 +1,4 @@
-@smoke
+#@smoke
 Feature: F06_03_SALE_SHARE | users could add new transactions for SALE_SHARE
 Background:user could click on SALE_SHARE
   When user login with email "tester7" and password "P@ssw0rd"

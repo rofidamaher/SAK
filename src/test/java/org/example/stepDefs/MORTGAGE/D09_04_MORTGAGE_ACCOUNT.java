@@ -15,7 +15,7 @@ public class D09_04_MORTGAGE_ACCOUNT {
     D07_01_AGREEMENTStepDef agreementStepDef = new D07_01_AGREEMENTStepDef();
 
     @Then("Account Number is {string} Name Of Bank is {string}")
-public void accountNumberAndNameOfBank(String arg0, String arg1) throws InterruptedException {
+    public void accountNumberAndNameOfBank(String arg0, String arg1) throws InterruptedException {
     Thread.sleep(200);
     mortgageAccount.Account_Number().click();
     mortgageAccount.Account_Number().sendKeys(arg0);
@@ -49,4 +49,6 @@ public void accountNumberAndNameOfBank(String arg0, String arg1) throws Interrup
         Thread.sleep(100);
         mortgageAccount.ApprovalLetterNumber().sendKeys(arg1);
     }
+
+
 }

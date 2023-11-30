@@ -1,4 +1,4 @@
-@smoke
+#@smoke
 Feature: F09_04_MORTGAGE_ACCOUNT | users could add new transactions for MORTGAGE_ACCOUNT
 
   Background:user could click on MORTGAGE_ACCOUNT
@@ -36,8 +36,6 @@ Feature: F09_04_MORTGAGE_ACCOUNT | users could add new transactions for MORTGAGE
     # تقدير الرسوم والتحصيل
     And user close the the samples Nav and open the fees Nav by xpath
     When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية"
-
     # Then user click on btnCollection
-
     # اصدار المحرر
     Then user click on btnSubmitTransaction

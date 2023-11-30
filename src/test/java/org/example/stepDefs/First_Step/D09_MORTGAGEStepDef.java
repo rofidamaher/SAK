@@ -126,4 +126,35 @@ public class D09_MORTGAGEStepDef {
         // Assert All
         soft.assertAll();
     }
+
+    @When("user click on MORTGAGE_STOCKS")
+    public void userClickOnMORTGAGE_STOCKS() {
+        mortgage.MORTGAGE_STOCKS().click();
+    }
+
+    @And("user clicked on MORTGAGE_STOCKS successfully")
+    public void userClickedOnMORTGAGE_STOCKSSuccessfully() {
+
+        // Soft Assertion
+        SoftAssert soft = new SoftAssert();
+
+        //first Assert
+        String expectedResult = "رهن أسهم في سوق الدوحة";
+        String actualResult = mortgage.MORTGAGE_label().getText();
+
+        System.out.println(actualResult);
+        soft.assertEquals(actualResult.contains(expectedResult), true);
+        soft.assertTrue(actualResult.contains(expectedResult), "user clicked on MORTGAGE_STOCKS successfully");
+
+        //Hooks.driver.getCurrentUrl();
+        // second Assert
+
+        String expectedResulturl = "http://192.168.1.111:8085/Master.html#/MORTGAGE_STOCKS/:17";
+        String actualResulturl = Hooks.driver.getCurrentUrl();
+        System.out.println(actualResulturl);
+        soft.assertTrue(actualResulturl.contains(expectedResulturl), "user clicked on MORTGAGE_STOCKS successfully");
+
+        // Assert All
+        soft.assertAll();
+    }
 }
