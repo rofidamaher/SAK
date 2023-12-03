@@ -27,4 +27,13 @@ public class P06_SAEL {
         return Hooks.driver.findElement(By.xpath("//a[@href='#/SALE_SHARE/:24']"));
     }
 
+    public WebElement SALE_COMMERCIAL_REGISTRATION()
+    {
+        return Hooks.driver.findElement(By.xpath("//a[@href='#/SALE_COMMERCIAL_REGISTRATION/:69']"));
+    }
+    public WebElement SALE_SHARE_COMMERCIAL_REGISTRATION()
+    {
+        return Hooks.driver.findElement(By.xpath("//a[@href='#/SALE_SHARE_COMMERCIAL_REGISTRATION/:70']"));
+    }
+
 }

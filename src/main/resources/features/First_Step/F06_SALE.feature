@@ -16,6 +16,10 @@ Background:user could click on SALE
     When user click on SALE_LAND
     And user clicked on SALE_LAND successfully
 
-  Scenario: user could click on SALE_SHARE
-    When user click on SALE_SHARE
-    And user clicked on SALE_SHARE successfully
+  Scenario: user could click on SALE_COMMERCIAL_REGISTRATION
+    When user click on SALE_COMMERCIAL_REGISTRATION
+    And user clicked on SALE_COMMERCIAL_REGISTRATION successfully
+
+  Scenario: user could click on SALE_SHARE_COMMERCIAL_REGISTRATION
+    When user click on SALE_SHARE_COMMERCIAL_REGISTRATION
+    And user clicked on SALE_SHARE_COMMERCIAL_REGISTRATION successfully

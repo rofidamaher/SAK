@@ -1,4 +1,4 @@
-@smoke
+
 Feature: F06_03_SALE_SHARE | users could add new transactions for SALE_SHARE
 Background:user could click on SALE_SHARE
   When user login with email "tester7" and password "P@ssw0rd"
@@ -12,7 +12,7 @@ Background:user could click on SALE_SHARE
   And user clicked on SALE_SHARE successfully
 
   #بيع  حصص في شركة / مؤسسة
-  Scenario: user could add new transactions for SALE_COMPANY
+  Scenario: user could add new transactions for SALE_SHARE
     # جهة إعتبارية محلية     |||  سجل تجاري |||||  رقم السجل   |||||||| النسبة المباعة
     When user add the first Party with obj of index "25" and id of index "2" civilId equal "230"  txtPercentFristParty "10" and click on chkDepositFirstParty
     And user click on add button and add new first Party successfully
