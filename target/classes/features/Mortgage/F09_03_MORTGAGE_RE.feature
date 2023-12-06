@@ -15,7 +15,7 @@ Feature: F09_03_MORTGAGE_RE | users could add new transactions for MORTGAGE_RE
   Scenario: user could add new transactions for MORTGAGE_RE
     # جهة اعتبارية اجنبية     |||  رقم السجل // الجنسية  /// الاسم
     When user add the first Party with obj of index "44" civilId "54646465" ddlNationalityFirstParty_chosen "4" textname "خالد علي محمد" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user click on ShowChild btn
     When user AddChildParty with adj of index "1" and obj of index "1" id equal "00000000090" and click on save btn
     And user close first Party and open the second Party

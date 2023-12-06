@@ -15,7 +15,7 @@ Feature: F09_01_MORTGAGE_LAND | users could add new transactions for MORTGAGE_LA
   Scenario: user could add new transactions for MORTGAGE_LAND
      # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user close first Party and open the second Party
 
     # عن نفسه      |||  رقم شخصي

@@ -15,7 +15,7 @@ Feature: F08_01_CONTRACT_ESTABLISHMENT | users could add new transactions for CO
   Scenario: user could add new transactions for CONTRACT_ESTABLISHMENT
       # شريك فى شركة اجنبية      |||  رقم شخصي // محل الاقامة /// نسبة المشاركة ///السجل التجاري /// اسم الشركة /// الجنسية
     When user add the first Party with obj of index "5" and id of index "1" id "00000000085" addressFirstParty "testtest" txtFirstRatioOfPartnership "10" txtElsqlEltogaryFirstParty "4541" txtCompanyNameFirstParty "for test " txtNationalitySeglFirstParty "2" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000080" successfully
     And user close first Party and open the second Party
      # شريك في شركة      |||  رقم شخصي /// الصلاحية \\\ مدة الصلاحية
     When user add the second Party with obj of index "6" and id of index "2" id "00000000085" and txtSecondPrivilege "2" txtSecondPrivilegeValidity "2"

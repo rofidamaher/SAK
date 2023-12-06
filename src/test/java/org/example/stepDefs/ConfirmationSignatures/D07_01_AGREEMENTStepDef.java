@@ -29,8 +29,8 @@ public class D07_01_AGREEMENTStepDef {
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement(By.xpath("//div[@id='childType_chosen']//li[@data-option-array-index='" + arg0 + "']"));
         objeItem.click();
-        Thread.sleep(100);
-
+        Thread.sleep(1000);
+        agreement.txtConfirmChildParty().click();
         agreement.txtConfirmChildParty().sendKeys(arg1);
         saleLand.btnAddChildParty().click();
         saleLand.save().click();

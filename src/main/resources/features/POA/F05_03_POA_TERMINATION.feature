@@ -15,7 +15,7 @@ Background:user could click on POA_TERMINATION
   Scenario: user could add new transactions for POA_TERMINATION
       # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id equal "00000000090" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     When user close first Party and open the model Nav
     And user enter transaction num "2023/3660" for POA_TERMINATION and click save model btn
     And user close the the samples Nav and open the fees Nav

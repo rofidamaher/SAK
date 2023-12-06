@@ -15,7 +15,7 @@ Background:user could click on SALE_COMMERCIAL_REGISTRATION
   Scenario: user could add new transactions for SALE_COMMERCIAL_REGISTRATION
     # عن نفسه      |||  رقم شخصي
     When user add the first Party with obj of index "8" and id of index "1" id "00000000200" and txtPercentFristParty "5" click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user close first Party and open the second Party by xpath
      # شريك في شركة      |||  رقم شخصي
     When user add the second Party with obj of index "6" and id of index "2" id "00000000085" and CR "230" txtPercentSecondParty "5"

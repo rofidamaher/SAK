@@ -43,7 +43,7 @@ public class D06_02_SALE_LANDStepDef {
 
     @When("user Add childType with obj of index {string}  id {string} and click on save btn")
     public void userAddChildTypeWithObjOfIndexIdAndClickOnSaveBtn(String arg0, String arg1) throws InterruptedException {
-        Thread.sleep(300);
+        Thread.sleep(2000);
         saleLand.drop_listChildType().click();
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement(By.xpath("//div[@id='childType_chosen']//li[@data-option-array-index='" + arg0 + "']"));
@@ -62,9 +62,9 @@ public class D06_02_SALE_LANDStepDef {
         POASpecial.drop_listSecondParty().click();
         Thread.sleep(100);
         WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveSecondParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
-
         objeItem.click();
         Thread.sleep(500);
+
         POASpecial.drop_id_listSecondParty().click();
         WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
         Thread.sleep(100);
@@ -72,8 +72,10 @@ public class D06_02_SALE_LANDStepDef {
         Thread.sleep(1000);
 
         POASpecial.id_inputSecondParty().sendKeys(arg2);
-
+        POASpecial.id_inputSecondParty().click();
+        Thread.sleep(100);
         saleLand.txtValueRaqmSecondParty().sendKeys(arg3);
+        Thread.sleep(100);
         saleLand.txtValueYearSecondParty().sendKeys(arg4);
         jse.executeScript("window.scrollBy(0,150)");
     }
