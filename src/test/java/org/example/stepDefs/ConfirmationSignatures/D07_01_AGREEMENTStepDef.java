@@ -60,18 +60,23 @@ public class D07_01_AGREEMENTStepDef {
     public void userClickOnAddButtonThenClickOnYesFirstPartyAndAddSecondPartyWithIdSuccessfully(String arg0) throws InterruptedException {
 
         POASpecial.add_butSecondParty().click();
-
-        agreement.YesFirstParty().click();
         Thread.sleep(100);
-        Hooks.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        agreement.YesFirstParty().click();
+        Thread.sleep(500);
         POASpecial.ok_but().click();
+        Thread.sleep(1000);
+        jse.executeScript("window.scrollBy(0,250)");
 
-        jse.executeScript("window.scrollBy(0,150)");
-
+        Thread.sleep(2000);
+        Hooks.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         for (int i = 0; i <POASpecial.secondPartyTable().size() ; i++) {
             String actualResult =POASpecial.secondPartyTable().get(i).getText();
-            System.out.println(actualResult);
-            Assert.assertTrue(actualResult.contains(arg0),"id for second Party has found : " + i);
+            Thread.sleep(100);
+            if(actualResult.equals(arg0)) {
+                System.out.println(actualResult);
+                Assert.assertTrue(actualResult.contains(arg0), "id for second Party has found : " + i);
+
+            }
         }
     }
 

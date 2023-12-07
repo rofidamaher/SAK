@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="146.589">
-    <testcase classname="F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL" name="user could add new transactions for POA_SPECIAL" time="146.148">
-        <system-out><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.164">
+    <testcase classname="F05_01_POA_SPECIAL | users could add new transactions for POA_SPECIAL" name="user could add new transactions for POA_SPECIAL" time="31.781">
+        <failure message="element not interactable&#10;  (Session info: chrome=109.0.5414.168)&#10;Build info: version: '4.9.0', revision: 'd7057100a6'&#10;System info: os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ef9386a5d7299640dd2c4543255c8055, clickElement {id=ffaf2741-d564-424e-8c7e-01b4f1bbfb9a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\QC-3\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53678/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (ef9386a5d7299640dd2c4543255c8055)] -&gt; id: ddlAdjectiveSecondParty_chosen]&#10;Session ID: ef9386a5d7299640dd2c4543255c8055" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When user login with email "amrsaid" and password "amrsaid".................passed
 And user press on login button..............................................passed
 And user login to the system successfully by user "amrsaid".................passed
 And user click on Documentation.............................................passed
@@ -13,31 +13,64 @@ And user clicked on POA_SPECIAL successfully................................pass
 When user add the first Party with obj of index "8" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty.passed
 And user click on add button and add new first Party with id "00000000200" successfully.passed
 And user close first Party and open the second Party by xpath...............passed
-When user add the second Party with obj of index "1" and id of index "1" id "00000000080" txtValueRaqmSecondParty "1111" txtValueYearSecondParty "222".passed
-And user click on add button and add new second Party with id "00000000080" successfully.passed
-And user click on ShowChild btn for id "00000000080"........................passed
-When user Add childType with obj of index "1"  id "00000000081" and click on save btn.passed
-When user add the second Party with obj of index "2" and id of index "1" id "00000000083" txtBayanatElwkalaSecondParty "1111".passed
-And user click on add button and add new second Party with id "00000000083" successfully.passed
-And user click on ShowChild btn for id "00000000083"........................passed
-When user Add childType with obj of index "1"  id "00000000084" and click on save btn.passed
-When user add the second Party with obj of index "2" and id of index "1" id "00000000084" click on Wkala and txtRqmElwekalaSecondParty "2023/4032".passed
-And user click on add button and choose AgentPersonsSecond "00000000090" Sure new second Party id "00000000084" added successfully.passed
-When user add the second Party with obj of index "4" and id of index "1" id "00000000085" txtWalyRaqmSecondParty "222" txtWalyYearSecondParty "333".passed
-And user click on add button and add new second Party with id "00000000085" successfully.passed
-And user click on ShowChild btn for id "00000000085"........................passed
-When user Add childType with obj of index "1"  id "00000000090" and click on save btn.passed
-When user add the second Party with obj of index "11" and id of index "1" id "00000000091" txtBuildingNumberSecondParty "12345678" txtEmailBoxSecondParty "111" txtCompanyPhoneSecondParty "32325656" cRExpiryDateSecondParty Y "2025" M "Jul" D "16".passed
-And user click on add button and add new second Party with id "00000000091" successfully.passed
-When user add the second Party with obj of index "6" and id of index "1" id equal "00000000085" and CR equal "230".passed
-And user click on add button and add new second Party with id "00000000085" successfully.passed
-And user close second Party and open samples Nav for xpath..................passed
-When user chick the fixed text checkbox and click inside the state of qatar radio btn.passed
-And user click on save model btn............................................passed
-And user close the the samples Nav and open the fees Nav by xpath...........passed
-When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".passed
-And user click on btnViewTransaction........................................passed
-Then user click on btnSubmitTransaction.....................................passed
-]]></system-out>
+When user add the second Party with obj of index "1" and id of index "1" id "00000000080" txtValueRaqmSecondParty "1111" txtValueYearSecondParty "222".failed
+And user click on add button and add new second Party with id "00000000080" successfully.skipped
+And user click on ShowChild btn for id "00000000080"........................skipped
+When user Add childType with obj of index "1"  id "00000000081" and click on save btn.skipped
+When user add the second Party with obj of index "2" and id of index "1" id "00000000083" txtBayanatElwkalaSecondParty "1111".skipped
+And user click on add button and add new second Party with id "00000000083" successfully.skipped
+And user click on ShowChild btn for id "00000000083"........................skipped
+When user Add childType with obj of index "1"  id "00000000084" and click on save btn.skipped
+When user add the second Party with obj of index "2" and id of index "1" id "00000000084" click on Wkala and txtRqmElwekalaSecondParty "2023/4032".skipped
+And user click on add button and choose AgentPersonsSecond "00000000090" Sure new second Party id "00000000084" added successfully.skipped
+When user add the second Party with obj of index "4" and id of index "1" id "00000000085" txtWalyRaqmSecondParty "222" txtWalyYearSecondParty "333".skipped
+And user click on add button and add new second Party with id "00000000085" successfully.skipped
+And user click on ShowChild btn for id "00000000085"........................skipped
+When user Add childType with obj of index "1"  id "00000000090" and click on save btn.skipped
+When user add the second Party with obj of index "11" and id of index "1" id "00000000091" txtBuildingNumberSecondParty "12345678" txtEmailBoxSecondParty "111" txtCompanyPhoneSecondParty "32325656" cRExpiryDateSecondParty Y "2025" M "Jul" D "16".skipped
+And user click on add button and add new second Party with id "00000000091" successfully.skipped
+When user add the second Party with obj of index "6" and id of index "1" id equal "00000000091" and CR equal "200".skipped
+And user click on add button and add new second Party with id "00000000091" successfully.skipped
+When user add the second Party with obj of index "7" and id of index "1" id equal "00000000091" and CR equal "200".skipped
+And user click on add button and add new second Party with id "00000000091" successfully.skipped
+When user add the second Party with obj of index "10" and id of index "1" id equal "00000000091" and CR equal "200".skipped
+And user click on add button and add new second Party with id "00000000091" successfully.skipped
+When user add the second Party with obj of index "12" and id of index "1" id "00000000080" txtBuildingNumberSecondParty "12345678".skipped
+And user click on add button and add new second Party with id "00000000080" successfully.skipped
+When user add the second Party with obj of index "15" and id of index "1" id equal "00000000201".skipped
+And user click on add button then click on YesFirstParty and add second Party with id "00000000201" successfully.skipped
+And user close second Party and open samples Nav for xpath..................skipped
+When user chick the fixed text checkbox and click inside the state of qatar radio btn.skipped
+And user click on save model btn............................................skipped
+And user close the the samples Nav and open the fees Nav by xpath...........skipped
+When user click on noFees checkbox and select ExcemptedReasons "جهة حكومية".skipped
+And user click on btnViewTransaction........................................skipped
+Then user click on btnSubmitTransaction.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.168)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef9386a5d7299640dd2c4543255c8055, clickElement {id=ffaf2741-d564-424e-8c7e-01b4f1bbfb9a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\QC-3\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53678}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53678/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ef9386a5d7299640dd2c4543255c8055)] -> id: ddlAdjectiveSecondParty_chosen]
+Session ID: ef9386a5d7299640dd2c4543255c8055
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.example.stepDefs.SALE.D06_02_SALE_LANDStepDef.userAddTheSecondPartyWithObjOfIndexAndIdOfIndexIdTxtValueRaqmSecondPartyTxtValueYearSecondParty(D06_02_SALE_LANDStepDef.java:62)
+	at ✽.user add the second Party with obj of index "1" and id of index "1" id "00000000080" txtValueRaqmSecondParty "1111" txtValueYearSecondParty "222"(file:///C:/Users/QC-3/Downloads/New%20folder/SAK/src/main/resources/features/POA/F05_01_POA_SPECIAL.feature:22)
+]]></failure>
     </testcase>
 </testsuite>

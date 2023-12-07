@@ -242,6 +242,24 @@ public class PARTIESStepDef {
     }
 
 
+    @When("user add the second Party with obj of index {string} and id of index {string} id {string} txtBuildingNumberSecondParty {string}")
+    public void userAddTheSecondPartyWithObjOfIndexAndIdOfIndexIdTxtBuildingNumberSecondParty(String arg0, String arg1, String arg2, String arg3) throws InterruptedException {
 
+        jse.executeScript("window.scrollBy(0,-150)");
+        POASpecial.drop_listSecondParty().click();
+        Thread.sleep(100);
+        WebElement objeItem = Hooks.driver.findElement( By.xpath("//div[@id='ddlAdjectiveSecondParty_chosen']//li[@data-option-array-index='"+arg0+"']"));
+        objeItem.click();
+        Thread.sleep(500);
+        POASpecial.drop_id_listSecondParty().click();
+        WebElement idItem = Hooks.driver.findElement(By.xpath("//div[@id='ddlConfirmTypeSeconedParty_chosen']//li[@data-option-array-index='"+arg1+"']"));
+        Thread.sleep(100);
+        idItem.click();
+        Thread.sleep(1000);
+        POASpecial.id_inputSecondParty().sendKeys(arg2);
+        POASpecial.id_inputSecondParty().click();
+        parties.txtBuildingNumberSecondParty().sendKeys(arg3);
+        Thread.sleep(100);
 
+    }
 }
