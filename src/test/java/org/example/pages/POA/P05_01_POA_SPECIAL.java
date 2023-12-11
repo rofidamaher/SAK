@@ -81,8 +81,13 @@ public class P05_01_POA_SPECIAL {
     }
     public List<WebElement> secondPartyTable()
     {
-        List<WebElement> secondPartyTableIds = Hooks.driver.findElements(By.xpath("//form[@class=\"secondParty ng-pristine ng-valid ng-scope\"]//tbody//tr//td[@data-title=\" رقم الإثبات\"]"));
+        List<WebElement> secondPartyTableIds = Hooks.driver.findElements(By.xpath("//form[@class='secondParty ng-pristine ng-valid ng-scope']//tbody//tr//td[@data-title=' رقم الإثبات']"));
         return secondPartyTableIds;
+    }
+    public List<WebElement> firstPartyTable()
+    {
+        List<WebElement> firstPartyTableIds = Hooks.driver.findElements(By.xpath("//form[@class='ng-pristine ng-valid ng-scope']//tbody//tr//td[@data-title=' رقم الإثبات']"));
+        return firstPartyTableIds;
     }
      public WebElement nav_sample() {
         return Hooks.driver.findElement(By.id("li_debage"));

@@ -15,7 +15,7 @@ Feature: F09_04_MORTGAGE_ACCOUNT | users could add new transactions for MORTGAGE
   Scenario: user could add new transactions for MORTGAGE_ACCOUNT
     # المؤسس
     When user add the first Party with obj of index "22" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user close first Party and open the second Party by xpath
     # رئيس مجلس الامناء
     When user add the second Party with obj of index "23" and id of index "2" id equal "00000000085"

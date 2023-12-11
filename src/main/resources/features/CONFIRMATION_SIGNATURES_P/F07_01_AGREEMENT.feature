@@ -13,7 +13,7 @@ Background:user could click on AGREEMENT
   Scenario: user could add new transactions for AGREEMENT
       # مفوض بموجب محضر اجتماع   //// الرقم الشخصي   ///  رقم الوكالة
     When user add the first Party with obj of index "33" and id of index "1" id "00000000090" txtBayanatElwkalaFirstParty "25/2014" and click on chkDepositFirstParty
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user click on ShowChild btn
       #  رخصة تجارية //// رقم الرخصة
     When user Add childType with obj of index "2" txtConfirmChildParty "1212" and click on save btn

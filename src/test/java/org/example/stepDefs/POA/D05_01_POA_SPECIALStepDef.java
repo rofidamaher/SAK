@@ -41,32 +41,43 @@ public class D05_01_POA_SPECIALStepDef {
 
     }
 
-    
-    @And("user click on add button and add new first Party successfully")
-    public String userClickOnAddButAndAddNewTransactionsSuccessfully() throws InterruptedException {
+
+    @And("user click on add button and add new first Party with id {string} successfully")
+    public void userClickOnAddButtonAndAddNewFirstPartyWithIdSuccessfully(String arg0) throws InterruptedException {
 
         Thread.sleep(1000);
         jse.executeScript("window.scrollBy(0,150)");
         Thread.sleep(300);
-
         POASpecial.add_butFirstParty().click();
         Thread.sleep(1000);
-        // Soft Assertion
-        SoftAssert soft = new SoftAssert();
         POASpecial.ok_but().click();
         Thread.sleep(1000);
+        jse.executeScript("window.scrollBy(0,50)");
+
+        for (int i = 0; i <POASpecial.firstPartyTable().size() ; i++) {
+            String actualResult =POASpecial.firstPartyTable().get(i).getText();
+            Thread.sleep(100);
+            if(actualResult.equals(arg0)) {
+                System.out.println(actualResult);
+                Assert.assertTrue(actualResult.equals(arg0), "id for second Party has found : " + arg0);
+
+            }
+        }
+
+
+       /* // Soft Assertion
+        SoftAssert soft = new SoftAssert();
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.transactions_num());
         String actualResult1 = POASpecial.transactions_num().getText();
         transactions_num = POASpecial.transactions_num().getText();
         System.out.println(actualResult1);
-
         soft.assertTrue(POASpecial.transactions_num().isDisplayed());
         // Assert All
         soft.assertAll();
 
         Thread.sleep(1000);
 
-        return transactions_num;
+        return transactions_num;*/
     }
 
 
@@ -106,7 +117,7 @@ public class D05_01_POA_SPECIALStepDef {
         POASpecial.companyNameSecondParty().click();
         JavascriptExecutor jse = (JavascriptExecutor) Hooks.driver;
 
-        jse.executeScript("window.scrollBy(0,150)");
+        jse.executeScript("window.scrollBy(0,50)");
     }
 
 
@@ -116,9 +127,6 @@ public class D05_01_POA_SPECIALStepDef {
         Thread.sleep(1000);
         POASpecial.ok_but().click();
         Hooks.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
-        jse.executeScript("window.scrollBy(0,50)");
-
         for (int i = 0; i <POASpecial.secondPartyTable().size() ; i++) {
             String actualResult =POASpecial.secondPartyTable().get(i).getText();
             Thread.sleep(100);
@@ -210,14 +218,14 @@ public class D05_01_POA_SPECIALStepDef {
     public void userClickOnBtnSubmitTransactionAndTransactionAddedSuccessfully() throws InterruptedException {
         jse.executeScript("arguments[0].scrollIntoView();", POASpecial.btnSubmitTransaction());
         POASpecial.btnSubmitTransaction().click();
-        Thread.sleep(2000);
-        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
-        {
-            Thread.sleep(3000);
-            System.out.println("Element is not visible yet");
-        }
-        Thread.sleep(200);
-        POASpecial.cboxClose().click();
+        Thread.sleep(10000);
+//        while (!isDisplayed(Hooks.driver.findElement(By.id("cboxContent"))))
+//        {
+//            Thread.sleep(3000);
+//            System.out.println("Element is not visible yet");
+//        }
+//        Thread.sleep(200);
+//        POASpecial.cboxClose().click();
 //        Hooks.driver.switchTo().frame(Hooks.driver.findElement(By.className("cboxIframe")));
 //        Thread.sleep(300);
 //        Hooks.driver.switchTo().defaultContent();

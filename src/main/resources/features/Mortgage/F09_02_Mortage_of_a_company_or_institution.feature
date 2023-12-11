@@ -18,7 +18,7 @@ Feature: F09_02_Mortage_of_a_company_or_institution | users could add new transa
     When user add the first Party with obj of index "1" and id of index "1" id equal "00000000200" and click on chkDepositFirstParty
     And book's number is "رقم1" and Book side is "جهة رقم1" for first Party
 
-    And user click on add button and add new first Party successfully
+    And user click on add button and add new first Party with id "00000000200" successfully
     And user close first Party and open the second Party
 
     # الوصي
